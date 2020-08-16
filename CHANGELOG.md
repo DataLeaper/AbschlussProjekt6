@@ -21,4 +21,26 @@
 - Add a toggle to disable/enable crash reports.
 - Fix search icon color.
 - Fix disappearing notices in Persistent Options.
-- Update some text in the tutorial and intro sl
+- Update some text in the tutorial and intro slides.
+- The intro will appear once even if you've already gone through it in this update. Just exit it and it shouldn't show up again.
+- Add Mastodon link.
+- Use Material Design 3 switches.
+
+# 349
+- Update translations.
+- Add Italian translation.
+- Crash fixes.
+- Remove OneUI Tuner references.
+- Update icon colors for Android 12+.
+- Update dependencies.
+- Show keys for predefined Icon Blacklist items.
+
+# 348
+- Crash fixes.
+- Update translations.
+- After editing a custom persistent option, the new value will be immediately written to the device settings.
+- Hide OneUI Tuner link on One UI 4 and later.
+- Add option to hide lock screen ads on FireOS.
+- Add option to allow custom left lock screen shortcut on FireOS.
+- Move lock screen settings to specific Lock Screen section.
+- Fix lock screen shortcuts reset
