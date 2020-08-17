@@ -43,4 +43,26 @@
 - Add option to hide lock screen ads on FireOS.
 - Add option to allow custom left lock screen shortcut on FireOS.
 - Move lock screen settings to specific Lock Screen section.
-- Fix lock screen shortcuts reset
+- Fix lock screen shortcuts resetting on One UI.
+- Add "Flashlight", "Do Not Disturb", and "None" options for One UI lock screen shortcuts.
+
+# 347
+- Try to prevent reports of OBSERVE_GRANT_REVOKE_PERMISSIONS crashes.
+- Make sure AD_ID permission isn't in manifest.
+- Address deprecations.
+
+# 346
+- Fix temperature slider in Night Mode option.
+- Implement a "revert" dialog for dangerous settings.
+- UI tweaks.
+- Update dependencies.
+- Update Immersive Mode description to mention broken Immersive Mode on Android 11 and later.
+- Update intro to use Material You theming.
+- Request notification permission on Android 13.
+- Target API 33.
+
+# 345
+- Dangerous preferences show up in red again.
+- Add a warning about Night Mode to the terms.
+- Implement Material You theming for Android 12 and later.
+- Update de
