@@ -65,4 +65,43 @@
 - Dangerous preferences show up in red again.
 - Add a warning about Night Mode to the terms.
 - Implement Material You theming for Android 12 and later.
-- Update de
+- Update dependencies.
+
+## 344
+- Add Hungarian translation.
+- Update translations.
+
+## 343
+- Code cleanup.
+- Update dependencies.
+- Crash fixes.
+
+## 342
+- Fix some crashes.
+- Update translations.
+- Add in a prompt to enable SYSTEM_ALERT_WINDOW on Android 12 for background operations.
+
+## 341
+- Disable the lock screen shortcuts option if it's unavailable on the current device.
+- Try a workaround for foreground Service crashes.
+- Update translations.
+
+## 340
+- Crash fixes.
+- Target API 32.
+- Code cleanup.
+
+## 339
+- Crash fixes.
+- Update dependencies.
+- Remove local dependencies for easier builds.
+- Include OnePlus in the instructions for OPPO/Realme.
+- Update some text.
+- Make permissions pages show clearer status.
+- Add Czech translation.
+- Update translations.
+- Add Spanish translation.
+
+## 338
+- Update dependencies.
+- Add Traditional
