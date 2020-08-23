@@ -138,4 +138,22 @@
 
 ## 332
 - Update terms to include more permission explanations.
-- Us
+- Use Shizuku for writing to Settings.System if possible.
+- Fix an issue with the lock screen shortcut selector where items would show when they weren't supposed to.
+- Update dependencies.
+- Add option to split "Internet" tile back up into "WiFi" and "Cell" tiles on Android 12.
+- Add some missing QS icons to the editor.
+- Prioritize title match over summary match when searching for preferences.
+- Update translations.
+- Crash fixes.
+- Update how SlidingPaneLayout is used to address changes to its UI.
+- Code cleanup.
+- Work on better tablet layouts.
+
+## 331
+- Crash fixes.
+- Code cleanup.
+- Update translations.
+- Add option to hide multi-SIM panel on One UI.
+- Disable QS header count option after Android 11.
+- Add QUERY_ALL_PACKAGES permission to properly list all apps in lock screen sh
