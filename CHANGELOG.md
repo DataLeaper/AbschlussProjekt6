@@ -156,4 +156,26 @@
 - Update translations.
 - Add option to hide multi-SIM panel on One UI.
 - Disable QS header count option after Android 11.
-- Add QUERY_ALL_PACKAGES permission to properly list all apps in lock screen sh
+- Add QUERY_ALL_PACKAGES permission to properly list all apps in lock screen shortcut selection and immersive mode.
+- Sort apps case-insensitively in the immersive mode selector.
+- Add fast scroll to immersive mode selector and lock screen shortcut selector.
+- Update lock screen shortcuts icon to with with One UI.
+- Add a workaround for restrictions on reading settings in Android 12.
+
+## 330
+- Fix filename format for icon blacklist backup.
+- Migrate from libsuperuser to libSU.
+- Update target SDK to 31.
+- Replace old hidden API blacklist with one from LSposed.
+- Add option to specify custom QS tile keys in QS editor.
+- Update dependencies.
+- Replace hidden API usage with public API.
+- Make the "Disable Safe Audio Warning" option more flexible.
+- Crash fixes.
+- Add hint to Persistent Options screen to disable battery optimization.
+
+## 329
+- Mark UI sounds preference as dangerous.
+- Update dependencies.
+- Make some more strings translatable.
+- Include other strings
