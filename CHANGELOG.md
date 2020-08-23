@@ -104,4 +104,38 @@
 
 ## 338
 - Update dependencies.
-- Add Traditional
+- Add Traditional Chinese translation.
+- Crash fixes.
+
+## 337
+- Code cleanup.
+- Move the search function to the new drawer.
+
+## 336
+- Update dependencies.
+- Make the Traditional Chinese translations show up for rTW instead of rCN.
+
+## 335
+- Add some missing content descriptions.
+- Crash fixes.
+- Explicitly show that the non-resettable keys in the reset dialog are from Settings.System.
+- UI tweaks.
+- Update dependencies.
+- Update translations.
+- Fix an issue where immersive mode wasn't activating properly.
+
+## 334
+- Fix the QS editor on One UI.
+- Work on making the QS editor look and work better.
+- Code tweaks.
+- Migrate away from old drawer layout and put the previous home screen as the drawer.
+- Tweak preference layout.
+- Add some animations.
+- Crash fixes.
+
+## 333
+- Crash fixes.
+
+## 332
+- Update terms to include more permission explanations.
+- Us
