@@ -178,4 +178,39 @@
 - Mark UI sounds preference as dangerous.
 - Update dependencies.
 - Make some more strings translatable.
-- Include other strings
+- Include other strings files in Crowdin config.
+- Remove unused strings.
+- Add more options to Demo Mode.
+- Update Night Mode description.
+- Add screen to manage SystemUI Tuner's QS tiles.
+- Disable Night Mode QS tile by default.
+
+## 328
+- Update dependencies.
+- Crash fixes.
+- Code cleanup.
+- Update terms.
+- Update translations for Portuguese, Russian, Traditional Chinese.
+- Add Korean translation.
+- Add Crowdin link.
+
+## 327
+- Update terms.
+- Update dependencies.
+- Code cleanup.
+- More ViewBinding fixes.
+
+## 326
+- Code cleanup.
+- Crash fixes
+- Update dependencies.
+- Update QS Header count description to say it's incompatible with One UI.
+- Update OneUI Tuner link.
+- Update Settings.System add-on link.
+
+## 325
+- Update dependencies.
+- ViewBinding crash fixes.
+
+## 324
+- Fix a crash in the custom pers
