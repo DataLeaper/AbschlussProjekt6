@@ -213,4 +213,20 @@
 - ViewBinding crash fixes.
 
 ## 324
-- Fix a crash in the custom pers
+- Fix a crash in the custom persistent options dialog caused by ViewBinding.
+
+## 323
+- Fix a Shizuku issues.
+- Move away from Kotlin synthetics to ViewBinding.
+
+## 322
+- Fix a Russian translation issue.
+- Add a Patreon supporters dialog and Patreon link.
+- UI tweaks for bottom sheets.
+- Update Shizuku implementation with new library and error handling.
+- Code tweaks.
+
+## 321
+- You can now use Shizuku for granting permissions.
+- UI tweak for option summary expansion.
+- Add Portuguese, Traditional Chinese, and Russian translations.
