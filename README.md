@@ -14,4 +14,17 @@ You can download SystemUI Tuner from:
 [![IzzyOnDroid](https://img.shields.io/endpoint?url=https://apt.izzysoft.de/fdroid/api/v1/shield/com.zacharee1.systemuituner&logo=F-Droid&style=for-the-badge)](https://apt.izzysoft.de/fdroid/index/apk/com.zacharee1.systemuituner)
 
 # Building
-SystemUI Tuner makes use of hidden APIs in Android. To avoid reflection, a special SDK JAR is us
+SystemUI Tuner makes use of hidden APIs in Android. To avoid reflection, a special SDK JAR is used to directly access these APIs.
+To successfully build, you'll need to grab the Android 12L (API 32) JAR from [here](https://github.com/Reginer/aosp-android-jar), and follow the instructions to install it.
+
+# Translating
+[![Crowdin](https://badges.crowdin.net/systemui-tuner/localized.svg)](https://crowdin.com/project/systemui-tuner)
+
+SystemUI Tuner is on Crowdin! [Check out the project page](https://crowdin.com/project/systemui-tuner) if you want to help translate the app to your language.
+
+[![Languages](https://badges.awesome-crowdin.com/translation-13103432-293451.png)](https://crowdin.com/project/systemui-tuner)
+
+# Error Reporting
+SystemUI Tuner uses Bugsnag for error reporting as of version 350. Previous versions use Firebase Crashlytics.
+
+<a href="https://www.bugsnag.com"><img src="https://assets-global.website-files.com/607f4f6df411bd01527dc7d5/63bc40cd9d502eda8e
