@@ -30,4 +30,16 @@ class App : Application(), SharedPreferences.OnSharedPreferenceChangeListener {
                 if (prefManager.persistentOptions.isEmpty()) {
                     try {
                         unbindService(connection)
-                    } catch (_: Il
+                    } catch (_: IllegalArgumentException) {}
+                    stopService(Intent(this, Manager::class.java))
+                } else {
+                    try {
+                        bindService(Intent(this, Manager::class.java), connection, Context.BIND_AUTO_CREATE)
+                    } catch (e: Exception) {
+                        Log.e("SystemUITuner", "Unable to bind service. Build SDK ${Build.VERSION.SDK_INT}.", e)
+                        Bugsnag.getClient().notify(Exception("Unable to bind service. Build SDK ${Build.VERSION.SDK_INT}", e))
+
+                        try {
+                            ContextCompat.startForegroundService(context, Intent(this, Manager::class.java))
+                        } catch (e: Exception) {
+                            Log.e("SystemUITuner", "Unable to start service. Build SDK ${Bu
