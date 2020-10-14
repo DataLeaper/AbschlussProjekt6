@@ -70,4 +70,27 @@ class App : Application(), SharedPreferences.OnSharedPreferenceChangeListener {
         prefManager.prefs.registerOnSharedPreferenceChangeListener(this)
     }
 
-    override fun onSharedPreferenceChanged(sharedPreferences: Share
+    override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences?, key: String?) {
+        when (key) {
+            PrefManager.PERSISTENT_OPTIONS -> {
+                updateServiceState(this)
+            }
+        }
+    }
+
+    private fun initExceptionHandler() {
+        val previousHandler = Thread.getDefaultUncaughtExceptionHandler()
+
+        Thread.setDefaultUncaughtExceptionHandler(ExceptionHandler(previousHandler))
+    }
+
+    class ExceptionHandler(private val previousHandler: Thread.UncaughtExceptionHandler?) : Thread.UncaughtExceptionHandler {
+        private var crashing = false
+
+        override fun uncaughtException(t: Thread, e: Throwable) {
+            when {
+                e is AndroidRuntimeException -> {
+                    Log.e("SystemUITuner", "Caught a runtime Exception!", e)
+                    Bugsnag.getClient().notify(e)
+                    Looper.loop()
+          
