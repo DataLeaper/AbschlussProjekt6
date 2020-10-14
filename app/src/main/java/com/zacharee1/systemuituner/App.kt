@@ -42,4 +42,32 @@ class App : Application(), SharedPreferences.OnSharedPreferenceChangeListener {
                         try {
                             ContextCompat.startForegroundService(context, Intent(this, Manager::class.java))
                         } catch (e: Exception) {
-                            Log.e("SystemUITuner", "Unable to start service. Build SDK ${Bu
+                            Log.e("SystemUITuner", "Unable to start service. Build SDK ${Build.VERSION.SDK_INT}.", e)
+                            Bugsnag.getClient().notify(Exception("Unable to start service. Build SDK ${Build.VERSION.SDK_INT}", e))
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+
+        if (prefManager.enableCrashReports == true) {
+            Bugsnag.start(this)
+        }
+
+        initExceptionHandler()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            HiddenApiBypass.setHiddenApiExemptions("L")
+        }
+
+        PersistenceHandlerRegistry.register(this)
+
+        updateServiceState(this)
+        prefManager.prefs.registerOnSharedPreferenceChangeListener(this)
+    }
+
+    override fun onSharedPreferenceChanged(sharedPreferences: Share
