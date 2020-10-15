@@ -93,4 +93,19 @@ class App : Application(), SharedPreferences.OnSharedPreferenceChangeListener {
                     Log.e("SystemUITuner", "Caught a runtime Exception!", e)
                     Bugsnag.getClient().notify(e)
                     Looper.loop()
-          
+                }
+                e is SecurityException &&
+                        e.message?.contains(
+                            "nor current process has android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS",
+                            true
+                        ) == true -> {
+                    Log.e("SystemUITuner", "Google Play Services error!", e)
+                    Bugsnag.getClient().notify(e)
+                    Looper.loop()
+                }
+                e.hasDeadObjectCause -> {
+                    if (!crashing) {
+                        crashing = true
+
+                        // Try to end profiling. If a profiler is running at this point, and we kill the
+                        // process (below), the in-memory buffer will be lost. So try to stop, wh
