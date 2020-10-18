@@ -123,4 +123,17 @@ class App : Application(), SharedPreferences.OnSharedPreferenceChangeListener {
                         )
                     }
 
-                    // Try everything to make sure t
+                    // Try everything to make sure this process goes away.
+                    Process.killProcess(Process.myPid())
+                    exitProcess(10)
+                }
+                else -> {
+                    previousHandler?.uncaughtException(t, e)
+                }
+            }
+        }
+
+        private val Throwable?.hasDeadObjectCause: Boolean
+            get() = this != null && (this is DeadObjectException || this.cause.hasDeadObjectCause)
+    }
+}
