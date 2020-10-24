@@ -26,4 +26,16 @@ import com.zacharee1.systemuituner.fragments.HomeFragment
 import com.zacharee1.systemuituner.fragments.SearchFragment
 import com.zacharee1.systemuituner.util.*
 
-class MainActivity : AppCompatActivity(), NavControl
+class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedListener {
+    private val mainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    private val searchFragment by lazy { supportFragmentManager.findFragmentById(R.id.search_fragment) as SearchFragment }
+    private val homeFragment by lazy { supportFragmentManager.findFragmentById(R.id.nav_home_fragment) as HomeFragment }
+    private val titleSwitcher by lazy { mainBinding.screenTitle }
+
+    private val navFragment by lazy { supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment }
+    private val navController: NavController
+        get() = navFragment.navController
+
+    private val searchView by lazy { mainBinding.searchBar }
+
+    private val introLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult
