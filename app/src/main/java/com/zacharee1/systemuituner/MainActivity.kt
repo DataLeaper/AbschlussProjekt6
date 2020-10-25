@@ -38,4 +38,28 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
 
     private val searchView by lazy { mainBinding.searchBar }
 
-    private val introLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult
+    private val introLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        if (result.resultCode != Activity.RESULT_OK) {
+            finish()
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.AppTheme_NoActionBar)
+        super.onCreate(savedInstanceState)
+
+        val (introReasons, needsResult) = run {
+            val reasons = arrayListOf<ComposeIntroActivity.Companion.StartReason>()
+            var needsResult = false
+
+            if (!prefManager.didIntro) {
+                if (hasWss) {
+                    prefManager.didIntro = true
+                }
+
+                reasons.add(ComposeIntroActivity.Companion.StartReason.INTRO)
+            }
+
+            if (!hasWss) {
+                reasons.add(ComposeIntroActivity.Companion.StartReason.WRITE_SECURE_SETTINGS)
+                needsResult
