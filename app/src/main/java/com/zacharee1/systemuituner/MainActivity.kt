@@ -81,4 +81,36 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
                 reasons.add(ComposeIntroActivity.Companion.StartReason.CRASH_REPORTS)
             }
 
-            
+            (reasons to needsResult)
+        }
+
+        if (introReasons.isNotEmpty()) {
+            if (needsResult) {
+                ComposeIntroActivity.startForResult(
+                    this,
+                    introLauncher,
+                    introReasons.toTypedArray()
+                )
+            } else {
+                ComposeIntroActivity.start(
+                    this,
+                    introReasons.toTypedArray()
+                )
+            }
+        }
+
+        setContentView(mainBinding.root)
+        setSupportActionBar(mainBinding.toolbar)
+
+        with(supportActionBar) {
+            this ?: return@with
+
+            setDisplayHomeAsUpEnabled(true)
+            setHomeButtonEnabled(true)
+            setHomeAsUpIndicator(DrawerArrowDrawable(this@MainActivity))
+        }
+
+        mainBinding.toolbar.addAnimation()
+
+        with(titleSwitcher) {
+            inAnimation = AnimationU
