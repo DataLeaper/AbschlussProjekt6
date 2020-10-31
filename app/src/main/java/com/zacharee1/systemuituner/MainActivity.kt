@@ -62,4 +62,23 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
 
             if (!hasWss) {
                 reasons.add(ComposeIntroActivity.Companion.StartReason.WRITE_SECURE_SETTINGS)
-                needsResult
+                needsResult = true
+            }
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S &&
+                !Settings.canDrawOverlays(this) &&
+                !prefManager.sawSystemAlertWindow) {
+                reasons.add(ComposeIntroActivity.Companion.StartReason.SYSTEM_ALERT_WINDOW)
+            }
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+                checkCallingOrSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED &&
+                !prefManager.sawNotificationsAlert) {
+                reasons.add(ComposeIntroActivity.Companion.StartReason.NOTIFICATIONS)
+            }
+
+            if (prefManager.enableCrashReports == null) {
+                reasons.add(ComposeIntroActivity.Companion.StartReason.CRASH_REPORTS)
+            }
+
+            
