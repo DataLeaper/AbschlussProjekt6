@@ -113,4 +113,30 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
         mainBinding.toolbar.addAnimation()
 
         with(titleSwitcher) {
-            inAnimation = AnimationU
+            inAnimation = AnimationUtils.loadAnimation(this@MainActivity, R.anim.scale_in)
+            outAnimation = AnimationUtils.loadAnimation(this@MainActivity, R.anim.scale_out)
+        }
+
+        mainBinding.searchHolder.apply {
+            translationX = width.toFloat()
+        }
+
+        navController.addOnDestinationChangedListener(this)
+
+        mainBinding.root.closePane()
+
+        searchFragment.onItemClickListener = { action, key ->
+            navController.navigate(
+                action,
+                bundleOf(BasePrefFragment.ARG_HIGHLIGHT_KEY to key)
+            )
+            searchView.setQuery("", false)
+            closeSearch()
+        }
+
+        homeFragment.onSearchClickListener = {
+            searchFragment.onShow()
+            mainBinding.searchHolder.apply {
+                visibility = View.VISIBLE
+                animate()
+             
