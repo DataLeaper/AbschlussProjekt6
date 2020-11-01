@@ -165,4 +165,39 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) {
             mainBinding.root.closePane()
-            if (!mainBinding.root.isSlideable) 
+            if (!mainBinding.root.isSlideable) {
+                updateDrawerWidth()
+            }
+            return true
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun closeSearch() {
+        mainBinding.searchHolder.apply {
+            animate()
+                .alpha(0f)
+                .translationX(width.toFloat())
+                .withEndAction {
+                    visibility = View.GONE
+                }
+        }
+        searchView.setQuery("", false)
+        searchView.setOnQueryTextListener(null)
+    }
+
+    override fun onDestinationChanged(
+        controller: NavController,
+        destination: NavDestination,
+        arguments: Bundle?
+    ) {
+        mainBinding.root.openPane()
+    }
+
+    override fun onBackPressed() {
+        when {
+            !searchView.isIconified -> {
+                closeSearch()
+            }
+            mainBinding.
