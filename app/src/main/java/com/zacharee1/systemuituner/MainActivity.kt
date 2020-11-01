@@ -139,4 +139,30 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
             mainBinding.searchHolder.apply {
                 visibility = View.VISIBLE
                 animate()
-             
+                    .alpha(1f)
+                    .translationX(0f)
+                    .withEndAction {
+                        visibility = View.VISIBLE
+                    }
+            }
+            searchView.setOnQueryTextListener(searchFragment)
+            searchView.isIconified = false
+        }
+
+        searchView.addAnimation()
+        searchView.setOnCloseListener {
+            closeSearch()
+            true
+        }
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+
+        updateDrawerWidth(true)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            mainBinding.root.closePane()
+            if (!mainBinding.root.isSlideable) 
