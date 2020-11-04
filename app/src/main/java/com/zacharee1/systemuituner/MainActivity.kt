@@ -200,4 +200,30 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
             !searchView.isIconified -> {
                 closeSearch()
             }
-            mainBinding.
+            mainBinding.root.isOpen -> {
+                mainBinding.root.closePane()
+            }
+            else -> {
+                finish()
+            }
+        }
+    }
+
+    override fun setTitle(title: CharSequence?) {
+        super.setTitle(null)
+
+        titleSwitcher.setText(title)
+    }
+
+    private var drawerAnimator: ValueAnimator? = null
+
+    private fun updateDrawerWidth(visible: Boolean = mainBinding.drawerLayout.width == 0) {
+        drawerAnimator?.cancel()
+        drawerAnimator = ValueAnimator.ofInt(
+            mainBinding.drawerLayout.width,
+            if (visible) resources.getDimensionPixelSize(R.dimen.drawer_width) else 0
+        )
+        drawerAnimator?.duration =
+            resources.getInteger(android.R.integer.config_mediumAnimTime).toLong()
+        drawerAnimator?.interpolator =
+            if (visible) DecelerateInt
