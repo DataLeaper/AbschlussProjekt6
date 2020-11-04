@@ -226,4 +226,13 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
         drawerAnimator?.duration =
             resources.getInteger(android.R.integer.config_mediumAnimTime).toLong()
         drawerAnimator?.interpolator =
-            if (visible) DecelerateInt
+            if (visible) DecelerateInterpolator() else AccelerateInterpolator()
+
+        drawerAnimator?.addUpdateListener {
+            mainBinding.drawerLayout.updateLayoutParams<ViewGroup.LayoutParams> {
+                width = it.animatedValue.toString().toInt()
+            }
+        }
+        drawerAnimator?.start()
+    }
+}
