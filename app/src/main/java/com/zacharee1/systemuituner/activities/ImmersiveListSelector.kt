@@ -120,3 +120,181 @@ class ImmersiveListSelector : AppCompatActivity(), CoroutineScope by MainScope()
         binding.scroller.setupWithRecyclerView(
             binding.selector,
             { position ->
+                val item = adapter.items[position]
+
+                FastScrollItemIndicator.Text(
+                    item.label.run { if (isBlank()) "?" else substring(0, 1) }.uppercase()
+                )
+            }
+        )
+
+        launch {
+            val apps = withContext(Dispatchers.IO) {
+                packageManager.getInstalledPackagesCompat(PackageManager.GET_ACTIVITIES)
+                    .filter { !it.activities.isNullOrEmpty() }
+                    .map { it.applicationInfo }
+                    .map {
+                        LoadedAppInfo(
+                            label = it.loadLabel(packageManager).toString(),
+                            packageName = it.packageName,
+                            icon = it.loadIcon(packageManager),
+                            isChecked = checked.contains(it.packageName),
+                            colorPrimary = it.getColorPrimary(this@ImmersiveListSelector)
+                        )
+                    }
+            }
+
+            setItems(apps)
+            binding.progress.visibility = View.GONE
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        cancel()
+        callback?.callSafely {
+            it.onImmersiveResult(ArrayList(checked))
+        }
+    }
+
+    fun setItems(items: Collection<LoadedAppInfo>) {
+        origItems.clear()
+        origItems.addAll(items)
+
+        adapter.items.replaceAll(origItems)
+    }
+
+    fun onFilter(query: String?) {
+        adapter.items.replaceAll(origItems.filter { it.matchesQuery(query) })
+    }
+
+    @SuppressLint("RestrictedApi")
+    class ImmersiveAdapter(private val checked: HashSet<String>, mainScope: CoroutineScope) :
+        RecyclerView.Adapter<ImmersiveAdapter.ImmersiveVH>(), CoroutineScope by mainScope {
+        enum class Payload {
+            CHECKED_CHANGE
+        }
+
+        val items = ItemList()
+
+        override fun getItemCount(): Int {
+            return items.size()
+        }
+
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImmersiveVH {
+            return ImmersiveVH(
+                LayoutInflater.from(parent.context)
+                    .inflate(R.layout.custom_preference, parent, false).apply {
+                    findViewById<LinearLayout>(android.R.id.widget_frame).apply {
+                        LayoutInflater.from(context).inflate(R.layout.checkbox, this, true)
+                    }
+                }
+            )
+        }
+
+        override fun onBindViewHolder(holder: ImmersiveVH, position: Int) {}
+
+        override fun onBindViewHolder(
+            holder: ImmersiveVH,
+            position: Int,
+            payloads: MutableList<Any>
+        ) {
+            super.onBindViewHolder(holder, position, payloads)
+            holder.onBind(items[position], payloads.firstOrNull())
+        }
+
+        inner class ItemList : SortedList<LoadedAppInfo>(LoadedAppInfo::class.java,
+            object : Callback<LoadedAppInfo>() {
+                override fun areItemsTheSame(
+                    item1: LoadedAppInfo?,
+                    item2: LoadedAppInfo?
+                ): Boolean {
+                    return item1?.packageName == item2?.packageName
+                }
+
+                override fun areContentsTheSame(
+                    oldItem: LoadedAppInfo?,
+                    newItem: LoadedAppInfo?
+                ): Boolean {
+                    return oldItem?.packageName == newItem?.packageName
+                }
+
+                override fun compare(o1: LoadedAppInfo, o2: LoadedAppInfo): Int {
+                    return if (o1.isChecked && !o2.isChecked) -1
+                    else if (!o1.isChecked && o2.isChecked) 1
+                    else o1.label.compareTo(o2.label, true)
+                }
+
+                override fun onInserted(position: Int, count: Int) {
+                    notifyItemRangeInserted(position, count)
+                }
+
+                override fun onChanged(position: Int, count: Int) {
+                    notifyItemRangeChanged(position, count)
+                }
+
+                override fun onRemoved(position: Int, count: Int) {
+                    notifyItemRangeRemoved(position, count)
+                }
+
+                override fun onMoved(fromPosition: Int, toPosition: Int) {
+                    notifyItemMoved(fromPosition, toPosition)
+                }
+            }
+        )
+
+        inner class ImmersiveVH(view: View) : RecyclerView.ViewHolder(view) {
+            val title: TextView
+                get() = itemView.findViewById(android.R.id.title)
+            val summary: TextView
+                get() = itemView.findViewById(android.R.id.summary)
+            val icon: ImageView
+                get() = itemView.findViewById(android.R.id.icon)
+            val checkbox: CheckedImageView
+                get() = itemView.findViewById(android.R.id.checkbox)
+
+            private val colorPreference = ColorPreference(itemView.context, null)
+
+            init {
+                itemView.setOnClickListener {
+                    val newPos = bindingAdapterPosition
+                    if (newPos != -1) {
+                        val newInfo = items[newPos]
+                        val isChecked = checked.contains(newInfo.packageName)
+                        if (!isChecked) {
+                            checked.add(newInfo.packageName)
+                        } else {
+                            checked.remove(newInfo.packageName)
+                        }
+
+                        newInfo.isChecked = !isChecked
+                        items.updateItemAt(newPos, newInfo)
+                    }
+                }
+            }
+
+            fun onBind(info: LoadedAppInfo, payload: Any?) {
+                checkbox.isChecked = checked.contains(info.packageName)
+
+                if (payload == Payload.CHECKED_CHANGE) return
+
+                colorPreference.iconColor = info.colorPrimary
+                colorPreference.bindVH(this)
+
+                title.text = info.label
+                summary.text = info.packageName
+                icon.setImageDrawable(info.icon)
+            }
+        }
+    }
+}
