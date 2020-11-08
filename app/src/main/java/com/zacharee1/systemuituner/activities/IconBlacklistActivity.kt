@@ -1,34 +1,31 @@
+
 package com.zacharee1.systemuituner.activities
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SearchView
 import com.zacharee1.systemuituner.R
-import com.zacharee1.systemuituner.activities.intro.ComposeIntroActivity
-import com.zacharee1.systemuituner.databinding.ActivityDemoModeBinding
+import com.zacharee1.systemuituner.databinding.ActivityIconBlacklistBinding
 import com.zacharee1.systemuituner.dialogs.RoundedBottomSheetDialog
+import com.zacharee1.systemuituner.fragments.IconBlacklistFragment
 import com.zacharee1.systemuituner.util.addAnimation
-import com.zacharee1.systemuituner.util.hasDump
 
-class DemoModeActivity : AppCompatActivity() {
-    private val binding by lazy { ActivityDemoModeBinding.inflate(layoutInflater) }
+class IconBlacklistActivity : AppCompatActivity() {
+    private val binding by lazy { ActivityIconBlacklistBinding.inflate(layoutInflater) }
+    private val blacklistFragment by lazy { supportFragmentManager.findFragmentById(R.id.blacklist_fragment) as IconBlacklistFragment }
+    private var searchView: SearchView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(binding.root)
-
         setSupportActionBar(binding.toolbar)
         binding.toolbar.addAnimation()
 
         supportActionBar?.setDisplayShowHomeEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        if (!hasDump) {
-            ComposeIntroActivity.start(this, arrayOf(ComposeIntroActivity.Companion.StartReason.EXTRA_PERMISSIONS))
-            finish()
-        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -43,14 +40,18 @@ class DemoModeActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.menu_search, menu)
 
         val searchItem = menu.findItem(R.id.search)
-        searchItem.isVisible = false
+        searchView = searchItem?.actionView as SearchView?
+
+        searchView?.setOnQueryTextListener(blacklistFragment)
+        searchView?.setOnCloseListener(blacklistFragment)
+        searchView?.addAnimation()
 
         val helpItem = menu.findItem(R.id.help)
         helpItem.isVisible = true
         helpItem.setOnMenuItemClickListener {
             RoundedBottomSheetDialog(this).apply {
                 setTitle(R.string.help)
-                setMessage(R.string.sub_demo_desc)
+                setMessage(R.string.special_sub_icon_blacklist_desc)
                 setPositiveButton(android.R.string.ok, null)
                 show()
             }
