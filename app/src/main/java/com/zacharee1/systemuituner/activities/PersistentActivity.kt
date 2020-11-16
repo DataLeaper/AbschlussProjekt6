@@ -19,4 +19,29 @@ class PersistentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContent
+        setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
+        binding.toolbar.addAnimation()
+
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_search, menu)
+
+        val searchItem = menu.findItem(R.id.search)
+        searchView = searchItem?.actionView as SearchView?
+
+        searchView?.setOnQueryTextListener(persistentFragment)
+        searchView?.addAnimation()
+        searchView?.setOnCloseListener {
+ 
