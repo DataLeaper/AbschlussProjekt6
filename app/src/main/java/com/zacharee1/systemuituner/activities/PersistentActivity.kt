@@ -44,4 +44,26 @@ class PersistentActivity : AppCompatActivity() {
         searchView?.setOnQueryTextListener(persistentFragment)
         searchView?.addAnimation()
         searchView?.setOnCloseListener {
- 
+            persistentFragment.onQueryTextChange(null)
+            false
+        }
+        searchView?.setOnSearchClickListener {
+            persistentFragment.onQueryTextChange("")
+        }
+
+        val addItem = menu.findItem(R.id.add)
+        addItem.isVisible = true
+        addItem.setOnMenuItemClickListener {
+            persistentFragment.addOrEditCustomItem()
+            true
+        }
+
+        val helpItem = menu.findItem(R.id.help)
+        helpItem.isVisible = true
+        helpItem.setOnMenuItemClickListener {
+            RoundedBottomSheetDialog(this).apply {
+                setTitle(R.string.help)
+                setMessage(R.string.persistent_options_desc)
+                setPositiveButton(android.R.string.ok, null)
+                show()
+          
