@@ -17,4 +17,21 @@ import com.zacharee1.systemuituner.data.QSTileInfo
 import com.zacharee1.systemuituner.data.SettingsType
 import com.zacharee1.systemuituner.databinding.ActivityQsEditorBinding
 import com.zacharee1.systemuituner.databinding.QsTileBinding
-import com.
+import com.zacharee1.systemuituner.dialogs.AddQSTileDialog
+import com.zacharee1.systemuituner.dialogs.RoundedBottomSheetDialog
+import com.zacharee1.systemuituner.util.*
+import com.zacharee1.systemuituner.views.GridAutofitLayoutManager
+import kotlinx.coroutines.launch
+import java.util.*
+import kotlin.math.max
+
+class QSEditorActivity : CoroutineActivity() {
+    private val adapter by lazy { QSEditorAdapter(this) }
+    private val binding by lazy { ActivityQsEditorBinding.inflate(layoutInflater) }
+
+    private val touchHelperCallback = object : ItemTouchHelper.SimpleCallback(ItemTouchHelper.DOWN or ItemTouchHelper.UP or ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT, 0) {
+        override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {}
+
+        override fun onMove(
+            recyclerView: RecyclerView,
+            viewHolder:
