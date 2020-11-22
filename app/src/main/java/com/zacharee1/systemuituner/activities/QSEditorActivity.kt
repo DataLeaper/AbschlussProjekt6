@@ -34,4 +34,30 @@ class QSEditorActivity : CoroutineActivity() {
 
         override fun onMove(
             recyclerView: RecyclerView,
-            viewHolder:
+            viewHolder: RecyclerView.ViewHolder,
+            target: RecyclerView.ViewHolder
+        ): Boolean {
+            adapter.move(viewHolder.bindingAdapterPosition, target.bindingAdapterPosition)
+            return true
+        }
+
+        override fun onSelectedChanged(viewHolder: RecyclerView.ViewHolder?, actionState: Int) {
+            super.onSelectedChanged(viewHolder, actionState)
+
+            viewHolder as QSEditorAdapter.QSVH?
+
+            viewHolder?.apply {
+                showRemove = !showRemove
+            }
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setContentView(binding.root)
+
+        actionBar?.apply {
+            setDisplayShowHomeEnabled(true)
+            setDisplayHomeAsUpEnabled(true)
+        
