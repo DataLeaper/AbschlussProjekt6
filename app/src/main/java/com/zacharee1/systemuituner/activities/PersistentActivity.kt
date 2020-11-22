@@ -66,4 +66,10 @@ class PersistentActivity : AppCompatActivity() {
                 setMessage(R.string.persistent_options_desc)
                 setPositiveButton(android.R.string.ok, null)
                 show()
-          
+            }
+            false
+        }
+
+        return true
+    }
+}
