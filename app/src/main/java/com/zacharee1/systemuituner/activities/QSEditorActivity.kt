@@ -84,4 +84,35 @@ class QSEditorActivity : CoroutineActivity() {
 
         binding.qsList.adapter = adapter
 
-        ItemTouchHelper(touchHelperCallback).attac
+        ItemTouchHelper(touchHelperCallback).attachToRecyclerView(binding.qsList)
+
+        adapter.populateTiles()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_qs_editor, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.add -> {
+                AddQSTileDialog(this, adapter)
+                    .show()
+                true
+            }
+            android.R.id.home -> {
+                onBackPressedDispatcher.onBackPressed()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        adapter.saveTiles()
+    }
+
+    inner class QSEditorAdapter(private val context: Context) : RecyclerView.Adapter<QSEdi
