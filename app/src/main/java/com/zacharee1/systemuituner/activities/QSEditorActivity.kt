@@ -60,4 +60,28 @@ class QSEditorActivity : CoroutineActivity() {
         actionBar?.apply {
             setDisplayShowHomeEnabled(true)
             setDisplayHomeAsUpEnabled(true)
-        
+        }
+
+        fun updateLayout() {
+            val fullWidth = binding.root.width
+            val sidePadding = max(0f, (fullWidth - dpAsPx(800)) / 2f).toInt()
+
+            binding.qsList.setPaddingRelative(
+                sidePadding, 0,
+                sidePadding, 0
+            )
+
+            binding.qsList.layoutManager = GridAutofitLayoutManager(this, dpAsPx(130))
+        }
+
+        updateLayout()
+
+        binding.root.addOnLayoutChangeListener { _, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom ->
+            if (left != oldLeft || top != oldTop || right != oldRight || bottom != oldBottom) {
+                updateLayout()
+            }
+        }
+
+        binding.qsList.adapter = adapter
+
+        ItemTouchHelper(touchHelperCallback).attac
