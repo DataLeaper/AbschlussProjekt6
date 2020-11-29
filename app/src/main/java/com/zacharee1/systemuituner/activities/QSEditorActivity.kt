@@ -115,4 +115,21 @@ class QSEditorActivity : CoroutineActivity() {
         adapter.saveTiles()
     }
 
-    inner class QSEditorAdapter(private val context: Context) : RecyclerView.Adapter<QSEdi
+    inner class QSEditorAdapter(private val context: Context) : RecyclerView.Adapter<QSEditorAdapter.QSVH>() {
+        @SuppressLint("DiscouragedApi")
+        private val defaultTiles = ArrayList<String>().apply {
+            try {
+                val remRes = context.packageManager.getResourcesForApplication("com.android.systemui")
+                val id = remRes.getIdentifier("quick_settings_tiles_default", "string", "com.android.systemui")
+                val amazonId = try {
+                    remRes.getIdentifier("amazon_quick_settings_tiles_default", "string", "com.android.systemui")
+                } catch (e: Exception) {
+                    0
+                }
+                val samsungId = try {
+                    remRes.getIdentifier("sec_quick_settings_tiles_default", "string", "com.android.systemui")
+                } catch (e: Exception) {
+                    0
+                }
+
+                val
