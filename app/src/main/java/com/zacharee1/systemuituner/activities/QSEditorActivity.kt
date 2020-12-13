@@ -132,4 +132,19 @@ class QSEditorActivity : CoroutineActivity() {
                     0
                 }
 
-                val
+                val items = when {
+                    amazonId != 0 -> {
+                        //Fire tablets have a lot of different default lists, so we're just
+                        //going to add them manually here.
+                        "wifi,bt,airplane,moonlight,privacy,home,dnd,smarthome,camera,lowpower,rotation,exitkft"
+                    }
+                    samsungId != 0 -> {
+                        val result = remRes.getString(samsungId)
+                        val tiles = result.split(",").toMutableList()
+
+                        remRes.getString(remRes.getIdentifier("quick_settings_custom_tile_component_names", "string", "com.android.systemui"))
+                            .split(",")
+                            .forEach { item ->
+                                val (key, _) = item.split(":")
+
+                                t
