@@ -147,4 +147,27 @@ class QSEditorActivity : CoroutineActivity() {
                             .forEach { item ->
                                 val (key, _) = item.split(":")
 
-                                t
+                                tiles.remove(key)
+                            }
+
+                        tiles.joinToString(",")
+                    }
+                    else -> {
+                        remRes.getString(id)
+                    }
+                }
+
+                addAll(items.split(","))
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
+                    && (!contains("wifi") && !contains("cell") && contains("internet"))) {
+                    add("wifi")
+                    add("cell")
+                }
+            } catch (_: Exception) {}
+        }
+
+        private val customTiles = ArrayList<String>().apply {
+            if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
+                val customTiles = context.packageManager
+                    .queryIntentServicesCompat(Intent("android.servic
