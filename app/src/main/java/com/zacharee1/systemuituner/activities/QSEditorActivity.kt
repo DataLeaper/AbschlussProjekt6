@@ -198,4 +198,33 @@ class QSEditorActivity : CoroutineActivity() {
 
         fun move(from: Int, to: Int) {
             if (from < to) {
-                for (i in fr
+                for (i in from until to) {
+                    Collections.swap(currentTiles, i, i + 1)
+                }
+            } else {
+                for (i in from downTo to + 1) {
+                    Collections.swap(currentTiles, i, i - 1)
+                }
+            }
+            notifyItemMoved(from, to)
+        }
+
+        fun addTile(tile: QSTileInfo) {
+            currentTiles.add(tile)
+            notifyItemInserted(currentTiles.lastIndex)
+
+            updateAvailableTiles()
+        }
+
+        private fun removeTile(position: Int) {
+            currentTiles.removeAt(position)
+            notifyItemRemoved(position)
+
+            updateAvailableTiles()
+        }
+
+        private fun updateAvailableTiles() {
+            availableTiles.clear()
+
+            availableTiles.addAll(defaultTiles.filterNot {
+                currentTiles.map { tile -> tile.key }
