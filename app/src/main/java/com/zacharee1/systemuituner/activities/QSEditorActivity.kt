@@ -170,4 +170,32 @@ class QSEditorActivity : CoroutineActivity() {
         private val customTiles = ArrayList<String>().apply {
             if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
                 val customTiles = context.packageManager
-                    .queryIntentServicesCompat(Intent("android.servic
+                    .queryIntentServicesCompat(Intent("android.service.quicksettings.action.QS_TILE"), PackageManager.MATCH_ALL)
+
+                customTiles.forEach {
+                    add("custom(${it.componentInfo.component.flattenToString()})")
+                }
+            }
+        }
+
+        private val currentTiles = ArrayList<QSTileInfo>()
+        val availableTiles = ArrayList<String>()
+
+        fun populateTiles() {
+            currentTiles.clear()
+
+            val tiles = context.getSetting(SettingsType.SECURE, "sysui_qs_tiles")
+
+            if (tiles.isNullOrBlank()) currentTiles.addAll(defaultTiles.map { QSTileInfo(it) })
+            else {
+                currentTiles.addAll(
+                    tiles.split(",").map { QSTileInfo(it) }
+                )
+            }
+
+            updateAvailableTiles()
+        }
+
+        fun move(from: Int, to: Int) {
+            if (from < to) {
+                for (i in fr
