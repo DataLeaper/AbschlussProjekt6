@@ -227,4 +227,30 @@ class QSEditorActivity : CoroutineActivity() {
             availableTiles.clear()
 
             availableTiles.addAll(defaultTiles.filterNot {
-                currentTiles.map { tile -> tile.key }
+                currentTiles.map { tile -> tile.key }.contains(it)
+            })
+
+            availableTiles.addAll(customTiles.filterNot {
+                currentTiles.map { tile -> tile.key }.contains(it)
+            })
+        }
+
+        fun saveTiles() {
+            val tileString = currentTiles.joinToString(",") { it.key }
+
+            launch {
+                context.writeSetting(SettingsType.SECURE, "sysui_qs_tiles", tileString, saveOption = true)
+            }
+        }
+
+        override fun getItemCount(): Int {
+            return currentTiles.size
+        }
+
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QSVH {
+            return QSVH(
+                LayoutInflater.from(parent.context).inflate(R.layout.qs_tile, parent, false)
+            )
+        }
+
+        override fun onBindViewHolder(holder: QSVH, posit
