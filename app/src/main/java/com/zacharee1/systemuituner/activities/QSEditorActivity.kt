@@ -253,4 +253,28 @@ class QSEditorActivity : CoroutineActivity() {
             )
         }
 
-        override fun onBindViewHolder(holder: QSVH, posit
+        override fun onBindViewHolder(holder: QSVH, position: Int) {
+            holder.onBind(currentTiles[position])
+        }
+
+        inner class QSVH(view: View) : RecyclerView.ViewHolder(view) {
+            var showRemove: Boolean
+                get() = vhBinding.remove.isVisible
+                set(value) {
+                    vhBinding.remove.isVisible = value
+                }
+
+            private val vhBinding = QsTileBinding.bind(itemView)
+
+            init {
+//                vhBinding.clickTarget.setOnLongClickListener {
+//                    vhBinding.remove.apply { isVisible = !isVisible }
+//                    true
+//                }
+
+                vhBinding.remove.setOnClickListener {
+                    val newPos = bindingAdapterPosition
+
+                    if (newPos != -1) {
+                        removeTile(newPos)
+ 
