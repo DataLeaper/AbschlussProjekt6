@@ -277,4 +277,27 @@ class QSEditorActivity : CoroutineActivity() {
 
                     if (newPos != -1) {
                         removeTile(newPos)
- 
+                        vhBinding.remove.isVisible = false
+                    }
+                }
+            }
+
+            fun onBind(info: QSTileInfo) {
+                vhBinding.clickTarget.setOnClickListener {
+                    if (info.type == QSTileInfo.Type.CUSTOM || info.type == QSTileInfo.Type.INTENT) {
+                        RoundedBottomSheetDialog(context).apply {
+                            setIcon(info.getIcon(context))
+                            setTitle(info.getLabel(context))
+
+                            setMessage(
+                                info.key
+                            )
+
+                            setPositiveButton(android.R.string.ok, null)
+
+                            show()
+                        }
+                    }
+                }
+
+                vhBinding.qsTileIcon.setImageDr
