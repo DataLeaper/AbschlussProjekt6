@@ -300,4 +300,16 @@ class QSEditorActivity : CoroutineActivity() {
                     }
                 }
 
-                vhBinding.qsTileIcon.setImageDr
+                vhBinding.qsTileIcon.setImageDrawable(info.getIcon(itemView.context))
+                vhBinding.label.text = info.getLabel(itemView.context)
+                vhBinding.qsTileType.setText(
+                    when (info.type) {
+                        QSTileInfo.Type.CUSTOM -> R.string.tile_custom
+                        QSTileInfo.Type.INTENT -> R.string.intent
+                        QSTileInfo.Type.STANDARD -> R.string.snooze_default
+                    }
+                )
+            }
+        }
+    }
+}
