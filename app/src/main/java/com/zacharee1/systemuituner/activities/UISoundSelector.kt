@@ -27,4 +27,22 @@ class UISoundSelector : AppCompatActivity() {
         fun start(context: Context, key: String, callback: IUISoundSelectionCallback) {
             val activity = Intent(context, UISoundSelector::class.java)
             activity.putExtra(EXTRA_KEY, key)
-            activity.
+            activity.putExtra(EXTRA_CALLBACK, Bundle().apply { putBinder(EXTRA_CALLBACK, callback.asBinder()) })
+
+            context.startActivity(activity)
+        }
+    }
+
+    private val key by lazy { intent.getStringExtra(EXTRA_KEY) }
+    private val callback by lazy {
+        val binder = intent.getBundleExtra(EXTRA_CALLBACK)?.getBinder(EXTRA_CALLBACK)
+        if (binder != null) {
+            IUISoundSelectionCallback.Stub.asInterface(binder)
+        } else null
+    }
+
+    private val selectionLauncher = registerForActivityResult(ActivityResultContracts.OpenDocument()) { result ->
+        result?.let { uri ->
+            val ext = contentResolver.getType(uri)?.split("/")?.getOrElse(1) { "ogg" } ?: "ogg"
+            val filesDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC)
+            val folder = File(
