@@ -45,4 +45,29 @@ class UISoundSelector : AppCompatActivity() {
         result?.let { uri ->
             val ext = contentResolver.getType(uri)?.split("/")?.getOrElse(1) { "ogg" } ?: "ogg"
             val filesDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC)
-            val folder = File(
+            val folder = File(filesDir, "sounds")
+
+            folder.mkdirs()
+            folder.setReadable(true, false)
+            folder.setExecutable(true, false)
+
+            val dest = File(folder, "ui_sound_$key.$ext")
+            if (dest.exists()) dest.delete()
+
+            try {
+                dest.createNewFile()
+
+                dest.outputStream().use { output ->
+                    contentResolver.openInputStream(uri).use { input ->
+                        input?.copyTo(output)
+                    }
+                }
+
+                dest.setReadable(true, false)
+                dest.setExecutable(true, false)
+
+                callback?.callSafely {
+                    it.onSoundSelected(dest.absolutePath, key)
+                }
+            } catch (e: IOException) {
+                Log.e("SystemUITunerSy
