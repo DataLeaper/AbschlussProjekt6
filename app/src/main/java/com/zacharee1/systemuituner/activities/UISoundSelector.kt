@@ -70,4 +70,17 @@ class UISoundSelector : AppCompatActivity() {
                     it.onSoundSelected(dest.absolutePath, key)
                 }
             } catch (e: IOException) {
-                Log.e("SystemUITunerSy
+                Log.e("SystemUITunerSystemSettings", "Error", e)
+                Toast.makeText(this, resources.getString(R.string.error_creating_file_template, e.message), Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        finish()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        selectionLauncher.launch(arrayOf("audio/*"))
+    }
+}
