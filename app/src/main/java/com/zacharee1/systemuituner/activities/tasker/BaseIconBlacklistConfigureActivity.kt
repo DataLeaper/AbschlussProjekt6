@@ -23,4 +23,26 @@ open class BaseIconBlacklistConfigureActivity(private val isRemove: Boolean) : A
         )
 
     private val helper by lazy { IconBlacklistHelper(this) }
-    protected val binding by lazy { Activ
+    protected val binding by lazy { ActivityTaskerIconBlacklistInputBinding.inflate(layoutInflater) }
+
+    private var key: String = ""
+
+    override fun assignFromInput(input: TaskerInput<TaskerIconBlacklistData>) {
+        key = input.regular.key
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        helper.onCreate()
+
+        setContentView(binding.root)
+
+        binding.input.setText(key)
+        binding.apply.setOnClickListener {
+            helper.finishForTasker()
+        }
+        binding.input.doOnTextChanged { text, _, _, _ ->
+            key = text?.toString() ?: ""
+        }
+    }
+}
