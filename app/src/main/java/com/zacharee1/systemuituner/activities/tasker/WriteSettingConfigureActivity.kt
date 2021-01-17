@@ -41,4 +41,14 @@ class WriteSettingConfigureActivity : AppCompatActivity(), TaskerPluginConfig<Ta
         val parsedType = SettingsType.fromString(type).value
         if (parsedType != -1) {
             binding.settingsType.setSelection(parsedType)
-   
+        }
+
+        binding.apply.setOnClickListener {
+            key = binding.keyEntry.text?.toString() ?: ""
+            value = binding.valueEntry.text?.toString()
+            type = binding.settingsType.selectedItem.toString()
+
+            helper.finishForTasker()
+        }
+    }
+}
