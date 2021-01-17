@@ -17,4 +17,28 @@ class WriteSettingConfigureActivity : AppCompatActivity(), TaskerPluginConfig<Ta
         get() = TaskerInput(TaskerWriteSettingData(type, key, value))
 
     private var type: String = SettingsType.UNDEFINED.toString()
-    p
+    private var key: String = ""
+    private var value: String? = null
+
+    private val helper by lazy { WriteSettingHelper(this) }
+    private val binding by lazy { TaskerWriteSettingBinding.inflate(layoutInflater) }
+
+    override fun assignFromInput(input: TaskerInput<TaskerWriteSettingData>) {
+        type = input.regular.type
+        key = input.regular.key
+        value = input.regular.value
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        helper.onCreate()
+
+        setContentView(binding.root)
+
+        binding.keyEntry.setText(key)
+        binding.valueEntry.setText(value)
+
+        val parsedType = SettingsType.fromString(type).value
+        if (parsedType != -1) {
+            binding.settingsType.setSelection(parsedType)
+   
