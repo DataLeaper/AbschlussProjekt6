@@ -23,4 +23,17 @@ data class SavedOption(
                 val split = input.split(":")
 
                 SavedOption(
-                    Setting
+                    SettingsType.fromString(
+                        split[0]
+                    ),
+                    split[1],
+                    split[2]
+                )
+            }
+        }
+    }
+
+    override fun toString(): String {
+        return gson.toJson(this)
+    }
+}
