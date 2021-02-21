@@ -63,4 +63,23 @@ class SearchIndex private constructor(context: Context) : ContextWrapper(context
         }
     }
 
-    private fun inflate(resource: Int, action: Int): PreferenceScre
+    private fun inflate(resource: Int, action: Int): PreferenceScreen {
+        return preferenceManager.inflateFromResource(this, resource, null).also { process(it, action) }
+    }
+
+    private fun process(group: PreferenceGroup, action: Int) {
+        for (i in 0 until group.preferenceCount) {
+            val child = group.getPreference(i)
+
+            if (child is PreferenceGroup) process(child, action)
+            else preferences.add(ActionedPreference.fromPreference(this, child, action))
+        }
+    }
+
+    fun filter(query: String?, result: (Collection<ActionedPreference>) -> Unit) = launch {
+        val filter = async {
+            TreeSet(
+                Comparator<ActionedPreference> { o1, o2 ->
+                    if (query.isNullOrBlank()) {
+                        o1.title.toString().compareTo(o2.title.toString(), true)
+            
