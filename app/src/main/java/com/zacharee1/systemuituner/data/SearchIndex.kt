@@ -82,4 +82,24 @@ class SearchIndex private constructor(context: Context) : ContextWrapper(context
                 Comparator<ActionedPreference> { o1, o2 ->
                     if (query.isNullOrBlank()) {
                         o1.title.toString().compareTo(o2.title.toString(), true)
-            
+                    } else {
+                        val o1Title = o1.title?.contains(query, true) == true
+                        val o2Title = o2.title?.contains(query, true) == true
+
+                        when {
+                            o1Title && !o2Title -> -1
+                            !o1Title && o2Title -> 1
+                            else -> o1.title.toString().compareTo(o2.title.toString(), true)
+                        }
+                    }
+                }
+            ).apply {
+                addAll(
+                    preferences.filter {
+                        query.isNullOrBlank() ||
+                                it.title.toString().contains(query, true) ||
+                                it.summary.toString().contains(query, true)
+                    }
+                )
+
+                for
