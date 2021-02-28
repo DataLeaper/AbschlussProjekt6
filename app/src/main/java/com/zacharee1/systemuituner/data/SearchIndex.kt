@@ -102,4 +102,28 @@ class SearchIndex private constructor(context: Context) : ContextWrapper(context
                     }
                 )
 
-                for
+                forEachIndexed { index, pref ->
+                    pref.order = index
+                }
+            }
+        }
+
+        result(filter.await())
+    }
+
+    class ActionedPreference(context: Context) : Preference(context), ISecurePreference by SecurePreference(
+        context,
+        null
+    ), ISpecificPreference, IColorPreference by ColorPreference(
+        context,
+        null
+    ), IVerifierPreference by VerifierPreference(context, null) {
+        companion object {
+            fun fromPreference(context: Context, preference: Preference, action: Int): ActionedPreference {
+                return ActionedPreference(context).apply {
+                    title = preference.title
+                    summary = preference.summary
+                    icon = preference.icon
+                    key = preference.key
+                    order = preference.order
+  
