@@ -145,4 +145,35 @@ class SearchIndex private constructor(context: Context) : ContextWrapper(context
 
                     initSecure(this)
                     initVerify(this)
-                
+                }
+            }
+
+            fun copy(context: Context, preference: ActionedPreference): ActionedPreference {
+                return fromPreference(context, preference, preference.action)
+            }
+        }
+
+        val _keys = HashMap<SettingsType, Array<String>>()
+
+        override val keys: HashMap<SettingsType, Array<String>>
+            get() = _keys
+
+        var action: Int = 0
+
+        override var dangerous: Boolean = false
+            set(value) {
+                field = value
+                markDangerous()
+            }
+
+        init {
+            layoutResource = R.layout.custom_preference
+        }
+
+        override fun onBindViewHolder(holder: PreferenceViewHolder) {
+            super.onBindViewHolder(holder)
+
+            bindVH(holder)
+        }
+
+        fun copy(): Action
