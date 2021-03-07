@@ -126,4 +126,23 @@ class SearchIndex private constructor(context: Context) : ContextWrapper(context
                     icon = preference.icon
                     key = preference.key
                     order = preference.order
-  
+                    if (preference is IDangerousPreference) {
+                        dangerous = preference.dangerous
+                    }
+                    if (preference is ISecurePreference) {
+                        type = preference.type
+                    }
+                    if (preference is ISpecificPreference) {
+                        _keys.putAll(preference.keys)
+                    }
+                    if (preference is IColorPreference) {
+                        iconColor = preference.iconColor
+                    }
+                    if (preference is IVerifierPreference) {
+                        visibilityVerifier = preference.visibilityVerifier
+                    }
+                    this.action = action
+
+                    initSecure(this)
+                    initVerify(this)
+                
