@@ -176,4 +176,18 @@ class SearchIndex private constructor(context: Context) : ContextWrapper(context
             bindVH(holder)
         }
 
-        fun copy(): Action
+        fun copy(): ActionedPreference {
+            return fromPreference(context, this, action)
+        }
+
+        fun markDangerous() {
+            title = if (dangerous) {
+                SpannableString(title).apply {
+                    setSpan(ForegroundColorSpan(Color.RED), 0, length, 0)
+                }
+            } else {
+                title.toString()
+            }
+        }
+    }
+}
