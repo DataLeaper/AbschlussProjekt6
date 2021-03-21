@@ -24,4 +24,20 @@ class CustomBlacklistItemDialogFragment : PreferenceDialogFragmentCompat() {
         }
     }
 
-    override fun onCreate
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        val builder = ScrolledRoundedBottomSheetDialog(requireContext())
+
+        builder.findViewById<View>(android.R.id.content)?.let { onBindDialogView(it) }
+        builder.setTitle(preference.title)
+        builder.setPositiveButton(android.R.string.ok) { dialog, which ->
+            this.dialog?.findViewById<View>(android.R.id.content)?.apply {
+                val label = findViewById<TextInputLayout>(R.id.label).editText?.text?.toString()
+                val key = findViewById<TextInputLayout>(R.id.key).editText?.text?.toString() ?: return@apply
+
+                if (key.isBlank()) return@apply
+
+                val item = CustomBlacklistItemInfo(label, key)
+
+                context.prefManager.apply {
+                    customBlacklistItems = customBlacklistItems.apply {
+                  
