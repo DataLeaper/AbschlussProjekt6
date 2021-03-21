@@ -40,4 +40,31 @@ class CustomBlacklistItemDialogFragment : PreferenceDialogFragmentCompat() {
 
                 context.prefManager.apply {
                     customBlacklistItems = customBlacklistItems.apply {
-                  
+                        remove(item)
+                        add(item)
+                    }
+                }
+            }
+            onClick(dialog, which)
+            dismiss()
+        }
+        builder.setNegativeButton(android.R.string.cancel) { dialog, which ->
+            onClick(dialog, which)
+            dismiss()
+        }
+        builder.setOnCancelListener {
+            onClick(it, DialogInterface.BUTTON_NEGATIVE)
+            dismiss()
+        }
+
+        return builder
+    }
+
+    override fun onBindDialogView(view: View) {
+        super.onBindDialogView(view)
+
+        View.inflate(view.context, R.layout.custom_blacklist_dialog, view.findViewById(R.id.wrapper))
+    }
+
+    override fun onDialogClosed(positiveResult: Boolean) {}
+}
