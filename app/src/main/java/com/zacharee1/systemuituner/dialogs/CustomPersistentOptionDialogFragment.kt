@@ -69,3 +69,44 @@ class CustomPersistentOptionDialogFragment : DialogFragment(), CoroutineScope by
                 val value = findViewById<TextInputEditText>(R.id.value_entry).text?.toString()
                 val type =
                     SettingsType.fromValue(findViewById<Spinner>(R.id.settings_type).selectedItemPosition)
+
+                if (key.isBlank()) return@apply
+
+                val item = CustomPersistentOption(label, value, type, key)
+
+                context.prefManager.apply {
+                    customPersistentOptions = customPersistentOptions.apply {
+                        removeAll {
+                            if (isEditing) {
+                                it.key == initialKey && it.type == initialType
+                            } else {
+                                it.key == key && it.type == type
+                            }
+                        }
+                        add(item)
+                    }
+                    saveOption(type, key, value)
+                }
+                launch {
+                    context.writeSetting(type, key, value)
+                }
+            }
+            dismiss()
+        }
+        builder.setNegativeButton(android.R.string.cancel) { _, _ ->
+            dismiss()
+        }
+
+        return builder
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        cancel()
+    }
+
+    override fun onCancel(dialog: DialogInterface) {
+        super.onCancel(dialog)
+        dismiss()
+    }
+}
