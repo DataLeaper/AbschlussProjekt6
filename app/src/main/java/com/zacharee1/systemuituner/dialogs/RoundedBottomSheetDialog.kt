@@ -97,3 +97,59 @@ open class RoundedBottomSheetDialog(context: Context) : BottomSheetDialog(contex
             }
         }
     }
+
+    fun setIcon(icon: Int) {
+        setIcon(ContextCompat.getDrawable(context, icon))
+    }
+
+    fun setIcon(icon: Drawable?) {
+        baseBinding.icon.setImageDrawable(icon)
+    }
+
+    fun setPositiveButton(text: Int, listener: DialogInterface.OnClickListener?) {
+        setPositiveButton(context.resources.getText(text), listener)
+    }
+
+    fun setPositiveButton(text: CharSequence?, listener: DialogInterface.OnClickListener?) {
+        baseBinding.positiveButton.text = text
+        baseBinding.positiveButton.isVisible = text != null
+
+        positiveListener = listener
+    }
+
+    fun setNegativeButton(text: Int, listener: DialogInterface.OnClickListener?) {
+        setNegativeButton(context.resources.getText(text), listener)
+    }
+
+    fun setNegativeButton(text: CharSequence?, listener: DialogInterface.OnClickListener?) {
+        baseBinding.negativeButton.text = text
+        baseBinding.negativeButton.isVisible = text != null
+
+        negativeListener = listener
+    }
+
+    fun setMessage(msg: Int) {
+        setMessage(if (msg == 0) null else context.getText(msg))
+    }
+
+    fun setMessage(msg: CharSequence?) {
+        findViewById<TextView>(android.R.id.message)?.apply {
+            isVisible = msg != null
+            text = msg
+        }
+    }
+
+    open fun setLayout(layout: Int) {
+        setLayout(if (layout == 0) null else LayoutInflater.from(context).inflate(layout, null))
+    }
+
+    open fun setLayout(layout: View?) {
+        findViewById<ViewGroup>(R.id.content_wrapper)?.apply {
+            isVisible = layout != null
+            removeAllViews()
+            if (layout != null) {
+                addView(layout)
+            }
+        }
+    }
+}
