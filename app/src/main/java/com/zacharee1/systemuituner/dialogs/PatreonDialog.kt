@@ -13,4 +13,6 @@ class PatreonDialog(context: Context) : RoundedBottomSheetDialog(context) {
             context.launchUrl("https://patreon.com/zacharywander")
         }
 
-        setNegativeButton(android.R.str
+        setNegativeButton(android.R.string.cancel, null)
+    }
+}
