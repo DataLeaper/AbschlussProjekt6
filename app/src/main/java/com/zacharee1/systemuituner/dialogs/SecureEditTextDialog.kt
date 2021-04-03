@@ -22,4 +22,30 @@ class SecureEditTextDialog : BaseOptionDialog() {
     companion object {
         private const val SAVE_STATE_TEXT = "EditTextPreferenceDialogFragment.text"
 
-        
+        fun newInstance(key: String): SecureEditTextDialog {
+            val fragment = SecureEditTextDialog()
+            val b = Bundle(1)
+            b.putString(ARG_KEY, key)
+            fragment.arguments = b
+            return fragment
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        text = if (savedInstanceState == null) {
+            editTextPreference.text
+        } else {
+            savedInstanceState.getCharSequence(SAVE_STATE_TEXT)
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putCharSequence(SAVE_STATE_TEXT, text)
+    }
+
+    override fun onBindDialogView(view: View) {
+        super.onBindDialogView(view)
+
+        editText = view.findViewById(android.R.id.
