@@ -48,4 +48,31 @@ class SecureEditTextDialog : BaseOptionDialog() {
     override fun onBindDialogView(view: View) {
         super.onBindDialogView(view)
 
-        editText = view.findViewById(android.R.id.
+        editText = view.findViewById(android.R.id.edit)
+        editText?.inputType = editTextPreference.inputType
+        editText?.setText(text)
+
+        view.findViewById<TextInputLayout>(R.id.edit_wrapper).apply {
+            setStartIconOnClickListener {
+                apply(preference.defaultValue?.toString())
+                editText?.setText(preference.defaultValue?.toString())
+            }
+
+            setEndIconOnClickListener {
+                apply(editText?.text?.toString())
+            }
+
+            hint = preference.title
+        }
+    }
+
+    private fun apply(text: String?) {
+        if (preference.callChangeListener(text)) {
+            editTextPreference.text = text
+            launch {
+                editTextPreference.onValueChanged(text, writeKey)
+            }
+        }
+    }
+
+    override fun o
