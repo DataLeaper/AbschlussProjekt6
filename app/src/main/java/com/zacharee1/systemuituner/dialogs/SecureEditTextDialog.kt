@@ -75,4 +75,5 @@ class SecureEditTextDialog : BaseOptionDialog() {
         }
     }
 
-    override fun o
+    override fun onDialogClosed(positiveResult: Boolean) {}
+}
