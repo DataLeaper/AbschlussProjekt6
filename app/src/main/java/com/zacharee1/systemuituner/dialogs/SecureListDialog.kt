@@ -45,4 +45,34 @@ class SecureListDialog : BaseOptionDialog() {
 
             val preference = listPref
             val value = preference.entryValues?.get(clickedIndex)?.toString()
- 
+            if (preference.callChangeListener(value)) {
+                preference.value = value
+
+                launch {
+                    preference.onValueChanged(value, preference.writeKey)
+                }
+            }
+        }
+
+        list.adapter = adapter
+    }
+
+    private data class ItemInfo(
+        val label: CharSequence?,
+        var isChecked: Boolean
+    )
+
+    private class Adapter(private val items: List<ItemInfo>, private val clickCallback: (index: Int) -> Unit) : RecyclerView.Adapter<Adapter.VH>() {
+        init {
+            setHasStableIds(true)
+        }
+
+        override fun getItemId(position: Int): Long {
+            return position.toLong()
+        }
+
+        override fun getItemCount(): Int {
+            return items.size
+        }
+
+        override fun onCreateViewHolder(parent: ViewGro
