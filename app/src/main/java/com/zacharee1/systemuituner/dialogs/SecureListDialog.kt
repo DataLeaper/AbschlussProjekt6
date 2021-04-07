@@ -75,4 +75,27 @@ class SecureListDialog : BaseOptionDialog() {
             return items.size
         }
 
-        override fun onCreateViewHolder(parent: ViewGro
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
+            return VH(LayoutInflater.from(parent.context).inflate(androidx.appcompat.R.layout.select_dialog_singlechoice_material, parent, false))
+        }
+
+        override fun onBindViewHolder(holder: VH, position: Int) {
+            holder.itemView.apply {
+                findViewById<CheckedTextView>(android.R.id.text1).apply {
+                    text = items[position].label
+                    isChecked = items[position].isChecked
+                }
+
+                setOnClickListener {
+                    val pos = holder.bindingAdapterPosition
+
+                    if (pos != -1) {
+                        clickCallback(pos)
+                        setChecked(pos, true)
+                    }
+                }
+            }
+        }
+
+        fun setChecked(index: Int, checked: Boolean) {
+            items.filter { it
