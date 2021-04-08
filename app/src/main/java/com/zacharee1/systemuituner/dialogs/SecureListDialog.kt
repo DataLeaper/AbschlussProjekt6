@@ -98,4 +98,15 @@ class SecureListDialog : BaseOptionDialog() {
         }
 
         fun setChecked(index: Int, checked: Boolean) {
-            items.filter { it
+            items.filter { it.isChecked }.forEach { itemInfo ->
+                itemInfo.isChecked = false
+                notifyItemChanged(items.indexOf(itemInfo))
+            }
+            items[index].isChecked = checked
+
+            notifyItemChanged(index)
+        }
+
+        class VH(view: View) : RecyclerView.ViewHolder(view)
+    }
+}
