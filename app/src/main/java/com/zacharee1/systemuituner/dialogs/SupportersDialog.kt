@@ -10,4 +10,9 @@ class SupportersDialog(context: Context) : ScrolledRoundedBottomSheetDialog(cont
     @SuppressLint("InflateParams")
     val view: View = LayoutInflater.from(context).inflate(R.layout.supporters_dialog, null)
     init {
-        setTitle(R.string.su
+        setTitle(R.string.supporters)
+        setLayout(view)
+
+        setPositiveButton(android.R.string.ok, null)
+    }
+}
