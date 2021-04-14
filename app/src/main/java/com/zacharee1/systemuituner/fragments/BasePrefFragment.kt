@@ -63,4 +63,20 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                 preference.key,
                 preference.disabled,
                 preference.enabled,
-   
+                requireContext().prefManager.forceEnableAll
+            )
+            is SecureSwitchPreference -> SwitchOptionDialog.newInstance(
+                preference.key,
+                preference.disabled,
+                preference.enabled,
+                requireContext().getSetting(preference.type, preference.writeKey, preference.defaultValue) == preference.enabled
+            )
+            is SecureSeekBarPreference -> SeekBarOptionDialog.newInstance(
+                preference.key,
+                preference.minValue,
+                preference.maxValue,
+                preference.defaultValue,
+                preference.units,
+                preference.scale,
+                (((requireContext().getSetting(preference.type, preference.writeKey)?.toFloatOrNull()
+                    ?: (preference.defaultValue * prefere
