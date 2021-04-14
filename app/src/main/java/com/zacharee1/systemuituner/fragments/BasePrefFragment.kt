@@ -38,4 +38,29 @@ import com.zacharee1.systemuituner.prefs.secure.SecureSeekBarPreference
 import com.zacharee1.systemuituner.prefs.secure.SecureSwitchPreference
 import com.zacharee1.systemuituner.prefs.secure.specific.*
 import com.zacharee1.systemuituner.util.*
-i
+import kotlinx.coroutines.*
+
+abstract class BasePrefFragment : CoroutinePreferenceFragment() {
+    companion object {
+        const val ARG_HIGHLIGHT_KEY = "highlight_key"
+    }
+
+    private val highlightKey: String?
+        get() = arguments?.getString(ARG_HIGHLIGHT_KEY)
+
+    open val widgetLayout: Int = Int.MIN_VALUE
+    open val limitSummary = true
+    open val supportsGrid = true
+
+    open val paddingDp = arrayOf(8f, 8f, 8f, 8f)
+    open val preferencePadding: ((Preference) -> Array<Float>)? = null
+
+    open val hasCategories = false
+
+    override fun onDisplayPreferenceDialog(preference: Preference) {
+        val fragment = when (preference) {
+            is ForceEnableAllPreference -> SwitchOptionDialog.newInstance(
+                preference.key,
+                preference.disabled,
+                preference.enabled,
+   
