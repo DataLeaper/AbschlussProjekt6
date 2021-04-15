@@ -79,4 +79,24 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                 preference.units,
                 preference.scale,
                 (((requireContext().getSetting(preference.type, preference.writeKey)?.toFloatOrNull()
-                    ?: (preference.defaultValue * prefere
+                    ?: (preference.defaultValue * preference.scale)) / preference.scale)).toInt()
+            )
+            is AnimationScalesPreference -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.animation_dialog
+            )
+            is KeepDeviceOnPluggedPreference -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.keep_device_plugged_dialog
+            )
+            is StorageThresholdPreference -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.storage_thresholds
+            )
+            is CameraGesturesPreference -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.camera_gestures
+            )
+            is AirplaneModeRadiosPreference -> OptionDialog.newInstance(
+                preference.key,
+                
