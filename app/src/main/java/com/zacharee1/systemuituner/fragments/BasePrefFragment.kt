@@ -99,4 +99,21 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
             )
             is AirplaneModeRadiosPreference -> OptionDialog.newInstance(
                 preference.key,
-                
+                R.layout.airplane_mode_radios
+            )
+            is ImmersiveModePreference -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.immersive_mode
+            )
+            is SecureListPreference -> SecureListDialog.newInstance(preference.key)
+            is UISoundsPreference -> OptionDialog.newInstance(preference.key, R.layout.ui_sounds)
+            is TetheringPreference -> SwitchOptionDialog.newInstance(
+                preference.key,
+                "false",
+                "true",
+                preference.bothFixed
+            )
+            is SMSLimitsPreference -> OptionDialog.newInstance(preference.key, R.layout.sms_limits)
+            is LockscreenShortcutsPref -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.
