@@ -116,4 +116,19 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
             is SMSLimitsPreference -> OptionDialog.newInstance(preference.key, R.layout.sms_limits)
             is LockscreenShortcutsPref -> OptionDialog.newInstance(
                 preference.key,
-                R.layout.
+                R.layout.lockscreen_shortcuts
+            )
+            is SecureEditTextPreference -> SecureEditTextDialog.newInstance(preference.key)
+            is DemoListPreference -> SecureListDialog.newInstance(preference.key)
+            is DemoSeekBarPreference -> SeekBarOptionDialog.newInstance(
+                preference.key,
+                preference.minValue,
+                preference.maxValue,
+                preference.defaultValue,
+                preference.units,
+                preference.scale,
+                (preference.sharedPreferences!!.getFloat(preference.key, preference.defaultValue * preference.scale) / preference.scale).toInt()
+            )
+            is DemoSwitchPreference -> SwitchOptionDialog.newInstance(
+                preference.key,
+                preference.di
