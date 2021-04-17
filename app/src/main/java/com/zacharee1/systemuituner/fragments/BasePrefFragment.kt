@@ -131,4 +131,22 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
             )
             is DemoSwitchPreference -> SwitchOptionDialog.newInstance(
                 preference.key,
-                preference.di
+                preference.disabled,
+                preference.enabled,
+                preference.sharedPreferences!!.getString(preference.key, preference.defaultValue?.toString()) == preference.enabled
+            )
+            is ReadSettingPreference -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.dialog_read_setting
+            )
+            is WriteSettingPreference -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.dialog_write_setting
+            )
+            is OneUIClockPositionPreference -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.one_ui_clock_position
+            )
+            is TouchWizNavigationBarColor -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.touchwiz_navigation_bar_color_
