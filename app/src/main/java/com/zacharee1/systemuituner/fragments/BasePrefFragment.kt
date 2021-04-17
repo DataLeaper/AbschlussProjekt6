@@ -149,4 +149,33 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
             )
             is TouchWizNavigationBarColor -> OptionDialog.newInstance(
                 preference.key,
-                R.layout.touchwiz_navigation_bar_color_
+                R.layout.touchwiz_navigation_bar_color_dialog
+            )
+            is NotificationSnoozeTimesPreference -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.notification_snooze_times
+            )
+            is NightModePreference -> OptionDialog.newInstance(
+                preference.key,
+                R.layout.night_mode
+            )
+            else -> null
+        }
+
+        @Suppress("DEPRECATION")
+        fragment?.setTargetFragment(this, 0)
+        fragment?.show(parentFragmentManager, null)
+
+        if (fragment == null) {
+            super.onDisplayPreferenceDialog(preference)
+        }
+    }
+
+    @SuppressLint("RestrictedApi")
+    override fun onBindPreferences() {
+        super.onBindPreferences()
+
+        setDivider(ResourcesCompat.getDrawable(resources, R.drawable.custom_divider, requireContext().theme))
+    }
+
+    @SuppressLint("Restricted
