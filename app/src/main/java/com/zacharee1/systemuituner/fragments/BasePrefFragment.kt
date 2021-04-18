@@ -178,4 +178,24 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
         setDivider(ResourcesCompat.getDrawable(resources, R.drawable.custom_divider, requireContext().theme))
     }
 
-    @SuppressLint("Restricted
+    @SuppressLint("RestrictedApi")
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        view.addOnLayoutChangeListener { _, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom ->
+            if (left != oldLeft || top != oldTop || right != oldRight || bottom != oldBottom) {
+                updateLayoutManager(view, listView, grid, linear, supportsGrid)
+                updateListWidthAndGravity()
+            }
+        }
+
+        highlightKey?.let { hKey ->
+            listView?.post {
+                listView?.apply {
+                    val a = adapter as PreferenceGroupAdapter
+                    val index = a.getPreferenceAdapterPosition(hKey)
+
+                    scrollToPosition(index)
+
+                    launch {
+                        val item = layoutManager?.findViewByPosition
