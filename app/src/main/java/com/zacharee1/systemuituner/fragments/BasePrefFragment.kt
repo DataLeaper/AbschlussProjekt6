@@ -198,4 +198,19 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                     scrollToPosition(index)
 
                     launch {
-                        val item = layoutManager?.findViewByPosition
+                        val item = layoutManager?.findViewByPosition(index) as? MaterialCardView ?: return@launch
+
+                        delay(200)
+                        val time = resources.getInteger(android.R.integer.config_mediumAnimTime).toLong()
+                        item.isPressed = true
+
+                        val anim = ObjectAnimator.ofPropertyValuesHolder(
+                            item,
+                            PropertyValuesHolder.ofFloat(View.SCALE_X, 1.2f),
+                            PropertyValuesHolder.ofFloat(View.SCALE_Y, 1.2f)
+                        )
+                        anim.repeatCount = 1
+                        anim.repeatMode = ValueAnimator.REVERSE
+                        anim.duration = time
+                        anim.interpolator = AnticipateInterpolator()
+                        ani
