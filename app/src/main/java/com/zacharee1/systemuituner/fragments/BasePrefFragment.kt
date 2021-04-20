@@ -213,4 +213,30 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                         anim.repeatMode = ValueAnimator.REVERSE
                         anim.duration = time
                         anim.interpolator = AnticipateInterpolator()
-                        ani
+                        anim.doOnEnd {
+                            item.isPressed = false
+                        }
+                        anim.start()
+                    }
+                }
+            }
+        }
+
+        updateListWidthAndGravity()
+    }
+
+    override fun onCreateRecyclerView(
+        inflater: LayoutInflater,
+        parent: ViewGroup,
+        savedInstanceState: Bundle?
+    ): RecyclerView {
+        return super.onCreateRecyclerView(inflater, parent, savedInstanceState).also {
+            requireContext().apply {
+                it.setPaddingRelative(dpAsPx(paddingDp[0]), dpAsPx(paddingDp[1]), dpAsPx(paddingDp[2]), dpAsPx(paddingDp[3]))
+            }
+            it.clipToPadding = false
+            it.itemAnimator = PrefAnimator().apply {
+                addDuration = 300
+                removeDuration = 300
+                moveDuration = 0
+           
