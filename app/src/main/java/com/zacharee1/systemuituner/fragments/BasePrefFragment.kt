@@ -239,4 +239,24 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                 addDuration = 300
                 removeDuration = 300
                 moveDuration = 0
-           
+                changeDuration = 0
+            }
+            it.layoutAnimation = AnimationUtils.loadLayoutAnimation(requireContext(), R.anim.list_initial_anim)
+        }
+    }
+
+    open fun onBindViewHolder(holder: PreferenceViewHolder, position: Int, preference: Preference?) {
+
+    }
+
+    @SuppressLint("RestrictedApi")
+    override fun onCreateAdapter(preferenceScreen: PreferenceScreen): RecyclerView.Adapter<*> {
+        return object : PreferenceGroupAdapter(preferenceScreen) {
+            private val descriptors = ArrayList<PreferenceHolder>()
+
+            @SuppressLint("RestrictedApi")
+            override fun getItemViewType(position: Int): Int {
+                val descriptor = PreferenceHolder(getItem(position)!!)
+                val index = descriptors.indexOf(descriptor)
+
+      
