@@ -259,4 +259,21 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                 val descriptor = PreferenceHolder(getItem(position)!!)
                 val index = descriptors.indexOf(descriptor)
 
+                return if (index != -1) {
+                    index
+                } else {
+                    descriptors.add(descriptor)
+                    descriptors.lastIndex
+                }
+            }
+
+            @SuppressLint("RestrictedApi", "ClickableViewAccessibility")
+            override fun onBindViewHolder(holder: PreferenceViewHolder, position: Int) {
+                super.onBindViewHolder(holder, position)
+
+                val preference = getItem(position)
+
+                if (hasCategories) {
+                    if (chooseLayoutManagerWithoutSetting(view, grid, linear) == grid && holder.itemView.layoutParams !is StaggeredGridLayoutManager.LayoutParams) {
+                        holder.itemView.layoutParams = StaggeredGridLayoutManager.LayoutParams(holder.itemView.layoutParams).apply {
       
