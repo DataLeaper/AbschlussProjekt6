@@ -276,4 +276,25 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                 if (hasCategories) {
                     if (chooseLayoutManagerWithoutSetting(view, grid, linear) == grid && holder.itemView.layoutParams !is StaggeredGridLayoutManager.LayoutParams) {
                         holder.itemView.layoutParams = StaggeredGridLayoutManager.LayoutParams(holder.itemView.layoutParams).apply {
-      
+                            isFullSpan = getItem(position) is PreferenceCategory
+                        }
+                    }
+                }
+
+                (holder.itemView as ViewGroup).apply {
+                    context.apply {
+                        preference?.let {
+                            preferencePadding?.invoke(preference)?.apply {
+                                setPaddingRelative(
+                                    dpAsPx(this[0]),
+                                    dpAsPx(this[1]),
+                                    dpAsPx(this[2]),
+                                    dpAsPx(this[3]),
+                                )
+                            }
+                        }
+                    }
+
+                    val summaryView = findViewById<TextView>(android.R.id.summary)
+
+                    summaryView.post {
