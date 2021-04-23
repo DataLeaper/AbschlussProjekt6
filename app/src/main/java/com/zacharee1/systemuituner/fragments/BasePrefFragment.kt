@@ -298,3 +298,18 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                     val summaryView = findViewById<TextView>(android.R.id.summary)
 
                     summaryView.post {
+                        findViewById<View>(R.id.expand_summary)?.apply {
+                            val image = findViewById<ImageView>(R.id.expand_summary_icon)
+
+                            summaryView as ExpandableTextView
+                            isVisible = summaryView.lineCount > summaryView.maxLines || summaryView.hasEllipsis
+
+                            image.rotation = if (!summaryView.isExpanded) 0f else 180f
+                            setOnClickListener {
+                                if (summaryView.isExpanded) {
+                                    image.animate()
+                                        .rotation(0f)
+                                        .withEndAction {
+                                            image.rotation = 0f
+                                        }
+                                   
