@@ -312,4 +312,25 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                                         .withEndAction {
                                             image.rotation = 0f
                                         }
-                                   
+                                    summaryView.collapse()
+                                } else {
+                                    image.animate()
+                                        .rotation(180f)
+                                        .withEndAction {
+                                            image.rotation = 180f
+                                        }
+                                    summaryView.expand()
+                                }
+                            }
+                        }
+                    }
+                }
+
+                this@BasePrefFragment.onBindViewHolder(holder, position, preference)
+            }
+
+            @SuppressLint("RestrictedApi", "PrivateResource")
+            override fun onCreateViewHolder(
+                parent: ViewGroup,
+                viewType: Int
+      
