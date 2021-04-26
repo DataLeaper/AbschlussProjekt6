@@ -333,4 +333,22 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
             override fun onCreateViewHolder(
                 parent: ViewGroup,
                 viewType: Int
-      
+            ): PreferenceViewHolder {
+                val item = descriptors[viewType]
+                return run {
+                    val inflater = LayoutInflater.from(parent.context)
+                    val a = parent.context.obtainStyledAttributes(
+                        null,
+                        androidx.preference.R.styleable.BackgroundStyle
+                    )
+                    var background =
+                        a.getDrawable(androidx.preference.R.styleable.BackgroundStyle_android_selectableItemBackground)
+                    if (background == null) {
+                        background = AppCompatResources.getDrawable(
+                            parent.context,
+                            android.R.drawable.list_selector_background
+                        )
+                    }
+                    a.recycle()
+
+                    val view: Vi
