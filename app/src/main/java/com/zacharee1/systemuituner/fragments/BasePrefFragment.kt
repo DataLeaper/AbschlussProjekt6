@@ -351,4 +351,20 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                     }
                     a.recycle()
 
-                    val view: Vi
+                    val view: View =
+                        inflater.inflate(item.layoutResource, parent, false)
+                    if (view.background == null) {
+                        ViewCompat.setBackground(view, background)
+                    }
+
+                    val widgetFrame =
+                        view.findViewById<ViewGroup>(android.R.id.widget_frame)
+                    if (widgetFrame != null) {
+                        when {
+                            widgetLayout != Int.MIN_VALUE -> {
+                                inflater.inflate(widgetLayout, widgetFrame)
+                            }
+                            item.widgetLayoutResource != 0 -> {
+                                inflater.inflate(item.widgetLayoutResource, widgetFrame)
+                            }
+                            
