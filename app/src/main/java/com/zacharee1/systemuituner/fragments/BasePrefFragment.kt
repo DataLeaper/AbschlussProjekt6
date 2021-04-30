@@ -386,4 +386,33 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                         if (item.isDangerous) {
                             setTextColor(Color.RED)
                         } else {
-                            setTextColor(Mater
+                            setTextColor(MaterialColors.getColor(this, android.R.attr.textColorPrimary))
+                        }
+                    }
+
+                    PreferenceViewHolder.createInstanceForTests(view)
+                }
+            }
+        }
+    }
+
+    private val grid by lazy {
+        object : StaggeredGridLayoutManager(2, VERTICAL) {
+            override fun supportsPredictiveItemAnimations(): Boolean {
+                return true
+            }
+        }
+    }
+    private val linear by lazy {
+        object : LinearLayoutManager(requireContext()) {
+            override fun supportsPredictiveItemAnimations(): Boolean {
+                return true
+            }
+        }
+    }
+
+    override fun onCreateLayoutManager(): RecyclerView.LayoutManager {
+        return chooseLayoutManager(view, grid, linear, supportsGrid)
+    }
+
+    private fun updateListWidthA
