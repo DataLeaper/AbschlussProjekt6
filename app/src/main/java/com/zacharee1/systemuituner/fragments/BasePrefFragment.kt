@@ -367,4 +367,23 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
                             item.widgetLayoutResource != 0 -> {
                                 inflater.inflate(item.widgetLayoutResource, widgetFrame)
                             }
-                            
+                            else -> {
+                                widgetFrame.visibility = View.GONE
+                            }
+                        }
+                    }
+
+                    if (item.className != PreferenceGroup::class.java.canonicalName) {
+                        if (item.isEnabled && limitSummary) {
+                            view.findViewById<TextView>(android.R.id.summary).apply {
+                                maxLines = 2
+                                ellipsize = TextUtils.TruncateAt.END
+                            }
+                        }
+                    }
+
+                    view.findViewById<TextView>(android.R.id.title)?.apply {
+                        if (item.isDangerous) {
+                            setTextColor(Color.RED)
+                        } else {
+                            setTextColor(Mater
