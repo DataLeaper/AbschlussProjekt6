@@ -415,4 +415,17 @@ abstract class BasePrefFragment : CoroutinePreferenceFragment() {
         return chooseLayoutManager(view, grid, linear, supportsGrid)
     }
 
-    private fun updateListWidthA
+    private fun updateListWidthAndGravity(widthDp: Float = requireContext().asDp(requireView().width)) {
+        if (!supportsGrid) {
+            listView.layoutParams = (listView.layoutParams as FrameLayout.LayoutParams).apply {
+                width = if (widthDp >= 800) requireContext().dpAsPx(800) else ViewGroup.LayoutParams.MATCH_PARENT
+                gravity = if (widthDp >= 800) Gravity.CENTER_HORIZONTAL else Gravity.START
+            }
+        } else {
+            listView.layoutParams = (listView.layoutParams as FrameLayout.LayoutParams).apply {
+                width = ViewGroup.LayoutParams.MATCH_PARENT
+                gravity = Gravity.START
+            }
+        }
+    }
+}
