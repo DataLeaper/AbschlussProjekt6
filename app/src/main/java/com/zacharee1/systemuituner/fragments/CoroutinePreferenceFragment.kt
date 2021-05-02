@@ -1,11 +1,12 @@
+
 package com.zacharee1.systemuituner.fragments
 
-import androidx.preference.PreferenceDialogFragmentCompat
+import androidx.preference.PreferenceFragmentCompat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.cancel
 
-abstract class CoroutinePreferenceDialogFragment : PreferenceDialogFragmentCompat(), CoroutineScope by MainScope() {
+abstract class CoroutinePreferenceFragment : PreferenceFragmentCompat(), CoroutineScope by MainScope() {
     override fun onDestroy() {
         super.onDestroy()
 
