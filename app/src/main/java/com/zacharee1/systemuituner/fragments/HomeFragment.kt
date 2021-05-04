@@ -93,3 +93,28 @@ class HomeFragment : BasePrefFragment(), NavController.OnDestinationChangedListe
         destination: NavDestination,
         arguments: Bundle?
     ) {
+        navPrefs[destination.id]?.key?.let {
+            setSelection(it)
+        }
+    }
+
+    @SuppressLint("RestrictedApi")
+    private fun setSelection(id: String) {
+        val oldId = selectedId
+        selectedId = id
+
+        val adapter = listView?.adapter as? PreferenceGroupAdapter
+
+        adapter?.apply {
+            oldId?.let {
+                notifyItemChanged(getPreferenceAdapterPosition(it))
+            }
+            notifyItemChanged(getPreferenceAdapterPosition(id))
+        }
+    }
+
+    override fun onBindViewHolder(holder: PreferenceViewHolder, position: Int, preference: Preference?) {
+        holder.itemView.foreground = if (preference?.key == selectedId) ColorDrawable(
+            ResourcesCompat.getColor(resources, R.color.selected_item, requireContext().theme)) else null
+    }
+}
