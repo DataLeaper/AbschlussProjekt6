@@ -42,4 +42,26 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
         }
 
 //        preferences.addAll(requireContext().prefManager.customPersistentOptions.map {
-//            PersistentPreference.fromCustomPersistentOption(requireConte
+//            PersistentPreference.fromCustomPersistentOption(requireContext(), it)
+//        })
+        true
+    }
+
+    private val persistentCategory: PreferenceCategory?
+        get() = preferenceScreen.findPreference("prefs_group")
+    private val noticeCategory: PreferenceCategory?
+        get() = preferenceScreen.findPreference("notices")
+
+    @SuppressLint("RestrictedApi")
+    private fun inflate(resource: Int): PreferenceScreen {
+        return preferenceManager.inflateFromResource(requireContext(), resource, null).also { process(it) }
+    }
+
+    private fun process(group: PreferenceGroup) {
+        for (i in 0 until group.preferenceCount) {
+            val child = group.getPreference(i)
+
+            if (child is PreferenceGroup) process(child)
+            else {
+                if (child is INoPersistPreference) continue
+                preferences.add(PersistentPreference.fromPreference(false, child, 
