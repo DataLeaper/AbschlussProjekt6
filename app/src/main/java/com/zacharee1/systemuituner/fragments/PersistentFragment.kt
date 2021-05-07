@@ -90,4 +90,29 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
         }
     }
 
-    override fun onViewCreated(view: Vie
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        view.background = ContextCompat.getDrawable(requireContext(), R.drawable.search_bg)
+    }
+
+    override fun onQueryTextChange(newText: String?): Boolean {
+        currentQuery = newText
+
+        noticeCategory?.isVisible = newText == null
+
+        filterPersistent(newText) {
+            val toRemove = ArrayList<Preference>()
+
+            persistentCategory?.forEach { child ->
+                if (!it.map { c -> c.key }.contains(child.key)) {
+                    toRemove.add(child)
+                }
+            }
+
+            toRemove.forEach { pref ->
+                persistentCategory?.removePreference(pref)
+            }
+
+            it.forEach { pref ->
+                if (persistentC
