@@ -64,4 +64,30 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
             if (child is PreferenceGroup) process(child)
             else {
                 if (child is INoPersistPreference) continue
-                preferences.add(PersistentPreference.fromPreference(false, child, 
+                preferences.add(PersistentPreference.fromPreference(false, child, this))
+            }
+        }
+    }
+
+    override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
+        setPreferencesFromResource(R.xml.prefs_search, rootKey)
+
+        addNoticePreferences()
+        filterPersistent(null) {
+            it.forEach { pref ->
+                persistentCategory?.addPreference(construct(pref))
+            }
+        }
+
+        persistentCategory?.isOrderingAsAdded = false
+        requireContext().prefManager.prefs.registerOnSharedPreferenceChangeListener(this)
+        onQueryTextChange(null)
+    }
+
+    override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences?, key: String?) {
+        if (key == PrefManager.CUSTOM_PERSISTENT_OPTIONS) {
+            onQueryTextChange(currentQuery)
+        }
+    }
+
+    override fun onViewCreated(view: Vie
