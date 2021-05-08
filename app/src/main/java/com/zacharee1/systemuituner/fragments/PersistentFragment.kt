@@ -140,4 +140,20 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
             label, key, value, type
         )
         @Suppress("DEPRECATION")
-        fr
+        fragment.setTargetFragment(this, 0)
+        fragment.show(parentFragmentManager, null)
+    }
+
+    private fun filterPersistent(query: String?, result: (ArrayList<PersistentPreference>) -> Unit) = launch {
+        isLoaded.await()
+
+        val filter = async {
+            ArrayList(
+                preferences.filter {
+                    (query.isNullOrBlank() ||
+                            it.title.toString().contains(query, true) ||
+                            it.origSummary?.toString()?.contains(query, true) == true)
+                }.map { PersistentPreference.fromPreference(false, it, this@PersistentFragment) } +
+                        requireContext().prefManager.customPersistentOptions.filter {
+                            query.isNullOrBlank() ||
+                                    it.label.contains(query, tru
