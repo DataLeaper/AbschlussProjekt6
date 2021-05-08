@@ -115,4 +115,29 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
             }
 
             it.forEach { pref ->
-                if (persistentC
+                if (persistentCategory?.hasPreference(pref.key) == false) {
+                    persistentCategory?.addPreference(construct(pref))
+                }
+            }
+        }
+
+        return true
+    }
+
+    override fun onQueryTextSubmit(query: String?): Boolean {
+        return false
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        requireContext().prefManager.prefs.unregisterOnSharedPreferenceChangeListener(this)
+    }
+
+    fun addOrEditCustomItem(label: String? = null, key: String? = null, value: String? = null, type: SettingsType? = null) {
+        val fragment = if (type == null || key == null || label == null) CustomPersistentOptionDialogFragment()
+        else CustomPersistentOptionDialogFragment.forEdit(
+            label, key, value, type
+        )
+        @Suppress("DEPRECATION")
+        fr
