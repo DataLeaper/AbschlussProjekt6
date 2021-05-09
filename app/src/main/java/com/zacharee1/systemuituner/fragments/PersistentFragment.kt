@@ -175,4 +175,22 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
             ).apply {
                 title = resources.getString(R.string.persistent_options_not_sticking_title)
                 summary = resources.getString(R.string.persistent_options_not_sticking_desc)
-                icon = ContextCompat.getDrawable(requireContext(), R.d
+                icon = ContextCompat.getDrawable(requireContext(), R.drawable.ic_baseline_help_outline_24)
+            }
+        )
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !Settings.canDrawOverlays(requireContext())) {
+            noticeCategory?.addPreference(
+                InlineActivityPreference(
+                    requireContext(),
+                    Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION)
+                ).apply {
+                    title = resources.getString(R.string.intro_system_alert_window)
+                    summary = resources.getString(R.string.intro_system_alert_window_desc)
+                    icon = ContextCompat.getDrawable(requireContext(), R.drawable.ic_baseline_help_outline_24)
+                }
+            )
+        }
+    }
+
+    private fun construct(pref: PersistentPreference): PersistentPreference {
+        return 
