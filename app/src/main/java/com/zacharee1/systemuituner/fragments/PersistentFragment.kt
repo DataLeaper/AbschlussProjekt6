@@ -156,4 +156,23 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
                 }.map { PersistentPreference.fromPreference(false, it, this@PersistentFragment) } +
                         requireContext().prefManager.customPersistentOptions.filter {
                             query.isNullOrBlank() ||
-                                    it.label.contains(query, tru
+                                    it.label.contains(query, true) ||
+                                    it.key.contains(query, true)
+                        }.map {
+                            PersistentPreference.fromCustomPersistentOption(this@PersistentFragment, it)
+                        }
+            )
+        }
+
+        result(filter.await())
+    }
+
+    private fun addNoticePreferences() {
+        noticeCategory?.addPreference(
+            InlineActivityPreference(
+                requireContext(),
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://dontkillmyapp.com"))
+            ).apply {
+                title = resources.getString(R.string.persistent_options_not_sticking_title)
+                summary = resources.getString(R.string.persistent_options_not_sticking_desc)
+                icon = ContextCompat.getDrawable(requireContext(), R.d
