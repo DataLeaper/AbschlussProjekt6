@@ -210,4 +210,25 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
                             preference.keys.forEach { (t, ks) ->
                                 ks.forEach { k ->
                                     add(PersistentOption(t, k))
-                            
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    context.prefManager.apply {
+                        persistentOptions = persistentOptions.apply {
+                            removeAll { item -> preference.keys.keys.contains(item.type) && preference.keys[item.type]?.contains(item.key) == true }
+                        }
+                    }
+                }
+
+                mainHandler.post {
+                    (listView?.adapter as PreferenceGroupAdapter?)?.updatePreferences()
+                }
+
+                true
+            }
+        }
+    }
+
+    class PersistentPreference(val isCustom: Boolean, val fragment: PersistentFragment, context: Context = fragment.requireContext()) : CheckBoxPreference(
