@@ -193,4 +193,21 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
     }
 
     private fun construct(pref: PersistentPreference): PersistentPreference {
-        return 
+        return PersistentPreference.copy(pref, this).apply {
+            val options = context.prefManager.persistentOptions
+            isChecked = keys.all { key ->
+                key.value.all { k ->
+                    options.any { opt -> opt.key == k && opt.type == key.key }
+                }
+            }
+
+            setOnPreferenceChangeListener { preference, newValue ->
+                preference as PersistentPreference
+
+                if (newValue.toString().toBoolean()) {
+                    context.prefManager.apply {
+                        persistentOptions = persistentOptions.apply {
+                            preference.keys.forEach { (t, ks) ->
+                                ks.forEach { k ->
+                                    add(PersistentOption(t, k))
+                            
