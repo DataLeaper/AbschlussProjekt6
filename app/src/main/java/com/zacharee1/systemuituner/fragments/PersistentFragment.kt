@@ -249,4 +249,22 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
             }
             fun fromPreference(isCustom: Boolean, preference: Preference, fragment: PersistentFragment): PersistentPreference {
                 return PersistentPreference(isCustom, fragment).apply {
-                    tit
+                    title = preference.title
+                    icon = preference.icon
+                    key = preference.key
+                    isVisible = preference.isVisible
+                    origSummary = if (preference is PersistentPreference) {
+                        preference.origSummary
+                    } else {
+                        preference.summary
+                    }
+                    if (preference is PersistentPreference) {
+                        keys.putAll(preference.keys)
+                    }
+                    if (preference is ISpecificPreference) {
+                        keys.putAll(preference.keys)
+                    }
+                    if (preference is IDangerousPreference) {
+                        dangerous = preference.dangerous
+                    }
+                    if 
