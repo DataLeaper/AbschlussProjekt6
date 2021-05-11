@@ -231,4 +231,22 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
         }
     }
 
-    class PersistentPreference(val isCustom: Boolean, val fragment: PersistentFragment, context: Context = fragment.requireContext()) : CheckBoxPreference(
+    class PersistentPreference(val isCustom: Boolean, val fragment: PersistentFragment, context: Context = fragment.requireContext()) : CheckBoxPreference(context), ISecurePreference by SecurePreference(
+        context,
+        null
+    ), IColorPreference by ColorPreference(
+        context,
+        null
+    ), IVerifierPreference by VerifierPreference(context, null) {
+        companion object {
+            fun fromCustomPersistentOption(fragment: PersistentFragment, info: CustomPersistentOption): PersistentPreference {
+                return PersistentPreference(true, fragment).apply {
+                    title = info.label
+                    key = info.key
+                    type = info.type
+                    keys[type] = arrayOf(key)
+                }
+            }
+            fun fromPreference(isCustom: Boolean, preference: Preference, fragment: PersistentFragment): PersistentPreference {
+                return PersistentPreference(isCustom, fragment).apply {
+                    tit
