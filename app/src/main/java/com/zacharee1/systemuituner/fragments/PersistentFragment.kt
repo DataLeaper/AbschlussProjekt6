@@ -267,4 +267,21 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
                     if (preference is IDangerousPreference) {
                         dangerous = preference.dangerous
                     }
-                    if 
+                    if (preference is ISecurePreference) {
+                        type = preference.type
+                    }
+                    if (preference is IColorPreference) {
+                        iconColor = preference.iconColor
+                    }
+                    if (preference is IVerifierPreference) {
+                        lowApi = preference.lowApi
+                        highApi = preference.highApi
+                        visibilityVerifier = preference.visibilityVerifier
+                        enabledVerifier = preference.enabledVerifier
+                    }
+
+                    if (keys.isEmpty()) {
+                        keys[type] = keys[type].run {
+                            if (this == null) {
+                                arrayOf(preference.key)
+        
