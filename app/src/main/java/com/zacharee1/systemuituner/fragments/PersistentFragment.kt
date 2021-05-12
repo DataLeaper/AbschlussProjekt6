@@ -284,4 +284,30 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
                         keys[type] = keys[type].run {
                             if (this == null) {
                                 arrayOf(preference.key)
-        
+                            } else {
+                                this + arrayOf(preference.key)
+                            }
+                        }
+                    }
+
+                    initSecure(this)
+                    initVerify(this)
+                }
+            }
+
+            fun copy(preference: PersistentPreference, fragment: PersistentFragment): PersistentPreference {
+                return fromPreference(preference.isCustom, preference, fragment)
+            }
+        }
+
+        val keys = HashMap<SettingsType, Array<String>>()
+        var origSummary: CharSequence? = null
+
+        init {
+            isPersistent = false
+            layoutResource = R.layout.custom_preference
+            widgetLayoutResource = if (isCustom) R.layout.custom_persistent_option_widget else R.layout.checkbox
+        }
+
+        override var dangerous: Boolean = false
+ 
