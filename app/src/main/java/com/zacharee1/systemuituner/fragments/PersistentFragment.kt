@@ -310,4 +310,28 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
         }
 
         override var dangerous: Boolean = false
- 
+            set(value) {
+                field = value
+                markDangerous()
+            }
+
+        override fun isPersistent(): Boolean {
+            return false
+        }
+
+        override fun compareTo(other: Preference): Int {
+            val sup = super.compareTo(other)
+
+            return if (other is TwoStatePreference) {
+                if (isChecked && !other.isChecked) -1
+                else if (isChecked && other.isChecked) sup
+                else if (!isChecked && other.isChecked) 1
+                else sup
+            } else sup
+        }
+
+        override fun onAttachedToHierarchy(preferenceManager: PreferenceManager) {
+            super.onAttachedToHierarchy(preferenceManager)
+
+            if (isCustom) {
+                summary = context.prefManager.customPersistentOptions.fi
