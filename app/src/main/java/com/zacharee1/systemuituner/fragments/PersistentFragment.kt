@@ -334,4 +334,21 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
             super.onAttachedToHierarchy(preferenceManager)
 
             if (isCustom) {
-                summary = context.prefManager.customPersistentOptions.fi
+                summary = context.prefManager.customPersistentOptions.find { it.type == type && it.key == key }?.run {
+                    context.resources.getString(R.string.custom_persistent_option_summary_template, type, key, value)
+                }
+            }
+        }
+
+        override fun onBindViewHolder(holder: PreferenceViewHolder) {
+            super.onBindViewHolder(holder)
+
+            if (isCustom) {
+                holder.itemView.apply {
+                    val binding = CustomPersistentOptionWidgetBinding.bind(findViewById(R.id.check_wrapper))
+
+                    binding.removeButton.setOnClickListener {
+                        RoundedBottomSheetDialog(context).apply {
+                            setTitle(R.string.remove_item)
+                            setMessage(R.string.remove_item_desc)
+                            setPositiveButton(android.R.string.ok) { _,
