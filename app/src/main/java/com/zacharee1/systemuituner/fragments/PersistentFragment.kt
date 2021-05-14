@@ -351,4 +351,18 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
                         RoundedBottomSheetDialog(context).apply {
                             setTitle(R.string.remove_item)
                             setMessage(R.string.remove_item_desc)
-                            setPositiveButton(android.R.string.ok) { _,
+                            setPositiveButton(android.R.string.ok) { _, _ ->
+                                context.prefManager.apply {
+                                    persistentOptions = persistentOptions.apply {
+                                        removeAll { it.type == type && it.key == key }
+                                    }
+                                    customPersistentOptions = customPersistentOptions.apply {
+                                        removeAll { it.type == type && it.key == key }
+                                    }
+                                }
+                                fragment.preferenceScreen.removePreferenceRecursively(key)
+                                dismiss()
+                            }
+                            setNegativeButton(android.R.string.cancel, null)
+                        }.show()
+      
