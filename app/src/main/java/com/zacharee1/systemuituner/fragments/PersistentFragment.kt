@@ -365,4 +365,29 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
                             }
                             setNegativeButton(android.R.string.cancel, null)
                         }.show()
-      
+                    }
+
+                    binding.editButton.setOnClickListener {
+                        val customInfo = context.prefManager.customPersistentOptions.find {
+                            it.key == key && it.type == type
+                        } ?: return@setOnClickListener
+
+                        fragment.addOrEditCustomItem(customInfo.label, customInfo.key, customInfo.value, customInfo.type)
+                    }
+                }
+            }
+
+            bindVH(holder)
+        }
+
+        fun copy(): PersistentPreference {
+            return fromPreference(isCustom,this, fragment)
+        }
+
+        private fun markDangerous() {
+            title = if (dangerous) {
+                SpannableString(title).apply {
+                    setSpan(ForegroundColorSpan(Color.RED), 0, length, 0)
+                }
+            } else {
+   
