@@ -390,4 +390,8 @@ class PersistentFragment : BasePrefFragment(), SearchView.OnQueryTextListener, S
                     setSpan(ForegroundColorSpan(Color.RED), 0, length, 0)
                 }
             } else {
-   
+                title.toString()
+            }
+        }
+    }
+}
