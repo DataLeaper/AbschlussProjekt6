@@ -20,4 +20,33 @@ class SearchFragment : BasePrefFragment(), SearchView.OnQueryTextListener {
 
     override val limitSummary: Boolean = false
 
-    private val pre
+    private val prefsCategory: PreferenceCategory?
+        get() = preferenceScreen.findPreference("prefs_group")
+
+    override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
+        setPreferencesFromResource(R.xml.prefs_search, rootKey)
+    }
+
+    fun onShow() {
+        launch {
+            searchIndex.load().await()
+
+            prefsCategory?.removeAll()
+            searchIndex.filter(null) {
+                it.forEach { pref ->
+                    prefsCategory?.addPreference(
+                        SearchIndex.ActionedPreference.copy(requireContext(), pref)
+                    )
+                }
+            }
+            prefsCategory?.isOrderingAsAdded = false
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        cancel()
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bun
