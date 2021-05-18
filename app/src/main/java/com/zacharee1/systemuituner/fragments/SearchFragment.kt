@@ -49,4 +49,25 @@ class SearchFragment : BasePrefFragment(), SearchView.OnQueryTextListener {
         cancel()
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bun
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        view.background = ContextCompat.getDrawable(requireContext(), R.drawable.search_bg)
+    }
+
+    override fun onPreferenceTreeClick(preference: Preference): Boolean {
+        if (preference is SearchIndex.ActionedPreference) {
+            onItemClickListener?.invoke(preference.action, preference.key)
+        }
+        return super.onPreferenceTreeClick(preference)
+    }
+
+    override fun onQueryTextChange(newText: String?): Boolean {
+        if (context != null) {
+            searchIndex.filter(newText) {
+                val toRemove = ArrayList<Preference>()
+
+                prefsCategory?.forEach { child ->
+                    if (!it.map { c -> c.key }.contains(child.key)) {
+                        toRemove.add(child)
+              
