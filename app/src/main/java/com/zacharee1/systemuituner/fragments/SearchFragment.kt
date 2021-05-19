@@ -70,4 +70,29 @@ class SearchFragment : BasePrefFragment(), SearchView.OnQueryTextListener {
                 prefsCategory?.forEach { child ->
                     if (!it.map { c -> c.key }.contains(child.key)) {
                         toRemove.add(child)
-              
+                    }
+                }
+
+                toRemove.forEach { pref ->
+                    prefsCategory?.removePreferenceRecursively(pref.key)
+                }
+
+                it.forEach { pref ->
+                    if (prefsCategory?.hasPreference(pref.key) == false) {
+                        prefsCategory?.addPreference(
+                            SearchIndex.ActionedPreference.copy(requireContext(), pref)
+                        )
+                    } else {
+                        prefsCategory?.findPreference<Preference>(pref.key)?.order = pref.order
+                    }
+                }
+            }
+        }
+
+        return true
+    }
+
+    override fun onQueryTextSubmit(query: String?): Boolean {
+        return false
+    }
+}
