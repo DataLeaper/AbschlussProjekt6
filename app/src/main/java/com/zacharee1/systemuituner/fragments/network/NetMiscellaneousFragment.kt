@@ -5,14 +5,6 @@ import com.zacharee1.systemuituner.R
 import com.zacharee1.systemuituner.fragments.BasePrefFragment
 import com.zacharee1.systemuituner.util.updateTitle
 
-class NetCellFragment : BasePrefFragment() {
+class NetMiscellaneousFragment : BasePrefFragment() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        setPreferencesFromResource(R.xml.prefs_net_cellular, rootKey)
-    }
-
-    override fun onResume() {
-        super.onResume()
-
-        updateTitle(R.string.sub_cellular)
-    }
-}
+        setPreferencesFromResource(R
