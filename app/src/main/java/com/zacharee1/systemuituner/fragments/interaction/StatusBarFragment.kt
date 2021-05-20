@@ -5,14 +5,14 @@ import com.zacharee1.systemuituner.R
 import com.zacharee1.systemuituner.fragments.BasePrefFragment
 import com.zacharee1.systemuituner.util.updateTitle
 
-class NotificationsFragment : BasePrefFragment() {
+class StatusBarFragment : BasePrefFragment() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        setPreferencesFromResource(R.xml.prefs_notifications, rootKey)
+        setPreferencesFromResource(R.xml.prefs_status_bar, rootKey)
     }
 
     override fun onResume() {
         super.onResume()
 
-        updateTitle(R.string.category_notifications)
+        updateTitle(R.string.category_status_bar)
     }
 }
