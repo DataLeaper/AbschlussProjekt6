@@ -5,14 +5,14 @@ import com.zacharee1.systemuituner.R
 import com.zacharee1.systemuituner.fragments.BasePrefFragment
 import com.zacharee1.systemuituner.util.updateTitle
 
-class NetMiscellaneousFragment : BasePrefFragment() {
+class NetWiFiFragment : BasePrefFragment() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        setPreferencesFromResource(R.xml.prefs_net_misc, rootKey)
+        setPreferencesFromResource(R.xml.prefs_net_wifi, rootKey)
     }
 
     override fun onResume() {
         super.onResume()
 
-        updateTitle(R.string.sub_miscellaneous)
+        updateTitle(R.string.sub_wifi)
     }
 }
