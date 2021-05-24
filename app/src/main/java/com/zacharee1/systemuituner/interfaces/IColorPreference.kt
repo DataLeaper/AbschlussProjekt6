@@ -35,4 +35,13 @@ class ColorPreference(context: Context, attrs: AttributeSet?) :
                 val drawable = getStateDrawable(1)
 
                 if (iconColor != Int.MIN_VALUE) {
-                    drawable?.setTint(
+                    drawable?.setTint(iconColor)
+//                    drawable?.setColorFilterCompat(iconColor, PorterDuff.Mode.SCREEN)
+                } else {
+                    drawable?.setTintList(null)
+//                    drawable?.clearColorFilter()
+                }
+            }
+        }
+    }
+}
