@@ -21,3 +21,14 @@ class SecurePreference(context: Context, attrs: AttributeSet?) :
         SettingsType.UNDEFINED
     override var writeKey: String = ""
 
+    init {
+        if (attrs != null) {
+            val array = context.theme.obtainStyledAttributes(attrs, R.styleable.BaseSecurePreference, 0, 0)
+
+            type = SettingsType.values().find { it.value ==  array.getInt(R.styleable.BaseSecurePreference_settings_type, SettingsType.UNDEFINED.value)} ?: SettingsType.UNDEFINED
+            writeKey = array.getString(R.styleable.BaseSecurePreference_differing_key) ?: ""
+
+            array.recycle()
+        }
+    }
+}
