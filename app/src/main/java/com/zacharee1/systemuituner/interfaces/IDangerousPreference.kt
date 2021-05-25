@@ -14,4 +14,6 @@ class DangerousPreference(context: Context, attrs: AttributeSet? = null) : IDang
     init {
         val array = context.theme.obtainStyledAttributes(attrs, R.styleable.DangerousPreference, 0, 0)
 
-        dangerous = array.getBoolean(R.styleable.DangerousPreference_dangerous, dan
+        dangerous = array.getBoolean(R.styleable.DangerousPreference_dangerous, dangerous)
+    }
+}
