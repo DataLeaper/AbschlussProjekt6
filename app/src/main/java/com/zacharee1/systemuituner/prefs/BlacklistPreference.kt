@@ -12,3 +12,27 @@ import com.zacharee1.systemuituner.data.SettingsType
 import com.zacharee1.systemuituner.util.getSetting
 
 open class BlacklistPreference(context: Context, attrs: AttributeSet?) : SwitchPreference(context, attrs) {
+    private val additionalKeys by lazy { HashSet<String>() }
+    val allKeys: HashSet<String>
+        get() = HashSet(additionalKeys).apply { add(autoWriteKey ?: key) }
+
+    var autoWriteKey: String? = null
+
+    init {
+        isPersistent = false
+        layoutResource = R.layout.custom_preference
+
+        if (attrs != null) {
+            val array = context.theme.obtainStyledAttributes(attrs, R.styleable.BlacklistPreference, 0, 0)
+
+            array.getString(R.styleable.BlacklistPreference_additional_keys)?.let {
+                additionalKeys.addAll(it.split(","))
+            }
+        }
+    }
+
+    override fun onAttached() {
+        super.onAttached()
+
+        val currentlyBlacklisted = HashSet(context.getSetting(SettingsType.SECURE, "icon_blacklist")?.split(",") ?: HashSet<String>())
+        isChecked = !curren
