@@ -35,4 +35,29 @@ open class BlacklistPreference(context: Context, attrs: AttributeSet?) : SwitchP
         super.onAttached()
 
         val currentlyBlacklisted = HashSet(context.getSetting(SettingsType.SECURE, "icon_blacklist")?.split(",") ?: HashSet<String>())
-        isChecked = !curren
+        isChecked = !currentlyBlacklisted.containsAll(allKeys)
+    }
+
+    override fun onBindViewHolder(holder: PreferenceViewHolder) {
+        super.onBindViewHolder(holder)
+
+        holder.itemView.findViewById<View>(R.id.icon_frame).isVisible = false
+
+        holder.itemView.findViewById<TextView>(android.R.id.summary).apply {
+            isVisible = autoWriteKey == null
+            text = allKeys.joinToString(", ")
+        }
+    }
+
+    fun addAdditionalKeys(keys: Collection<String>) {
+        additionalKeys.addAll(keys)
+    }
+
+    fun removeAdditionalKeys(keys: Collection<String>) {
+        additionalKeys.removeAll(keys.toSet())
+    }
+
+    fun clearAdditionalKeys() {
+        additionalKeys.clear()
+    }
+}
