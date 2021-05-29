@@ -19,4 +19,32 @@ open class ManageQSPreference(context: Context, attrs: AttributeSet?) : SwitchPr
 
     init {
         isPersistent = false
-        layoutResource = R.layout.custom_pre
+        layoutResource = R.layout.custom_preference
+
+        if (attrs != null) {
+            val array = context.theme.obtainStyledAttributes(attrs, R.styleable.ManageQSPreference, 0, 0)
+
+            array.getString(R.styleable.ManageQSPreference_manage_component)?.let {
+                manageComponent = ComponentName.unflattenFromString(it)
+            }
+        }
+    }
+
+    override fun onAttached() {
+        super.onAttached()
+        super.setOnPreferenceChangeListener(this)
+
+        isChecked = manageComponent?.let {
+            context.isComponentEnabled(it)
+        } ?: false
+    }
+
+    override fun setOnPreferenceChangeListener(onPreferenceChangeListener: OnPreferenceChangeListener?) {
+        //no-op
+    }
+
+    override fun onPreferenceChange(preference: Preference, newValue: Any): Boolean {
+        val isChecked = newValue.toString().toBoolean()
+
+        manageComponent?.let {
+            context.pac
