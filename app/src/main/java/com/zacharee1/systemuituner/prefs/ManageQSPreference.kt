@@ -47,4 +47,13 @@ open class ManageQSPreference(context: Context, attrs: AttributeSet?) : SwitchPr
         val isChecked = newValue.toString().toBoolean()
 
         manageComponent?.let {
-            context.pac
+            context.packageManager.setComponentEnabledSetting(
+                it,
+                if (isChecked) PackageManager.COMPONENT_ENABLED_STATE_ENABLED else PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+                PackageManager.DONT_KILL_APP
+            )
+        }
+
+        return true
+    }
+}
