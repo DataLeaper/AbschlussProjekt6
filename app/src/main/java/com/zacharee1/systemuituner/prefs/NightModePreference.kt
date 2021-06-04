@@ -32,4 +32,23 @@ class NightModePreference(context: Context, attrs: AttributeSet) : BaseDialogPre
         setSummary(R.string.option_night_mode_desc)
         setIcon(R.drawable.ic_baseline_nights_stay_24)
 
-        lowApi = Buil
+        lowApi = Build.VERSION_CODES.N
+        dialogTitle = title
+        dialogMessage = summary
+        iconColor = ContextCompat.getColor(context, R.color.pref_color_4)
+    }
+
+    override suspend fun onValueChanged(newValue: Any?, key: String): Boolean {
+        val info = newValue as? NightModeInfo
+
+        return context.run {
+            if (info == null) {
+                writeSettingsBulk(
+                    *keys.flatMap { it.value.map { v -> SettingsInfo(it.key, v, null) } }.toTypedArray(),
+                    revertable = true,
+                    saveOption = true,
+                )
+            } else {
+                writeSettingsBulk(
+                    SettingsInfo(SettingsType.SECURE, NightModeView.TWILIGHT_MODE, info.twilightMode),
+                    SettingsInfo(SettingsType.SECURE, NightModeView.NIGHT_DISPLAY_ACTIVA
