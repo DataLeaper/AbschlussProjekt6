@@ -7,4 +7,18 @@ import androidx.preference.PreferenceViewHolder
 import com.zacharee1.systemuituner.R
 import com.zacharee1.systemuituner.interfaces.ColorPreference
 import com.zacharee1.systemuituner.interfaces.IColorPreference
-import com.zacharee1.sy
+import com.zacharee1.systemuituner.interfaces.INoPersistPreference
+
+class ReadSettingPreference(context: Context, attrs: AttributeSet) : DialogPreference(context, attrs), IColorPreference by ColorPreference(
+    context,
+    attrs
+), INoPersistPreference {
+    init {
+        layoutResource = R.layout.custom_preference
+    }
+
+    override fun onBindViewHolder(holder: PreferenceViewHolder) {
+        super.onBindViewHolder(holder)
+        bindVH(holder)
+    }
+}
