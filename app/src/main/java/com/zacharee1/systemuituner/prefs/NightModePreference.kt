@@ -51,4 +51,13 @@ class NightModePreference(context: Context, attrs: AttributeSet) : BaseDialogPre
             } else {
                 writeSettingsBulk(
                     SettingsInfo(SettingsType.SECURE, NightModeView.TWILIGHT_MODE, info.twilightMode),
-                    SettingsInfo(SettingsType.SECURE, NightModeView.NIGHT_DISPLAY_ACTIVA
+                    SettingsInfo(SettingsType.SECURE, NightModeView.NIGHT_DISPLAY_ACTIVATED, info.nightModeActivated),
+                    SettingsInfo(SettingsType.SECURE, NightModeView.NIGHT_DISPLAY_AUTO_MODE, info.nightModeAuto),
+                    SettingsInfo(SettingsType.SECURE, NightModeView.NIGHT_DISPLAY_COLOR_TEMPERATURE, info.nightModeTemp),
+                    revertable = true,
+                    saveOption = true,
+                )
+            }
+        }
+    }
+}
