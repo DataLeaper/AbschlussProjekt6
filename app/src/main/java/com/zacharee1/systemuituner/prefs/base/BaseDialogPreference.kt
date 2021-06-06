@@ -11,4 +11,24 @@ import com.zacharee1.systemuituner.interfaces.*
 open class BaseDialogPreference(context: Context, attrs: AttributeSet) : DialogPreference(context, attrs), IColorPreference by ColorPreference(context, attrs),
         IVerifierPreference by VerifierPreference(context, attrs), IDialogPreference {
     init {
-      
+        layoutResource = R.layout.custom_preference
+    }
+
+    override fun onAttachedToHierarchy(preferenceManager: PreferenceManager) {
+        super.onAttachedToHierarchy(preferenceManager)
+
+        dialogMessage = summary
+        dialogTitle = title
+        dialogIcon = icon
+        initVerify(this)
+    }
+
+    override fun onBindViewHolder(holder: PreferenceViewHolder) {
+        super.onBindViewHolder(holder)
+        bindVH(holder)
+    }
+
+    override suspend fun onValueChanged(newValue: Any?, key: String): Boolean {
+        return true
+    }
+}
