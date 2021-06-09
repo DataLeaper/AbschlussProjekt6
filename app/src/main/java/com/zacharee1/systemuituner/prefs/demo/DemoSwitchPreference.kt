@@ -25,4 +25,17 @@ open class DemoSwitchPreference(context: Context, attrs: AttributeSet) : BaseDem
 
         array.recycle()
 
-        layoutResource = R.layout.cu
+        layoutResource = R.layout.custom_preference
+    }
+
+    override fun onAttachedToHierarchy(preferenceManager: PreferenceManager) {
+        super.onAttachedToHierarchy(preferenceManager)
+        summary = sharedPreferences?.getString(key, disabled)
+    }
+
+    override suspend fun onValueChanged(newValue: Any?, key: String): Boolean {
+        val result = super.onValueChanged(newValue, key)
+        summary = newValue?.toString()
+        return result
+    }
+}
