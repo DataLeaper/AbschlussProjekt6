@@ -24,4 +24,15 @@ class ShowDialogPreference(context: Context, attrs: AttributeSet?) : Preference(
     }
 
     override fun onClick() {
-        supe
+        super.onClick()
+
+        dialogClass?.getConstructor(Context::class.java)?.newInstance(context)?.show()
+    }
+
+    override fun onBindViewHolder(holder: PreferenceViewHolder) {
+        super.onBindViewHolder(holder)
+
+        holder.isDividerAllowedAbove = true
+        holder.isDividerAllowedBelow = true
+    }
+}
