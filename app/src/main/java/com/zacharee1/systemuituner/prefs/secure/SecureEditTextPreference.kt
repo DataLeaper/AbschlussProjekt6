@@ -13,4 +13,14 @@ class SecureEditTextPreference(context: Context, attrs: AttributeSet) : BaseSecu
     var text: CharSequence? = null
 
     init {
-        val array = co
+        val array = context.theme.obtainStyledAttributes(attrs, R.styleable.SecureEditTextPreference, 0, 0)
+        inputType = array.getInt(R.styleable.SecureEditTextPreference_android_inputType, inputType)
+        array.recycle()
+
+        dialogLayoutResource = R.layout.better_edittext_dialog
+    }
+
+    override fun onSetInitialValue(defaultValue: Any?) {
+        this.text = context.getSetting(type, writeKey)
+    }
+}
