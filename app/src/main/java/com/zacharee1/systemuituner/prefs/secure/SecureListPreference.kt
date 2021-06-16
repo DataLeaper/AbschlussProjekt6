@@ -29,4 +29,26 @@ class SecureListPreference(context: Context, attrs: AttributeSet) : BaseSecurePr
                 try {
                     persistString(value)
                 } catch (e: ClassCastException) {
-                    
+                    preferenceManager.sharedPreferences?.edit(true) {
+                        remove(key)
+                    }
+                    persistString(value)
+                }
+                if (changed) {
+                    notifyChanged()
+                }
+            }
+        }
+
+    override var entries: Array<CharSequence?>? = null
+    override var entryValues: Array<CharSequence?>? = null
+
+    init {
+        val array = context.theme.obtainStyledAttributes(attrs, R.styleable.SecureListPreference, 0, 0)
+
+        array.getString(R.styleable.SecureListPreference_verifier)?.let {
+            verifier = context.classLoader.loadClass(it)
+                .getConstructor(Context::class.java)
+                .newInstance(context) as? BaseListPreferenceVerifier
+
+            verifier?.verifyEntries(entries, entry
