@@ -51,4 +51,30 @@ class SecureListPreference(context: Context, attrs: AttributeSet) : BaseSecurePr
                 .getConstructor(Context::class.java)
                 .newInstance(context) as? BaseListPreferenceVerifier
 
-            verifier?.verifyEntries(entries, entry
+            verifier?.verifyEntries(entries, entryValues)?.apply {
+                entries = first
+                entryValues = second
+            }
+        }
+
+        entries = TypedArrayUtils.getTextArray(
+            array, androidx.preference.R.styleable.ListPreference_entries,
+            androidx.preference.R.styleable.ListPreference_android_entries
+        )
+
+        entryValues = TypedArrayUtils.getTextArray(
+            array, androidx.preference.R.styleable.ListPreference_entryValues,
+            androidx.preference.R.styleable.ListPreference_android_entryValues
+        )
+
+        array.recycle()
+    }
+
+    override fun onSetInitialValue(defaultValue: Any?) {
+        value = context.getSetting(type, key) ?: defaultValue?.toString() ?: entryValues?.get(0)?.toString()
+    }
+
+    override fun onGetDefaultValue(a: TypedArray, index: Int): Any? {
+        return a.getString(index)
+    }
+}
