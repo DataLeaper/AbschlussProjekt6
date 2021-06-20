@@ -18,4 +18,16 @@ class SecureSeekBarPreference(context: Context, attrs: AttributeSet) : BaseSecur
         val android = context.theme.obtainStyledAttributes(attrs, R.styleable.Preference, 0, 0)
 
         minValue = array.getInt(R.styleable.SecureSeekBarPreference_minValue, minValue)
-        maxValue
+        maxValue = array.getInt(R.styleable.SecureSeekBarPreference_maxValue, maxValue)
+        defaultValue = android.getInt(R.styleable.Preference_android_defaultValue, defaultValue)
+        scale = array.getFloat(R.styleable.SecureSeekBarPreference_scale, scale)
+        units = array.getString(R.styleable.SecureSeekBarPreference_units)
+
+        array.recycle()
+        android.recycle()
+    }
+
+    override suspend fun onValueChanged(newValue: Any?, key: String): Boolean {
+        return context.writeSetting(type, writeKey, newValue, dangerous, true)
+    }
+}
