@@ -17,4 +17,27 @@ class AnimationScalesPreference(context: Context, attrs: AttributeSet) : BaseDia
     override val keys = hashMapOf(
         SettingsType.GLOBAL to arrayOf(
             Settings.Global.ANIMATOR_DURATION_SCALE,
-            Settings.Global.TRANSI
+            Settings.Global.TRANSITION_ANIMATION_SCALE,
+            Settings.Global.WINDOW_ANIMATION_SCALE
+        )
+    )
+
+    init {
+        key = "anim"
+
+        setTitle(R.string.feature_custom_animation_scales)
+        setSummary(R.string.feature_custom_animation_scales_desc)
+
+        dialogTitle = title
+        dialogMessage = summary
+        setIcon(R.drawable.animation)
+        iconColor = ContextCompat.getColor(context, R.color.pref_color_7)
+    }
+
+    override suspend fun onValueChanged(newValue: Any?, key: String): Boolean {
+        val data = newValue as AnimationScalesData
+
+        return context.run {
+            writeSettingsBulk(
+                SettingsInfo(SettingsType.GLOBAL, Settings.Global.ANIMATOR_DURATION_SCALE, data.animatorScale),
+                SettingsInfo(Setting
