@@ -40,4 +40,10 @@ class AnimationScalesPreference(context: Context, attrs: AttributeSet) : BaseDia
         return context.run {
             writeSettingsBulk(
                 SettingsInfo(SettingsType.GLOBAL, Settings.Global.ANIMATOR_DURATION_SCALE, data.animatorScale),
-                SettingsInfo(Setting
+                SettingsInfo(SettingsType.GLOBAL, Settings.Global.WINDOW_ANIMATION_SCALE, data.windowScale),
+                SettingsInfo(SettingsType.GLOBAL, Settings.Global.TRANSITION_ANIMATION_SCALE, data.transitionScale),
+                saveOption = true
+            )
+        }
+    }
+}
