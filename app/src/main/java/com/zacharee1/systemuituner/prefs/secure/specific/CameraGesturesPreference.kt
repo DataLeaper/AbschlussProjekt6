@@ -11,4 +11,27 @@ import com.zacharee1.systemuituner.prefs.base.BaseDialogPreference
 import com.zacharee1.systemuituner.data.SettingsType
 import com.zacharee1.systemuituner.util.writeSetting
 
-class CameraGesturesPreference(
+class CameraGesturesPreference(context: Context, attrs: AttributeSet) : BaseDialogPreference(context, attrs),
+    ISpecificPreference {
+    override val keys = hashMapOf(
+        SettingsType.SECURE to arrayOf(
+            Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
+            Settings.Secure.CAMERA_DOUBLE_TWIST_TO_FLIP_ENABLED,
+            Settings.Secure.CAMERA_GESTURE_DISABLED
+        )
+    )
+
+    init {
+        key = "camera_gestures"
+
+        setTitle(R.string.feature_camera_gestures)
+        setSummary(R.string.feature_camera_gestures_desc)
+
+        dialogTitle = title
+        dialogMessage = summary
+        setIcon(R.drawable.ic_baseline_camera_24)
+        iconColor = ContextCompat.getColor(context, R.color.pref_color_6)
+    }
+
+    override suspend fun onValueChanged(newValue: Any?, key: String): Boolean {
+        val data = newVal
