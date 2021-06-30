@@ -16,4 +16,26 @@ class LockscreenShortcutsPref(context: Context, attrs: AttributeSet) : BaseDialo
         SettingsType.SECURE to arrayOf(
             "sysui_keyguard_left",
             "sysui_keyguard_right"
-      
+        ),
+        SettingsType.SYSTEM to arrayOf(
+            "lock_application_shortcut"
+        )
+    )
+
+    init {
+        key = "lockscreen_shortcuts"
+
+        setTitle(R.string.feature_lockscreen_shortcuts)
+        setSummary(R.string.feature_lockscreen_shortcuts_desc)
+
+        dialogTitle = title
+        dialogMessage = summary
+        setIcon(R.drawable.lock_open)
+
+        enabledVerifier = EnableLockscreenShortcuts(context)
+
+        lowApi = Build.VERSION_CODES.O
+//        highApi = Build.VERSION_CODES.O_MR1
+        iconColor = ContextCompat.getColor(context, R.color.pref_color_3)
+    }
+}
