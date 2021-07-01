@@ -25,4 +25,10 @@ class NotificationSnoozeTimesPreference(context: Context, attrs: AttributeSet) :
         iconColor = context.resources.getColor(R.color.pref_color_5, context.theme)
         setIcon(R.drawable.ic_baseline_snooze_24)
 
-        lowApi = Build.VERSION_CODES.O_M
+        lowApi = Build.VERSION_CODES.O_MR1
+    }
+
+    override suspend fun onValueChanged(newValue: Any?, key: String): Boolean {
+        return context.writeSetting(SettingsType.GLOBAL, "notification_snooze_options", newValue, saveOption = true)
+    }
+}
