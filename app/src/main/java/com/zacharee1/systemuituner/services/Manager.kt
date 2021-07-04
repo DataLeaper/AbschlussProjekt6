@@ -64,3 +64,103 @@ class Manager : Service(), SharedPreferences.OnSharedPreferenceChangeListener, C
                     NotificationManager.IMPORTANCE_LOW
                 )
             )
+
+            val notification = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID)
+                .setContentTitle(resources.getText(R.string.app_name))
+                .setContentText(resources.getText(R.string.tap_to_disable))
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentIntent(
+                    PendingIntent.getActivity(
+                        this, 100, getNotificationSettingsForChannel(
+                            NOTIFICATION_CHANNEL_ID
+                        ),
+                        PendingIntent.FLAG_MUTABLE or PendingIntent.FLAG_UPDATE_CURRENT,
+                    )
+                )
+                .build()
+
+            startForeground(1000, notification)
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        cancel()
+        observer.unregister()
+        prefManager.prefs.unregisterOnSharedPreferenceChangeListener(this)
+    }
+
+    private fun doInitialCheck() {
+        prefManager.persistentOptions.forEach { opt ->
+            if (opt.type != SettingsType.UNDEFINED) {
+                runComparison(opt.type, opt.key, true)
+            }
+        }
+    }
+
+    private fun runComparison(type: SettingsType, key: String, isInitialSetup: Boolean = false) {
+        launch {
+            val handler = PersistenceHandlerRegistry.handlers.find { it.settingsKey == key && it.settingsType == type }
+
+            if (handler != null) {
+                val prefValue = handler.getPreferenceValueAsString()
+
+                if (isInitialSetup) {
+                    handler.doInitialSet()
+                }
+
+                if (!handler.compareValues()) {
+                    writeSetting(type, key, prefValue)
+                }
+            } else {
+                val value = try {
+                    getSetting(type, key)
+                } catch (e: IllegalStateException) {
+                    Log.e("SystemUITuner", "A persistent option has an undefined settings type. Please clear app data.", e)
+                    return@launch
+                }
+                val prefValue = prefManager.savedOptions.find { it.type == type && it.key == key }?.value
+
+                if (isInitialSetup || value != prefValue) {
+                    if (isInitialSetup) {
+                        writeSetting(type, key, null)
+                    }
+                    writeSetting(type, key, prefValue)
+                }
+            }
+        }
+    }
+
+    inner class ManagerImpl : IManager.Stub()
+
+    inner class Observer : ContentObserver(mainHandler) {
+        fun register() {
+            unregister()
+
+            prefManager.persistentOptions.forEach {
+                val uri = when (it.type) {
+                    SettingsType.GLOBAL -> Settings.Global.getUriFor(it.key)
+                    SettingsType.SECURE -> Settings.Secure.getUriFor(it.key)
+                    SettingsType.SYSTEM -> Settings.System.getUriFor(it.key)
+                    else -> return@forEach
+                }
+
+                contentResolver.registerContentObserver(uri, true, this@Observer)
+            }
+        }
+
+        fun unregister() {
+            try {
+                contentResolver.unregisterContentObserver(this)
+            } catch (_: Exception) {}
+        }
+
+        override fun onChange(selfChange: Boolean, uri: Uri) {
+            val type = SettingsType.fromString(uri.pathSegments.run { this[lastIndex - 1] })
+            val key = uri.lastPathSegment
+
+            runComparison(type, key)
+        }
+    }
+}
