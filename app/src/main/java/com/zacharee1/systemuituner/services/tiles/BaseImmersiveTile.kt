@@ -18,3 +18,31 @@ abstract class BaseImmersiveTile : CoroutineTileService() {
         override fun onChange(selfChange: Boolean) {
             updateState()
         }
+    }
+
+    override fun onStartListening() {
+        contentResolver.registerContentObserver(Settings.Global.getUriFor(Settings.Global.POLICY_CONTROL), true, observer)
+        updateState()
+    }
+
+    override fun onStopListening() {
+        contentResolver.unregisterContentObserver(observer)
+    }
+
+    override fun onClick() {
+        val info = immersiveManager.parseAdvancedImmersive()
+        val isOn = isOn(info)
+
+        immersiveManager.loadInSavedLists(info)
+
+        when (type) {
+            ImmersiveManager.ImmersiveMode.FULL -> {
+                if (isOn) {
+                    info.allFull = false
+                    info.fullApps.clear()
+                    info.fullBl.clear()
+                } else {
+                    info.allFull = info.fullApps.isEmpty()
+                }
+            }
+     
