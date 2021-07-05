@@ -72,4 +72,19 @@ abstract class BaseImmersiveTile : CoroutineTileService() {
         }
     }
 
-    private fu
+    private fun updateState() {
+        val info = immersiveManager.parseAdvancedImmersive()
+
+        qsTile?.state = if (isOn(info)) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
+        qsTile?.safeUpdateTile()
+    }
+
+    private fun isOn(info: ImmersiveManager.ImmersiveInfo): Boolean {
+        return when (type) {
+            ImmersiveManager.ImmersiveMode.FULL -> info.allFull || info.fullApps.isNotEmpty() || info.fullBl.isNotEmpty()
+            ImmersiveManager.ImmersiveMode.NAV -> info.allNav || info.navApps.isNotEmpty() || info.navBl.isNotEmpty()
+            ImmersiveManager.ImmersiveMode.STATUS -> info.allStatus || info.statusApps.isNotEmpty() || info.statusBl.isNotEmpty()
+            else -> throw IllegalArgumentException("$type is not valid")
+        }
+    }
+}
