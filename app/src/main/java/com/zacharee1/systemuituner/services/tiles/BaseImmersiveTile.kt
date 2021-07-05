@@ -45,4 +45,31 @@ abstract class BaseImmersiveTile : CoroutineTileService() {
                     info.allFull = info.fullApps.isEmpty()
                 }
             }
-     
+            ImmersiveManager.ImmersiveMode.NAV -> {
+                if (isOn) {
+                    info.allNav = false
+                    info.navApps.clear()
+                    info.navBl.clear()
+                } else {
+                    info.allNav = info.navApps.isEmpty()
+                }
+            }
+            ImmersiveManager.ImmersiveMode.STATUS -> {
+                if (isOn) {
+                    info.allStatus = false
+                    info.statusApps.clear()
+                    info.statusBl.clear()
+                } else {
+                    info.allStatus = info.statusApps.isEmpty()
+                }
+            }
+            ImmersiveManager.ImmersiveMode.NONE -> {}
+        }
+
+        launch {
+            immersiveManager.setAdvancedImmersive(info)
+            updateState()
+        }
+    }
+
+    private fu
