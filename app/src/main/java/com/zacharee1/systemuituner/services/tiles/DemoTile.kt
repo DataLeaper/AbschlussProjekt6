@@ -35,4 +35,10 @@ class DemoTile : CoroutineTileService(), (Boolean) -> Unit {
             if (demoHandler.isCurrentlyEnabled) {
                 demoHandler.exitDemo()
             } else {
-              
+                demoHandler.enterDemo()
+            }
+        }
+
+        super.onClick()
+    }
+}
