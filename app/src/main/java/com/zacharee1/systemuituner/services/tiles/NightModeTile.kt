@@ -48,3 +48,20 @@ class NightModeTile : CoroutineTileService() {
                 } else {
                     writeSetting(SettingsType.SECURE, "night_display_activated", 0, saveOption = true)
                 }
+            } else {
+                if (Build.VERSION.SDK_INT == Build.VERSION_CODES.N) {
+                    writeSetting(SettingsType.SECURE, "twilight_mode", 1, saveOption = true)
+                } else {
+                    writeSetting(SettingsType.SECURE, "night_display_activated", 1, saveOption = true)
+                }
+            }
+
+            updateState()
+        }
+    }
+
+    private fun updateState() {
+        qsTile?.state = if (isActive) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
+        qsTile?.safeUpdateTile()
+    }
+}
