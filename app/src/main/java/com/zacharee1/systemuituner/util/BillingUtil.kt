@@ -68,4 +68,6 @@ class BillingUtil(private val dialog: DonateDialog) : CoroutineScope by MainScop
     }
 
     private fun Context.extractActivity(): Activity {
-        return activit
+        return activityContext ?: throw IllegalArgumentException("Unable to extract Activity from ${javaClass.canonicalName}")
+    }
+}
