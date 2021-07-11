@@ -49,4 +49,23 @@ class BillingUtil(private val dialog: DonateDialog) : CoroutineScope by MainScop
         val skus = arrayListOf(sku).map { Product.newBuilder().setProductId(it).setProductType(BillingClient.ProductType.INAPP).build() }
 
         val result = withContext(Dispatchers.IO) {
-            cli
+            client.queryProductDetails(QueryProductDetailsParams.newBuilder().setProductList(skus).build())
+        }
+
+        val list = result.productDetailsList
+        if (result.billingResult.responseCode == OK && list != null && list.isNotEmpty()) {
+            client.launchBillingFlow(
+                activity,
+                BillingFlowParams.newBuilder().setProductDetailsParamsList(
+                    list.map { BillingFlowParams.ProductDetailsParams.newBuilder().setProductDetails(it).build() }
+                ).build()
+            )
+        }
+    }
+
+    fun onDonatePayPalClicked() {
+        dialog.context.launchUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=zachary.wander@gmail.com")
+    }
+
+    private fun Context.extractActivity(): Activity {
+        return activit
