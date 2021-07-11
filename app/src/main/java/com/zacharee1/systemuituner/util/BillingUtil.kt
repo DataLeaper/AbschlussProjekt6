@@ -29,4 +29,24 @@ class BillingUtil(private val dialog: DonateDialog) : CoroutineScope by MainScop
         client.startConnection(object : BillingClientStateListener {
             override fun onBillingSetupFinished(result: BillingResult) {
                 dialog.view.post {
-                    dialogBinding.paypalTitle
+                    dialogBinding.paypalTitle.isVisible = result.responseCode != OK
+                    dialogBinding.paypalButton.isVisible = result.responseCode != OK
+
+                    dialogBinding.googlePlayDonateTitle.isVisible = result.responseCode == OK
+                    dialogBinding.googlePlayDonate.isVisible = result.responseCode == OK
+                }
+            }
+
+            override fun onBillingServiceDisconnected() {}
+        })
+    }
+
+    private fun consumeAsync(token: String) {
+        client.consumeAsync(ConsumeParams.newBuilder().setPurchaseToken(token).build()) { _, _ -> }
+    }
+
+    fun doDonate(sku: String) = launch {
+        val skus = arrayListOf(sku).map { Product.newBuilder().setProductId(it).setProductType(BillingClient.ProductType.INAPP).build() }
+
+        val result = withContext(Dispatchers.IO) {
+            cli
