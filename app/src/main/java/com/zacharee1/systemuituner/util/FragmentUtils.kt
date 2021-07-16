@@ -38,4 +38,30 @@ fun Fragment.chooseLayoutManager(
     linear: RecyclerView.LayoutManager,
     extraFlags: Boolean = true,
     spanCount: (Float) -> Int = {
-        floor(it 
+        floor(it / 400).toInt()
+    }
+): RecyclerView.LayoutManager {
+    val dpWidth = requireContext().asDp(view?.width ?: 0)
+
+    return if (extraFlags && dpWidth >= 800) {
+        grid.also {
+            if (it is GridLayoutManager) {
+                it.spanCount = spanCount(dpWidth)
+            }
+
+            if (it is StaggeredGridLayoutManager) {
+                it.spanCount = spanCount(dpWidth)
+            }
+        }
+    } else {
+        linear
+    }
+}
+
+fun Fragment.updateTitle(title: Int) {
+    activity?.setTitle(title)
+}
+
+fun Fragment.updateTitle(title: CharSequence?) {
+    activity?.title = title
+}
