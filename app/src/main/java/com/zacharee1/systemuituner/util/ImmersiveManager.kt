@@ -27,4 +27,25 @@ class ImmersiveManager(context: Context) : ContextWrapper(context) {
         fun clear() {
             allFull = false
             allStatus = false
-            allNav 
+            allNav = false
+            fullApps.clear()
+            statusApps.clear()
+            navApps.clear()
+            fullBl.clear()
+            statusBl.clear()
+            navBl.clear()
+        }
+    }
+
+    suspend fun setAdvancedImmersive(info: ImmersiveInfo) {
+        val modes = ArrayList<String?>()
+
+        val fullMode = buildModeString(ImmersiveMode.FULL.type, info.allFull, info.fullApps, info.fullBl)
+        val statusMode = buildModeString(ImmersiveMode.STATUS.type, info.allStatus, info.statusApps, info.statusBl)
+        val navMode = buildModeString(ImmersiveMode.NAV.type, info.allNav, info.navApps, info.navBl)
+
+        if (fullMode.isNotBlank()) modes.add(fullMode)
+        if (statusMode.isNotBlank()) modes.add(statusMode)
+        if (navMode.isNotBlank()) modes.add(navMode)
+
+    
