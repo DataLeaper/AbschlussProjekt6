@@ -70,4 +70,18 @@ class ImmersiveManager(context: Context) : ContextWrapper(context) {
             val values by lazy { typeAndValues[1].split(",") }
 
             if (values[0] == "*") {
-             
+                when (type) {
+                    ImmersiveMode.FULL.type -> info.allFull = true
+                    ImmersiveMode.STATUS.type -> info.allStatus = true
+                    ImmersiveMode.NAV.type -> info.allNav = true
+                }
+            }
+
+            values.forEach { value ->
+                if (value != "*") {
+                    val isBl = value.startsWith("-")
+                    when (type) {
+                        ImmersiveMode.FULL.type -> if (isBl) info.fullBl.add(value.removePrefix("-")) else info.fullApps.add(value)
+                        ImmersiveMode.STATUS.type -> if (isBl) info.statusBl.add(value.removePrefix("-")) else info.statusApps.add(value)
+                        ImmersiveMode.NAV.type -> if (isBl) info.navBl.add(value.removePrefix("-")) else info.navApps.add(value)
+                 
