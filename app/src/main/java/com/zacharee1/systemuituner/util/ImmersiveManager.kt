@@ -84,4 +84,34 @@ class ImmersiveManager(context: Context) : ContextWrapper(context) {
                         ImmersiveMode.FULL.type -> if (isBl) info.fullBl.add(value.removePrefix("-")) else info.fullApps.add(value)
                         ImmersiveMode.STATUS.type -> if (isBl) info.statusBl.add(value.removePrefix("-")) else info.statusApps.add(value)
                         ImmersiveMode.NAV.type -> if (isBl) info.navBl.add(value.removePrefix("-")) else info.navApps.add(value)
-                 
+                    }
+                }
+            }
+        }
+
+        return info
+    }
+
+    fun loadInSavedLists(info: ImmersiveInfo) {
+        prefManager.apply {
+            info.fullApps.apply {
+                clear()
+                addAll(getImmersiveWhitelist(ImmersiveMode.FULL))
+            }
+            info.navApps.apply {
+                clear()
+                addAll(getImmersiveWhitelist(ImmersiveMode.NAV))
+            }
+            info.statusApps.apply {
+                clear()
+                addAll(getImmersiveWhitelist(ImmersiveMode.STATUS))
+            }
+
+            info.fullBl.apply {
+                clear()
+                addAll(getImmersiveBlacklist(ImmersiveMode.FULL))
+            }
+            info.navBl.apply {
+                clear()
+                addAll(getImmersiveBlacklist(ImmersiveMode.NAV))
+           
