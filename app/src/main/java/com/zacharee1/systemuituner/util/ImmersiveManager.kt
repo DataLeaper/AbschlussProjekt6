@@ -48,4 +48,26 @@ class ImmersiveManager(context: Context) : ContextWrapper(context) {
         if (statusMode.isNotBlank()) modes.add(statusMode)
         if (navMode.isNotBlank()) modes.add(navMode)
 
-    
+        val string = if (modes.isEmpty()) ImmersiveMode.NONE.type else modes.joinToString(separator = ":")
+
+        writeSetting(SettingsType.GLOBAL, Settings.Global.POLICY_CONTROL, string, saveOption = true)
+    }
+
+    fun parseAdvancedImmersive(value: String? = getSetting(SettingsType.GLOBAL, Settings.Global.POLICY_CONTROL)): ImmersiveInfo {
+        val info = ImmersiveInfo()
+
+        if (value.isNullOrBlank() || value == ImmersiveMode.NONE.type) {
+            return info
+        }
+
+        val split = value.split(":")
+
+        split.forEach {
+            val typeAndValues = it.split("=")
+            if (typeAndValues.size <= 1) return info
+
+            val type = typeAndValues[0]
+            val values by lazy { typeAndValues[1].split(",") }
+
+            if (values[0] == "*") {
+             
