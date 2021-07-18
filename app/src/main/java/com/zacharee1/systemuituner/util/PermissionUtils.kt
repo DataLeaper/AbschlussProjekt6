@@ -20,4 +20,8 @@ val Context.hasPackageUsageStats: Boolean
 
 val Context.hasShizukuPermission: Boolean
     get() = if (Shizuku.isPreV11() || Shizuku.getVersion() < 11) {
-        checkCallingOrSelfPermission(ShizukuProvider.PERMIS
+        checkCallingOrSelfPermission(ShizukuProvider.PERMISSION) == PackageManager.PERMISSION_GRANTED
+    } else {
+        Shizuku.checkSelfPermission() == PackageManager.PERMISSION_GRANTED
+    }
+
