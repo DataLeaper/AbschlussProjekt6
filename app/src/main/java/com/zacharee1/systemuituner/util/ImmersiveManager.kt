@@ -114,4 +114,22 @@ class ImmersiveManager(context: Context) : ContextWrapper(context) {
             info.navBl.apply {
                 clear()
                 addAll(getImmersiveBlacklist(ImmersiveMode.NAV))
-           
+            }
+            info.statusBl.apply {
+                clear()
+                addAll(getImmersiveBlacklist(ImmersiveMode.STATUS))
+            }
+        }
+    }
+
+    private fun buildModeString(type: String, all: Boolean, apps: ArrayList<String>, bl: ArrayList<String>): String {
+        val builder = StringBuilder()
+
+        if (all) builder.append("$type=*")
+        else if (apps.isNotEmpty()) builder.append("$type=${apps.joinToString(separator = ",")}")
+
+        if (bl.isNotEmpty()) builder.append(bl.joinToString(separator = ",-", prefix = if (builder.isEmpty()) "$type=-" else ",-"))
+
+        return builder.toString()
+    }
+}
