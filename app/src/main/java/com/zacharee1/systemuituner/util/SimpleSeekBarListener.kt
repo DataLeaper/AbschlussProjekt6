@@ -9,3 +9,13 @@ abstract class SimpleSeekBarListener : SeekBarView.SeekBarListener {
 
     override fun onProgressChanged(newValue: Int, newScaledValue: Float) {
 
+    }
+
+    override fun onProgressReset() {
+
+    }
+
+    override fun onProgressSubtracted() {
+
+    }
+}
