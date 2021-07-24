@@ -21,4 +21,22 @@ class BlacklistPersistenceHandler(context: Context) : BasePersistenceHandler<Has
         if (value == null) {
             context.prefManager.blacklistedItems = HashSet()
         } else {
-            context.prefManager.blackl
+            context.prefManager.blacklistedItems = HashSet(value.split(","))
+        }
+    }
+
+    override fun areValuesTheSame(preferenceValue: HashSet<String>?, settingsValue: String?): Boolean {
+        if (preferenceValue.isNullOrEmpty()) return settingsValue.isNullOrBlank()
+        if (settingsValue.isNullOrBlank()) return preferenceValue.isEmpty()
+
+        val split = settingsValue.split(",")
+        return split.size == preferenceValue.size
+                && preferenceValue.containsAll(split)
+                && split.containsAll(preferenceValue)
+    }
+
+    override suspend fun doInitialSet() {
+        val prefValue = getPreferenceValue()
+        context.prefManager.blacklistedItems = HashSet()
+        context.writeSetting(SettingsType.SECURE, settingsKey, null)
+        context.prefManager.blacklistedItems = prefV
