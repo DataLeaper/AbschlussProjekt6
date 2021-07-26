@@ -39,4 +39,6 @@ class BlacklistPersistenceHandler(context: Context) : BasePersistenceHandler<Has
         val prefValue = getPreferenceValue()
         context.prefManager.blacklistedItems = HashSet()
         context.writeSetting(SettingsType.SECURE, settingsKey, null)
-        context.prefManager.blacklistedItems = prefV
+        context.prefManager.blacklistedItems = prefValue
+    }
+}
