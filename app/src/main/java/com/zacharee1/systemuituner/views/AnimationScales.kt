@@ -21,4 +21,18 @@ class AnimationScales(context: Context, attrs: AttributeSet) : ScrollView(contex
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
 
-        val initialAnimatorScale = context.getSetting(SettingsType.GLOBAL, Settings.Global.ANIMATOR_DURATION_SCALE, 1f)?.toFloatOrNul
+        val initialAnimatorScale = context.getSetting(SettingsType.GLOBAL, Settings.Global.ANIMATOR_DURATION_SCALE, 1f)?.toFloatOrNull() ?: 1f
+        val initialWindowScale = context.getSetting(SettingsType.GLOBAL, Settings.Global.WINDOW_ANIMATION_SCALE, 1f)?.toFloatOrNull() ?: 1f
+        val initialTransitionScale = context.getSetting(SettingsType.GLOBAL, Settings.Global.TRANSITION_ANIMATION_SCALE, 1f)?.toFloatOrNull() ?: 1f
+
+        scaleData.animatorScale = initialAnimatorScale
+        scaleData.windowScale = initialWindowScale
+        scaleData.transitionScale = initialTransitionScale
+
+        binding.animatorSb.apply {
+            scaledProgress = scaleData.animatorScale
+            listener = object : SeekBarView.SeekBarListener {
+                override fun onProgressAdded() {}
+                override fun onProgressReset() {}
+                override fun onProgressSubtracted() {}
+                override fun onProgressChanged(newValue: Int, n
