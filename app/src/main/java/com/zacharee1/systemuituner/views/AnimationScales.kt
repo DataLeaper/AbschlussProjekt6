@@ -56,4 +56,24 @@ class AnimationScales(context: Context, attrs: AttributeSet) : ScrollView(contex
             listener = object : SeekBarView.SeekBarListener {
                 override fun onProgressAdded() {}
                 override fun onProgressReset() {}
-      
+                override fun onProgressSubtracted() {}
+                override fun onProgressChanged(newValue: Int, newScaledValue: Float) {
+                    val thisRef = this
+
+                    launch {
+                        scaleData.windowScale = newScaledValue
+                        if (callback?.invoke(scaleData) == false) {
+                            scaleData.windowScale = initialWindowScale
+                            listener = null
+                            scaledProgress = scaleData.windowScale
+                            listener = thisRef
+                        }
+                    }
+                }
+            }
+        }
+
+        binding.transitionSb.apply {
+            scaledProgress = scaleData.transitionScale
+            listener = object : SeekBarView.SeekBarListener {
+              
