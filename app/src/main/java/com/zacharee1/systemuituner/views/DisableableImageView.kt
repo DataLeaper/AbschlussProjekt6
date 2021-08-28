@@ -19,4 +19,12 @@ open class DisableableImageView : AppCompatImageView {
             alphaAnim = ValueAnimator.ofInt(this.imageAlpha, if (enabled) 0xFF else 0x3F)
                 .apply {
                     addUpdateListener {
-   
+                        this@DisableableImageView.imageAlpha = it.animatedValue.toString().toInt()
+                    }
+                    start()
+                }
+        }
+        isClickable = enabled
+        super.setEnabled(enabled)
+    }
+}
