@@ -30,4 +30,26 @@ class ImmersiveMode(context: Context, attrs: AttributeSet) : LinearLayout(contex
         super.onAttachedToWindow()
 
         val list = binding.modeList
-        list.adapter = ImmersiveAdapter(immersiveInfo, immersi
+        list.adapter = ImmersiveAdapter(immersiveInfo, immersiveManager)
+
+        rootView.findViewById<Button>(R.id.negative_button).apply {
+            isVisible = true
+            setText(R.string.reset)
+            setOnClickListener {
+                immersiveInfo.clear()
+                launch {
+                    immersiveManager.setAdvancedImmersive(immersiveInfo)
+                    list.adapter?.notifyItemRangeChanged(0, list.adapter?.itemCount ?: 0)
+                }
+            }
+        }
+    }
+
+    inner class ImmersiveAdapter(
+        private val immInfo: ImmersiveManager.ImmersiveInfo,
+        private val manager: ImmersiveManager
+    ) : RecyclerView.Adapter<ImmersiveAdapter.VH>() {
+        private val items = arrayListOf(
+            ItemInfo(
+                R.string.immersive_full,
+                ImmersiveManager.I
