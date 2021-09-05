@@ -52,4 +52,32 @@ class ImmersiveMode(context: Context, attrs: AttributeSet) : LinearLayout(contex
         private val items = arrayListOf(
             ItemInfo(
                 R.string.immersive_full,
-                ImmersiveManager.I
+                ImmersiveManager.ImmersiveMode.FULL
+            ),
+            ItemInfo(
+                R.string.immersive_status,
+                ImmersiveManager.ImmersiveMode.STATUS
+            ),
+            ItemInfo(
+                R.string.immersive_nav,
+                ImmersiveManager.ImmersiveMode.NAV
+            )
+        )
+
+        override fun getItemCount(): Int {
+            return items.size
+        }
+
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
+            return VH(
+                LayoutInflater.from(parent.context).inflate(
+                    R.layout.immersive_mode_item,
+                    parent,
+                    false
+                )
+            )
+        }
+
+        override fun onBindViewHolder(holder: VH, position: Int) {
+            val info = items[position]
+            va
