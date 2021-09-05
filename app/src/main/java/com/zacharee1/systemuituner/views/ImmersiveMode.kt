@@ -80,4 +80,21 @@ class ImmersiveMode(context: Context, attrs: AttributeSet) : LinearLayout(contex
 
         override fun onBindViewHolder(holder: VH, position: Int) {
             val info = items[position]
-            va
+            val binding = ImmersiveModeItemBinding.bind(holder.itemView)
+
+            holder.itemView.apply {
+                binding.immersiveName.text = resources.getText(info.name)
+                binding.all.isChecked = when (info.type) {
+                    ImmersiveManager.ImmersiveMode.FULL -> immInfo.allFull
+                    ImmersiveManager.ImmersiveMode.STATUS -> immInfo.allStatus
+                    ImmersiveManager.ImmersiveMode.NAV -> immInfo.allNav
+                    else -> false
+                }
+                binding.whitelistButton.isEnabled = !binding.all.isChecked
+
+                binding.all.setOnClickListener {
+                    val newInfo = items[holder.bindingAdapterPosition]
+                    binding.all.isChecked = !binding.all.isChecked
+
+                    when (newInfo.type) {
+                  
