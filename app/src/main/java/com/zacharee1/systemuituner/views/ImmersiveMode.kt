@@ -97,4 +97,19 @@ class ImmersiveMode(context: Context, attrs: AttributeSet) : LinearLayout(contex
                     binding.all.isChecked = !binding.all.isChecked
 
                     when (newInfo.type) {
-                  
+                        ImmersiveManager.ImmersiveMode.FULL -> immInfo.allFull = binding.all.isChecked
+                        ImmersiveManager.ImmersiveMode.STATUS -> immInfo.allStatus = binding.all.isChecked
+                        ImmersiveManager.ImmersiveMode.NAV -> immInfo.allNav = binding.all.isChecked
+                        else -> {}
+                    }
+
+                    binding.whitelistButton.isEnabled = !binding.all.isChecked
+
+                    update()
+                }
+
+                binding.whitelistButton.setOnClickListener {
+                    val newInfo = items[holder.bindingAdapterPosition]
+                    val apps = when (newInfo.type) {
+                        ImmersiveManager.ImmersiveMode.FULL -> immInfo.fullApps
+                        ImmersiveManager.ImmersiveMode.STATUS -> immInfo.statusApp
