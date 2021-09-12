@@ -129,4 +129,25 @@ class ImmersiveMode(context: Context, attrs: AttributeSet) : LinearLayout(contex
                     val newInfo = items[holder.bindingAdapterPosition]
                     val apps = when (newInfo.type) {
                         ImmersiveManager.ImmersiveMode.FULL -> immInfo.fullBl
-                        Immer
+                        ImmersiveManager.ImmersiveMode.STATUS -> immInfo.statusBl
+                        ImmersiveManager.ImmersiveMode.NAV -> immInfo.navBl
+                        else -> ArrayList()
+                    }
+
+                    ImmersiveListSelector.start(context, context.prefManager.getImmersiveBlacklist(newInfo.type), ImmersiveSelectionCallbackWrapper {
+                        apps.clear()
+                        apps.addAll(it)
+                        context.prefManager.putImmersiveBlacklist(newInfo.type, apps)
+                        update()
+                    })
+                }
+            }
+        }
+
+        fun update() {
+            launch {
+                manager.setAdvancedImmersive(immInfo)
+            }
+        }
+
+        inner class VH(view: View) : Recyc
