@@ -54,4 +54,16 @@ class KeepOnPlugged(context: Context, attrs: AttributeSet) : ScrollView(context,
                     if (callback?.invoke(result) == false) {
                         ac.isChecked = latestState and BatteryManager.BATTERY_PLUGGED_AC != 0
                         usb.isChecked = latestState and BatteryManager.BATTERY_PLUGGED_USB != 0
-                        wireless.isChecked = latestState and BatteryManager.BATTERY_PLUGGED_W
+                        wireless.isChecked = latestState and BatteryManager.BATTERY_PLUGGED_WIRELESS != 0
+                    } else {
+                        latestState = result
+                    }
+                }
+            }
+        }
+
+        ac.setOnCheckedChangeListener(listener)
+        usb.setOnCheckedChangeListener(listener)
+        wireless.setOnCheckedChangeListener(listener)
+    }
+}
