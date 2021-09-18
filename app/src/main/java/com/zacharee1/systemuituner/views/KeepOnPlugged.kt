@@ -29,4 +29,17 @@ class KeepOnPlugged(context: Context, attrs: AttributeSet) : ScrollView(context,
             0
         )?.toIntOrNull() ?: 0
 
-        ac.isChecked = current and BatteryManager.BATTERY_PLU
+        ac.isChecked = current and BatteryManager.BATTERY_PLUGGED_AC != 0
+        usb.isChecked = current and BatteryManager.BATTERY_PLUGGED_USB != 0
+        wireless.isChecked = current and BatteryManager.BATTERY_PLUGGED_WIRELESS != 0
+
+        var latestState: Int = current
+
+        val listener = CompoundButton.OnCheckedChangeListener { buttonView, isChecked ->
+            val result = when (buttonView) {
+                ac -> (if (isChecked) BatteryManager.BATTERY_PLUGGED_AC else 0) or
+                        (if (usb.isChecked) BatteryManager.BATTERY_PLUGGED_USB else 0) or
+                        (if (wireless.isChecked) BatteryManager.BATTERY_PLUGGED_WIRELESS else 0)
+                usb -> (if (ac.isChecked) BatteryManager.BATTERY_PLUGGED_AC else 0) or
+                        (if (isChecked) BatteryManager.BATTERY_PLUGGED_USB else 0) or
+        
