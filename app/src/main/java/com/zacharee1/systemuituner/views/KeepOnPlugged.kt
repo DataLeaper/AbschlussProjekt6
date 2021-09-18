@@ -42,4 +42,16 @@ class KeepOnPlugged(context: Context, attrs: AttributeSet) : ScrollView(context,
                         (if (wireless.isChecked) BatteryManager.BATTERY_PLUGGED_WIRELESS else 0)
                 usb -> (if (ac.isChecked) BatteryManager.BATTERY_PLUGGED_AC else 0) or
                         (if (isChecked) BatteryManager.BATTERY_PLUGGED_USB else 0) or
-        
+                        (if (wireless.isChecked) BatteryManager.BATTERY_PLUGGED_WIRELESS else 0)
+                wireless -> (if (ac.isChecked) BatteryManager.BATTERY_PLUGGED_AC else 0) or
+                        (if (usb.isChecked) BatteryManager.BATTERY_PLUGGED_USB else 0) or
+                        (if (isChecked) BatteryManager.BATTERY_PLUGGED_WIRELESS else 0)
+                else -> current
+            }
+
+            if (latestState != result) {
+                launch {
+                    if (callback?.invoke(result) == false) {
+                        ac.isChecked = latestState and BatteryManager.BATTERY_PLUGGED_AC != 0
+                        usb.isChecked = latestState and BatteryManager.BATTERY_PLUGGED_USB != 0
+                        wireless.isChecked = latestState and BatteryManager.BATTERY_PLUGGED_W
