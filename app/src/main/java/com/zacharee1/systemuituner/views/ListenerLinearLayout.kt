@@ -11,4 +11,6 @@ class ListenerLinearLayout(context: Context, attrs: AttributeSet) : LinearLayout
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
 
-        onConfigurationChangedListener?.invoke(n
+        onConfigurationChangedListener?.invoke(newConfig)
+    }
+}
