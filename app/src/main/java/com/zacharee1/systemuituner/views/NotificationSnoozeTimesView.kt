@@ -58,4 +58,19 @@ class NotificationSnoozeTimesView(context: Context, attrs: AttributeSet) : Frame
 
         binding.apply.setOnClickListener {
             launch {
-    
+                if (callback?.invoke(
+                        StringBuilder()
+                            .append("default=")
+                            .append(binding.snoozeDefault.textOrDefault(defTime))
+                            .append(",")
+                            .append("options_array=")
+                            .append(binding.snoozeA.textOrDefault(aTime))
+                            .append(":")
+                            .append(binding.snoozeB.textOrDefault(bTime))
+                            .append(":")
+                            .append(binding.snoozeC.textOrDefault(cTime))
+                            .append(":")
+                            .append(binding.snoozeD.textOrDefault(dTime))
+                            .toString()
+                    ) == false) {
+        
