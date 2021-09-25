@@ -32,4 +32,30 @@ class NotificationSnoozeTimesView(context: Context, attrs: AttributeSet) : Frame
 
         if (!setting.isNullOrBlank()) {
             try {
-                val parts = setting.split(","
+                val parts = setting.split(",")
+                val default = parts[0].split("=")[1]
+                val options = parts[1].split("=")[1].split(":")
+
+                defTime = default
+                aTime = options[0]
+                bTime = options[1]
+                cTime = options[2]
+                dTime = options[3]
+            } catch (e: IndexOutOfBoundsException) {
+                defTime = "60"
+                aTime = "15"
+                bTime = "30"
+                cTime = "60"
+                dTime = "120"
+            }
+        }
+
+        binding.snoozeDefault.setText(defTime)
+        binding.snoozeA.setText(aTime)
+        binding.snoozeB.setText(bTime)
+        binding.snoozeC.setText(cTime)
+        binding.snoozeD.setText(dTime)
+
+        binding.apply.setOnClickListener {
+            launch {
+    
