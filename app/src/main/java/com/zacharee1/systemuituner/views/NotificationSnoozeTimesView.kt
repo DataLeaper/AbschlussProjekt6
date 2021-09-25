@@ -73,4 +73,13 @@ class NotificationSnoozeTimesView(context: Context, attrs: AttributeSet) : Frame
                             .append(binding.snoozeD.textOrDefault(dTime))
                             .toString()
                     ) == false) {
-        
+                    init()
+                }
+            }
+        }
+    }
+
+    fun EditText.textOrDefault(default: String): String {
+        return text?.toString().run { if (this.isNullOrBlank()) default else this }
+    }
+}
