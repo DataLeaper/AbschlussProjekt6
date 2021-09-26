@@ -35,4 +35,18 @@ class OneUIClockPositionView(context: Context, attrs: AttributeSet) : Constraint
             else -> R.id.position_left
         }
 
-        binding.clockPo
+        binding.clockPosition.check(currentPosition)
+        binding.clockPosition.setOnCheckedChangeListener { _, checkedId ->
+            val blacklistSet = HashSet((context.getSetting(SettingsType.SECURE, "icon_blacklist") ?: "").split(","))
+
+            when (checkedId) {
+                R.id.position_left -> {
+                    blacklistSet.removeAll(arrayOf(POSITION_MIDDLE, POSITION_RIGHT).toSet())
+                    blacklistSet.add(POSITION_LEFT)
+                }
+                R.id.position_middle -> {
+                    blacklistSet.removeAll(arrayOf(POSITION_LEFT, POSITION_RIGHT).toSet())
+                    blacklistSet.add(POSITION_MIDDLE)
+                }
+                R.id.position_right -> {
+                    blacklistSet.removeAll(arrayOf(POSITION_LEFT, POSITION_MIDDLE).toSet())
