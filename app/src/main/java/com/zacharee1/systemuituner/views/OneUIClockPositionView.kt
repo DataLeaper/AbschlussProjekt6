@@ -50,3 +50,15 @@ class OneUIClockPositionView(context: Context, attrs: AttributeSet) : Constraint
                 }
                 R.id.position_right -> {
                     blacklistSet.removeAll(arrayOf(POSITION_LEFT, POSITION_MIDDLE).toSet())
+                    blacklistSet.add(POSITION_RIGHT)
+                }
+            }
+
+            launch {
+                if (callback?.invoke(blacklistSet.joinToString(",")) == false) {
+                    init()
+                }
+            }
+        }
+    }
+}
