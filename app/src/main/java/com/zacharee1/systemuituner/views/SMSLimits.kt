@@ -27,4 +27,24 @@ class SMSLimits(context: Context, attrs: AttributeSet) : ScrollView(context, att
         binding.maxCount.setStartIconOnClickListener {
             launch {
                 context.writeSetting(SettingsType.GLOBAL, Settings.Global.SMS_OUTGOING_CHECK_MAX_COUNT, COUNT_DEF, saveOption = true)
-       
+            }
+            binding.maxCount.editText?.setText(COUNT_DEF.toString())
+        }
+
+        binding.interval.setStartIconOnClickListener {
+            launch {
+                context.writeSetting(SettingsType.GLOBAL, Settings.Global.SMS_OUTGOING_CHECK_INTERVAL_MS, INTERVAL_DEF, saveOption = true)
+            }
+            binding.interval.editText?.setText(INTERVAL_DEF.toString())
+        }
+
+        binding.maxCount.setEndIconOnClickListener {
+            val c = binding.maxCount.editText?.text?.toString()?.toIntOrNullOnError() ?: COUNT_DEF
+
+            launch {
+                context.writeSetting(SettingsType.GLOBAL, Settings.Global.SMS_OUTGOING_CHECK_MAX_COUNT, c, saveOption = true)
+            }
+        }
+
+        binding.interval.setEndIconOnClickListener {
+            val i = binding.interval.editText?.text?.toString()?
