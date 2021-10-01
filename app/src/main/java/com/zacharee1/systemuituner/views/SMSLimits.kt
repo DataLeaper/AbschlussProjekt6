@@ -47,4 +47,11 @@ class SMSLimits(context: Context, attrs: AttributeSet) : ScrollView(context, att
         }
 
         binding.interval.setEndIconOnClickListener {
-            val i = binding.interval.editText?.text?.toString()?
+            val i = binding.interval.editText?.text?.toString()?.toIntOrNullOnError() ?: INTERVAL_DEF
+
+            launch {
+                context.writeSetting(SettingsType.GLOBAL, Settings.Global.SMS_OUTGOING_CHECK_INTERVAL_MS, i, saveOption = true)
+            }
+        }
+    }
+}
