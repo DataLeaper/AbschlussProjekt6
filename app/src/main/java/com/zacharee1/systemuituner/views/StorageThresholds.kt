@@ -12,4 +12,21 @@ import com.zacharee1.systemuituner.util.launch
 import com.zacharee1.systemuituner.util.writeSetting
 
 class StorageThresholds(context: Context, attrs: AttributeSet) : ScrollView(context, attrs) {
-    privat
+    private val binding by lazy { StorageThresholdsBinding.bind(this) }
+
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+
+        binding.thresholdPercent.apply {
+            scaledProgress = context.getSetting(SettingsType.GLOBAL, Settings.Global.SYS_STORAGE_THRESHOLD_PERCENTAGE, 5f)?.toFloatOrNull() ?: 5f
+            listener = object : SimpleSeekBarListener() {
+                override fun onProgressChanged(newValue: Int, newScaledValue: Float) {
+                    launch {
+                        context.writeSetting(SettingsType.GLOBAL, Settings.Global.SYS_STORAGE_THRESHOLD_PERCENTAGE, newScaledValue.toInt(), saveOption = true)
+                    }
+                }
+            }
+        }
+
+        binding.thresholdBytes.apply {
+            scaledProgress = (context.getSetting(SettingsType.GLOBAL, Settings.Global.SYS
