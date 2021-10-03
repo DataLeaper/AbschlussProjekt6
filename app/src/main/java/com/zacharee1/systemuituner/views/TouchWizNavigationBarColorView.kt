@@ -76,4 +76,9 @@ class TouchWizNavigationBarColorView(context: Context, attrs: AttributeSet) : Fr
         } else if (context is ContextWrapper) {
             val baseContext = context.baseContext
             if (baseContext is FragmentActivity) {
-                return baseCont
+                return baseContext
+            }
+        }
+        throw IllegalStateException("Error getting activity from context: $context")
+    }
+}
