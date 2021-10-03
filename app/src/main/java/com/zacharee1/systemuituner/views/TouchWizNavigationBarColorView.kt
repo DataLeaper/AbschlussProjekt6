@@ -46,4 +46,34 @@ class TouchWizNavigationBarColorView(context: Context, attrs: AttributeSet) : Fr
     }
 
     private fun init() {
-        binding.currentColor.color = context.getSetting(SettingsType.GLOBAL, "navigationbar_c
+        binding.currentColor.color = context.getSetting(SettingsType.GLOBAL, "navigationbar_color")?.toIntOrNull() ?: Color.WHITE
+    }
+
+    override fun onColorReset(dialogId: Int) {
+        persistColor(null)
+    }
+
+    override fun onColorSelected(dialogId: Int, color: Int) {
+        persistColor(color)
+    }
+
+    override fun onDialogDismissed(dialogId: Int) {}
+
+    private fun persistColor(color: Int?) {
+        binding.currentColor.color = color ?: Color.WHITE
+
+        launch {
+            if (callback?.invoke(color) == false) {
+                init()
+            }
+        }
+    }
+
+    private fun getActivity(): FragmentActivity {
+        val context = context
+        if (context is FragmentActivity) {
+            return context
+        } else if (context is ContextWrapper) {
+            val baseContext = context.baseContext
+            if (baseContext is FragmentActivity) {
+                return baseCont
