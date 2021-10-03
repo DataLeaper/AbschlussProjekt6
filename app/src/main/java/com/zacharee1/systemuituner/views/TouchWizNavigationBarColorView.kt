@@ -21,4 +21,29 @@ class TouchWizNavigationBarColorView(context: Context, attrs: AttributeSet) : Fr
     private val dialog: ColorPickerDialog = ColorPickerDialog.newBuilder()
         .setDialogType(ColorPickerDialog.TYPE_PRESETS)
         .setDialogTitle(R.string.option_touchwiz_navbar_color)
-        .setColorShape(ColorShape.CIRCLE
+        .setColorShape(ColorShape.CIRCLE)
+        .setAllowPresets(true)
+        .setAllowCustom(true)
+        .setShowAlphaSlider(true)
+        .setShowColorShades(true)
+        .setColor(context.getSetting(SettingsType.GLOBAL, "navigationbar_color")?.toIntOrNull() ?: Color.WHITE)
+        .create()
+
+    private val binding by lazy { TouchwizNavigationBarColorDialogBinding.bind(this) }
+
+    override fun onFinishInflate() {
+        super.onFinishInflate()
+
+        dialog.setColorPickerDialogListener(this)
+        binding.setColor.setOnClickListener {
+            getActivity().supportFragmentManager
+                .beginTransaction()
+                .add(dialog, null)
+                .commitAllowingStateLoss()
+        }
+
+        init()
+    }
+
+    private fun init() {
+        binding.currentColor.color = context.getSetting(SettingsType.GLOBAL, "navigationbar_c
