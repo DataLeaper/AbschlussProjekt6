@@ -38,4 +38,27 @@
         <TextView
             android:text="@string/feature_header_airplane_mode_toggleable_radios"
             android:textStyle="bold"
-            android:textSize="1
+            android:textSize="16sp"
+            android:textColor="?android:textColorPrimary"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <com.zacharee1.systemuituner.views.RoundedFrameCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/radio_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+    </com.zacharee1.systemuituner.views.RoundedFrameCardView>
+
+</com.zacharee1.systemuituner.views.AirplaneModeRadios>
