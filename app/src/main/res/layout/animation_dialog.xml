@@ -27,3 +27,52 @@
             android:layout_height="?listPreferredItemHeightLarge"
             app:view_defaultValue="100"
             app:minValue="0"
+            app:maxValue="500"
+            app:scale="0.01"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            />
+
+        <TextView
+            android:text="@string/option_window_animation_scale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <tk.zwander.seekbarpreference.SeekBarView
+            android:id="@+id/window_sb"
+            android:layout_width="match_parent"
+            android:layout_height="?listPreferredItemHeightLarge"
+            app:view_defaultValue="100"
+            app:minValue="0"
+            app:maxValue="500"
+            app:scale="0.01"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            />
+
+        <TextView
+            android:text="@string/option_transition_animation_scale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <tk.zwander.seekbarpreference.SeekBarView
+            android:id="@+id/transition_sb"
+            android:layout_width="match_parent"
+            android:layout_height="?listPreferredItemHeightLarge"
+            app:view_defaultValue="100"
+            app:minValue="0"
+            app:maxValue="500"
+            app:scale="0.01"
+            />
+
+    </LinearLayout>
+
+</com.zacharee1.systemuituner.views.AnimationScales>

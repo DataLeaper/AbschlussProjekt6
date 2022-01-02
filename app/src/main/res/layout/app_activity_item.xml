@@ -1,0 +1,60 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<com.zacharee1.systemuituner.views.RoundedFrameCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?listPreferredItemHeight"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            tools:src="@mipmap/ic_launcher"
+            />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="?android:textColorPrimary"
+                tools:text="@string/option_lockscreen_shortcut_left"
+                />
+
+            <TextView
+                android:id="@+id/component"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="com.zacharee1.systemuituner"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.zacharee1.systemuituner.views.RoundedFrameCardView>
