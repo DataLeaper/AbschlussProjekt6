@@ -23,3 +23,13 @@
     app:startIconDrawable="@drawable/ic_undo_black_24dp"
     app:endIconDrawable="@drawable/ic_baseline_check_24"
     app:endIconMode="custom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@android:id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
