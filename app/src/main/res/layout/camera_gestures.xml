@@ -18,4 +18,20 @@
             android:layout_height="?listPreferredItemHeight"
             />
 
-        <com
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/camera_power_button"
+            android:text="@string/option_camera_gesture_double_power"
+            android:layout_width="match_parent"
+            android:layout_height="?listPreferredItemHeight"
+            />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/camera_twist"
+            android:text="@string/option_camera_gesture_twist"
+            android:layout_width="match_parent"
+            android:layout_height="?listPreferredItemHeight"
+            />
+
+    </LinearLayout>
+
+</com.zacharee1.systemuituner.views.CameraGestures>
