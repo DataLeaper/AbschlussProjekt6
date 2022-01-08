@@ -24,4 +24,19 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/key"
-        android:layout_width="0
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="4dp"
+        android:hint="@string/key">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textNoSuggestions"
+            android:digits="@string/icon_blacklist_custom_allowed_chars"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
