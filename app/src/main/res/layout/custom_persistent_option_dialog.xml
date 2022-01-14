@@ -61,4 +61,15 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@id/label_entry_wrapper"
-        app
+        app:layout_constraintStart_toEndOf="@id/key_entry_wrapper"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/value_entry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

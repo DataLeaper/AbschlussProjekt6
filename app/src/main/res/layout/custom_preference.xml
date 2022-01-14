@@ -1,0 +1,157 @@
+
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:id="@+id/pref_root"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    app:cardForegroundColor="@android:color/transparent"
+    app:strokeColor="?android:textColorSecondary"
+    app:strokeWidth="0.75dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:orientation="horizontal"
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+            android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/icon_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/circle_selector"
+                    android:elevation="4dp"
+                    android:foreground="@drawable/circle_shadow"
+                    android:gravity="center"
+                    android:minWidth="48dp"
+                    android:orientation="horizontal">
+
+                    <com.zacharee1.systemuituner.views.PreferenceImageView
+                        android:id="@android:id/icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        tools:src="@drawable/link" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/title_summary_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@android:id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:singleLine="false"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        tools:text="Some Preference" />
+
+                    <at.blogc.android.views.ExpandableTextView
+                        android:id="@android:id/summary"
+                        style="@style/PreferenceSummaryTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textAlignment="viewStart"
+                        android:textColor="?android:attr/textColorSecondary"
+                        app:animation_duration="@android:integer/config_mediumAnimTime"
+                        tools:ignore="PrivateResource"
+                        tools:text="Some long expandable summary we need a lot of text here to overflow so let's keep going shall we come on overflow already please overflow this is so much text gotta keep going to force an overflow come on so many lines please hurry up and overflow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Preference should place its actual preference widget here. -->
+            <LinearLayout
+                android:id="@android:id/widget_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="0dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/expand_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_ripple"
+            android:layout_gravity="bottom|center"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            android:contentDescription="@string/more"
+            tools:visibility="visible"
+            tools:ignore="TouchTargetSizeCheck">
+
+            <ImageView
+                android:id="@+id/expand_summary_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:scaleY="-1"
+                android:src="@drawable/arrow_up"
+                tools:ignore="ContentDescription"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
