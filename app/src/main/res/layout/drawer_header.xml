@@ -7,4 +7,26 @@
     android:layout_height="172dp">
 
     <ImageView
-        android:
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/header"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"
+        />
+
+    <FrameLayout
+        android:id="@+id/search_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackgroundBorderless"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:contentDescription="@string/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/searc
