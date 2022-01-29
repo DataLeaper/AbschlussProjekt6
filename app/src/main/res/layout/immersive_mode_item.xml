@@ -24,4 +24,31 @@
         <com.rey.material.widget.CheckedImageView
             android:id="@+id/all"
             android:layout_width="wrap_content"
-            android:layout
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?android:attr/listChoiceIndicatorMultiple"
+            android:contentDescription="@string/all_apps"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <FrameLayout
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#aaa"
+            />
+
+    </FrameLayout>
+
+    <com.zacharee1.systemuituner.views.DisableableImageView
+        android:id="@+id/whitelist_button"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+     
