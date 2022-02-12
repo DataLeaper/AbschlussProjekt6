@@ -76,4 +76,13 @@
     <ImageView
         android:id="@+id/blacklist"
         android:layout_width="75dp"
-        android:layout_height="
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="center"
+        android:src="@drawable/ic_playlist_remove_24dp"
+        android:contentDescription="@string/immersive_blacklist"
+        />
+
+</LinearLayout>
