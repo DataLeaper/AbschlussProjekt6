@@ -51,4 +51,29 @@
         android:layout_width="75dp"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-     
+        android:scaleType="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_baseline_playlist_add_24"
+        android:contentDescription="@string/immersive_whitelist"
+        />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <FrameLayout
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#aaa"
+            />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/blacklist"
+        android:layout_width="75dp"
+        android:layout_height="
