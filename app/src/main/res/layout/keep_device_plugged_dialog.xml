@@ -31,4 +31,6 @@
             android:layout_height="?listPreferredItemHeight"
             />
 
-    </LinearLayo
+    </LinearLayout>
+
+</com.zacharee1.systemuituner.views.KeepOnPlugged>
