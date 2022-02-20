@@ -11,4 +11,26 @@
 
         <LinearLayout
             android:id="@+id/twilight_wrapper"
-            android:layout_width="match_pare
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/twilight_mode"
+                android:layout_width="match_parent"
+                android:layout_height="?listPreferredItemHeightSmall"
+                android:entries="@array/twilight_mode_names"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/night_display_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/night_display_enabled"
+                android:layout_width="match_parent"
+                android:layout
