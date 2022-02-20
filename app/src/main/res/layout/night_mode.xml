@@ -33,4 +33,25 @@
             <com.google.android.material.materialswitch.MaterialSwitch
                 android:id="@+id/night_display_enabled"
                 android:layout_width="match_parent"
-                android:layout
+                android:layout_height="?listPreferredItemHeightSmall"
+                android:text="@string/enabled"
+                />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/night_display_auto"
+                android:layout_width="match_parent"
+                android:layout_height="?listPreferredItemHeightSmall"
+                android:text="@string/auto"
+                />
+
+            <tk.zwander.seekbarpreference.SeekBarView
+                android:id="@+id/night_display_temp"
+                android:layout_width="match_parent"
+                android:layout_height="?listPreferredItemHeightLarge"
+                app:minValue="0"
+                app:maxValue="10000"
+                />
+
+        </LinearLayout>
+
+        <com.google.android.material.butt
