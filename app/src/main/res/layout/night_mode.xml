@@ -54,4 +54,16 @@
 
         </LinearLayout>
 
-        <com.google.android.material.butt
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reset_night_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            />
+
+    </LinearLayout>
+
+</com.zacharee1.systemuituner.views.NightModeView>
