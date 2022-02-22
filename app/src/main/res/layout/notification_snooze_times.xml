@@ -7,4 +7,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientat
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/snooze_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/snooze_default"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/snooze_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.goo
