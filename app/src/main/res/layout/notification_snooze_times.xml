@@ -68,4 +68,25 @@
         <com.google.android.material.textfield.TextInputLayout
             android:hint="@string/snooze_d"
             android:layout_width="match_parent"
-            androi
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/snooze_d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            />
+
+    </LinearLa
