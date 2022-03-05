@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zacharee1.systemuituner.views.OneUIClockPositionView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RadioGroup
+        android:id="@+id/clock_position"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/position_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/left"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:
