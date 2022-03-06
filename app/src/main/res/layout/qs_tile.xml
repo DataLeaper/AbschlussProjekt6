@@ -5,4 +5,27 @@
     android:id="@+id/qs_tile_card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:an
+    android:animateLayoutChanges="true"
+    android:layout_margin="4dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="?android:colorBackground"
+    app:cardForegroundColor="@android:color/transparent"
+    app:strokeColor="?android:textColorSecondary"
+    app:strokeWidth="0.75dp"
+    app:cardCornerRadius="8dp">
+
+    <FrameLayout
+        android:id="@+id/click_target"
+        android:clickable="true"
+        android:focusable="true"
+        android:animateLayoutChanges="true"
+        android:background="?android:selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientati
