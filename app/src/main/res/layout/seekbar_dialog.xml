@@ -1,0 +1,9 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<tk.zwander.seekbarpreference.SeekBarView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/seekbar_view"
+    android:layout_width="match_parent"
+    android:layout_height="?listPreferredItemHeightLarge"
+    android:layout_margin="8dp"
+    app:isPreference="true" />

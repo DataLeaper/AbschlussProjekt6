@@ -72,4 +72,14 @@
             android:layout_height="32dp"
             android:src="@drawable/ic_baseline_remove_circle_24"
             android:tint="@android:color/holo_red_dark"
-          
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="top|end"
+            android:visibility="gone"
+            android:contentDescription="@string/remove_item"
+            tools:visibility="visible"
+            />
+
+    </FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>
