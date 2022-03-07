@@ -51,4 +51,25 @@
                 tools:text="SystemUI Tuner"
                 />
 
-            <me.grantlan
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/qs_tile_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:minTextSize="8sp"
+                android:maxLines="1"
+                tools:text="@string/tile_custom"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_baseline_remove_circle_24"
+            android:tint="@android:color/holo_red_dark"
+          
