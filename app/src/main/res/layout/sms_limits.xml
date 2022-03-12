@@ -20,4 +20,22 @@
             app:endIconDrawable="@drawable/ic_baseline_check_24"
             app:endIconMode="custom">
 
-            <com.google.android.materi
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/option_sms_limit_interval"
+            app:suffixText="ms"
+            app:startIconDrawable="@drawable/ic_undo_black_24dp"
+            app:endIconDrawable="@drawable/ic_baseline_check_24"
+            app:endIconMode="custom">
+
+            <com.google.android.material.
