@@ -38,4 +38,14 @@
             app:endIconDrawable="@drawable/ic_baseline_check_24"
             app:endIconMode="custom">
 
-            <com.google.android.material.
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</com.zacharee1.systemuituner.views.SMSLimits>
