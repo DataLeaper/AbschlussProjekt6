@@ -1,0 +1,77 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/empty_fragment">
+
+    <fragment
+        android:id="@+id/empty_fragment"
+        android:name="com.zacharee1.systemuituner.fragments.EmptyFragment"
+        android:label="EmptyFragment" />
+    <fragment
+        android:id="@+id/displayFragment"
+        android:name="com.zacharee1.systemuituner.fragments.DisplayFragment"
+        android:label="DisplayFragment" />
+    <fragment
+        android:id="@+id/UIFragment"
+        android:name="com.zacharee1.systemuituner.fragments.UIFragment"
+        android:label="UIFragment" />
+    <fragment
+        android:id="@+id/lockFragment"
+        android:name="com.zacharee1.systemuituner.fragments.LockFragment"
+        android:label="LockFragment" />
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="com.zacharee1.systemuituner.fragments.system.StorageFragment"
+        android:label="StorageFragment" />
+    <fragment
+        android:id="@+id/netMiscellaneousFragment"
+        android:name="com.zacharee1.systemuituner.fragments.network.NetMiscellaneousFragment"
+        android:label="MiscellaneousFragment" />
+    <fragment
+        android:id="@+id/appsFragment"
+        android:name="com.zacharee1.systemuituner.fragments.AppsFragment"
+        android:label="AppsFragment" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.zacharee1.systemuituner.fragments.interaction.NotificationsFragment"
+        android:label="NotificationsFragment" />
+    <fragment
+        android:id="@+id/statusBarFragment"
+        android:name="com.zacharee1.systemuituner.fragments.interaction.StatusBarFragment"
+        android:label="StatusBarFragment" />
+    <fragment
+        android:id="@+id/qsFragment"
+        android:name="com.zacharee1.systemuituner.fragments.interaction.QSFragment"
+        android:label="QSFragment" />
+    <fragment
+        android:id="@+id/developerFragment"
+        android:name="com.zacharee1.systemuituner.fragments.DeveloperFragment"
+        android:label="DeveloperFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.zacharee1.systemuituner.fragments.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/audioFragment"
+        android:name="com.zacharee1.systemuituner.fragments.AudioFragment"
+        android:label="AudioFragment" />
+    <fragment
+        android:id="@+id/netWiFiFragment"
+        android:name="com.zacharee1.systemuituner.fragments.network.NetWiFiFragment"
+        android:label="NetWiFiFragment" />
+    <fragment
+        android:id="@+id/netCellFragment"
+        android:name="com.zacharee1.systemuituner.fragments.network.NetCellFragment"
+        android:label="NetCellFragment" />
+    <fragment
+        android:id="@+id/advancedFragment"
+        android:name="com.zacharee1.systemuituner.fragments.AdvancedFragment"
+        tools:layout="AdvancedFragment" />
+    <activity
+        android:id="@+id/persistentActivity"
+        android:name="com.zacharee1.systemuituner.activities.PersistentActivity"
+        android:label="PersistentActivity" />
+</navigation>
