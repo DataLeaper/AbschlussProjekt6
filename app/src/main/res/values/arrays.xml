@@ -50,4 +50,30 @@
         <item>inout</item>
     </string-array>
 
-    <string-array name=
+    <string-array name="data_type_names">
+        <item>1X</item>
+        <item>3G</item>
+        <item>4G</item>
+        <item>4G+</item>
+        <item>5G</item>
+        <item>5Ge</item>
+        <item>5G+</item>
+        <item>E</item>
+        <item>G</item>
+        <item>H</item>
+        <item>H+</item>
+        <item>LTE</item>
+        <item>LTE+</item>
+        <item>@string/demo_mode_data_type_disabled</item>
+        <item>@string/demo_mode_data_type_not_default_data</item>
+        <item>@string/demo_mode_data_type_roaming</item>
+        <item>@string/demo_mode_data_type_none</item>
+    </string-array>
+
+    <string-array name="data_type_values">
+        <item>1x</item>
+        <item>3g</item>
+        <item>4g</item>
+        <item>4g+</item>
+        <item>5g</item>
+        <it
