@@ -76,4 +76,32 @@
         <item>4g</item>
         <item>4g+</item>
         <item>5g</item>
-        <it
+        <item>5ge</item>
+        <item>5g+</item>
+        <item>e</item>
+        <item>g</item>
+        <item>h</item>
+        <item>h+</item>
+        <item>lte</item>
+        <item>lte+</item>
+        <item>dis</item>
+        <item>not</item>
+        <item>roam</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="bar_mode_names">
+        <item>@string/demo_mode_status_bar_opaque</item>
+        <item>@string/demo_mode_status_bar_semi_transparent</item>
+        <item>@string/demo_mode_status_bar_translucent</item>
+    </string-array>
+
+    <string-array name="bar_mode_values">
+        <item>opaque</item>
+        <item>semi-transparent</item>
+        <item>translucent</item>
+    </string-array>
+
+    <string-array name="settings_types_names">
+        <item>@string/global</item>
+        <
