@@ -104,4 +104,27 @@
 
     <string-array name="settings_types_names">
         <item>@string/global</item>
-        <
+        <item>@string/secure</item>
+        <item>@string/system</item>
+    </string-array>
+
+    <string-array name="twilight_mode_names">
+        <item>@string/disabled</item>
+        <item>@string/enabled</item>
+        <item>@string/auto</item>
+    </string-array>
+
+    <string-array name="safe_audio_labels">
+        <item>@string/safe_audio_state_not_configured</item>
+        <item>@string/safe_audio_state_disabled</item>
+        <item>@string/safe_audio_state_inactive</item>
+        <item>@string/safe_audio_state_active</item>
+    </string-array>
+
+    <string-array name="safe_audio_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>
