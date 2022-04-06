@@ -15,4 +15,18 @@
     <string name="icon_blacklist_add_custom">Add Custom Item</string>
     <string name="icon_blacklist_add_custom_desc">If you can\'t find the icon you want to hide, and you know its key, you can add it here.</string>
     <string name="icon_blacklist_remove_custom">Remove This Item</string>
-    <string name="icon_blacklist_remove_custom_desc">Are you sure 
+    <string name="icon_blacklist_remove_custom_desc">Are you sure you want to remove this custom blacklist item?</string>
+
+    <string name="icon_blacklist_custom_allowed_chars" translatable="false">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_.- </string>
+
+    <string name="icon_blacklist_rotate">Rotation Lock</string>
+    <string name="icon_blacklist_airplane">Airplane Mode</string>
+    <string name="icon_blacklist_wifi">WiFi</string>
+    <string name="icon_blacklist_volte">VoLTE</string>
+    <string name="icon_blacklist_vowifi">VoWiFi</string>
+    <string name="icon_blacklist_dmb">DMB</string>
+    <string name="icon_blacklist_wifi_calling">WiFi Calling</string>
+    <string name="icon_blacklist_cdma_eri">CDMA ERI</string>
+    <string name="icon_blacklist_data_connection">Data Connection</string>
+    <string name="icon_blacklist_phone_evdo_signal">Phone EvDO Signal</string>
+    <str
