@@ -29,4 +29,17 @@
     <string name="icon_blacklist_cdma_eri">CDMA ERI</string>
     <string name="icon_blacklist_data_connection">Data Connection</string>
     <string name="icon_blacklist_phone_evdo_signal">Phone EvDO Signal</string>
-    <str
+    <string name="icon_blacklist_phone_signal">Phone Signal</string>
+    <string name="icon_blacklist_volume">Volume</string>
+    <string name="icon_blacklist_headset">Headset</string>
+    <string name="icon_blacklist_speakerphone">Speakerphone</string>
+    <string name="icon_blacklist_remote_call">Remote Call</string>
+    <string name="icon_blacklist_tty">TTY</string>
+    <string name="icon_blacklist_clock">Clock</string>
+    <string name="icon_blacklist_alarm">Alarm</string>
+    <string name="icon_blacklist_zen">Zen</string>
+    <string name="icon_blacklist_do_not_disturb">Do Not Disturb</string>
+    <string name="icon_blacklist_managed_profile">Managed Profile</string>
+    <string name="icon_blacklist_battery">Battery</string>
+    <string name="icon_blacklist_cast">Cast</string>
+    <string name="icon_blacklist_nfc">NFC</string>
