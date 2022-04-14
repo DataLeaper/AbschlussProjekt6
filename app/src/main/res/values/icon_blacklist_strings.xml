@@ -55,4 +55,19 @@
     <string name="icon_blacklist_nfclock">NFC Lock</string>
     <string name="icon_blacklist_secure">Secure</string>
     <string name="icon_blacklist_power_saver">Power Saver</string>
-    <string name="icon_blacklist_data_saver">Data 
+    <string name="icon_blacklist_data_saver">Data Saver</string>
+    <string name="icon_blacklist_hotspot">Hotspot</string>
+    <string name="icon_blacklist_bluetooth">Bluetooth</string>
+    <string name="icon_blacklist_mute">Mute</string>
+    <string name="icon_blacklist_vpn">VPN</string>
+
+    <string name="icon_blacklist_knox_container">KNOX Container</string>
+    <string name="icon_blacklist_smart_network">Smart Network</string>
+    <string name="icon_blacklist_glove">Glove</string>
+    <string name="icon_blacklist_gesture">Gesture</string>
+    <string name="icon_blacklist_smart_scroll">Smart Scroll</string>
+    <string name="icon_blacklist_face">Face</string>
+    <string name="icon_blacklist_gps">GPS</string>
+    <string name="icon_blacklist_lbs">LBS</string>
+    <string name="icon_blacklist_wearable_gear">Wearable Gear</string>
+    <string name="icon_blacklist
