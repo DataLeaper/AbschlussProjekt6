@@ -70,4 +70,18 @@
     <string name="icon_blacklist_gps">GPS</string>
     <string name="icon_blacklist_lbs">LBS</string>
     <string name="icon_blacklist_wearable_gear">Wearable Gear</string>
-    <string name="icon_blacklist
+    <string name="icon_blacklist_femtoicon">Femtocell</string>
+    <string name="icon_blacklist_comsamsungrcs">Samsung RCS</string>
+    <string name="icon_blacklist_wifi_p2p">WiFi P2P</string>
+    <string name="icon_blacklist_wifi_ap">WiFi AP</string>
+    <string name="icon_blacklist_wifi_oxygen">WiFi Oxygen</string>
+    <string name="icon_blacklist_phone_signal_second_stub">Phone Signal Second Stub</string>
+    <string name="icon_blacklist_toddler">Toddler</string>
+    <string name="icon_blacklist_keyguard_wakeup">Keyguard Wakeup</string>
+    <string name="icon_blacklist_safezone">SafeZone</string>
+    <string name="icon_blacklist_wimax">WiMax</string>
+    <string name="icon_blacklist_smart_bonding">Smart Bonding</string>
+    <string name="icon_blacklist_private_mode">Private Mode</string>
+
+    <string name="icon_blacklist_powersavingmode">Power Saving Mode</string>
+    <strin
