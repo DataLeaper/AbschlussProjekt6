@@ -1,0 +1,7 @@
+<resources>
+    <style name="BaseTheme" parent="Theme.Material3.DynamicColors.DayNight">
+        <item name="buttonBarButtonStyle">@style/AppTheme.Alert.Button</item>
+        <item name="android:buttonBarButtonStyle">@style/AppTheme.Alert.Button</item>
+        <item name="materialAlertDialogTheme">@style/DialogTheme</item>
+        <item name="alertDialogTheme">@style/DialogTheme</item>
+        <item name="al
