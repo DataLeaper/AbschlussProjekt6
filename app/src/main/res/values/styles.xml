@@ -4,4 +4,16 @@
         <item name="android:buttonBarButtonStyle">@style/AppTheme.Alert.Button</item>
         <item name="materialAlertDialogTheme">@style/DialogTheme</item>
         <item name="alertDialogTheme">@style/DialogTheme</item>
-        <item name="al
+        <item name="alertDialogStyle">@style/DialogTheme</item>
+        <item name="dialogTheme">@style/DialogTheme</item>
+        <item name="android:dialogTheme">@style/DialogTheme</item>
+        <item name="android:alertDialogStyle">@style/DialogTheme</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+        <item name="toolbarStyle">@style/ActionBarStyle</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:toolbarStyle">@style/ActionBarStyle</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetTheme</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="spinnerStyle">@style/SpinnerStyle</item>
+        <item name="android:spinnerStyle">@style/SpinnerSt
