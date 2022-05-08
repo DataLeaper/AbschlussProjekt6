@@ -37,4 +37,18 @@
         <item name="android:windowBackground">@drawable/splash</item>
     </style>
 
-  
+    <style name="ActionBarStyle" parent="Base.Widget.Material3.ActionBar.Solid">
+        <item name="android:background">@color/toolbarColor</item>
+        <item name="titleTextStyle">@style/ActionBarStyle.Title</item>
+        <item name="titleTextAppearance">@style/ActionBarStyle.Title</item>
+        <item name="android:titleTextAppearance">@style/ActionBarStyle.Title</item>
+    </style>
+
+    <style name="ActionBarStyle.Title" parent="TextAppearance.Material3.ActionBar.Title">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="DialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog.Centered">
+        <item name="buttonBarPositiveButtonStyle">@style/AppTheme.Alert.Button</item>
+        <item name="buttonBarNeutralButtonStyle">@style/AppTheme.Alert.Button</item>
+        <item name="buttonBar
