@@ -51,4 +51,19 @@
     <style name="DialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog.Centered">
         <item name="buttonBarPositiveButtonStyle">@style/AppTheme.Alert.Button</item>
         <item name="buttonBarNeutralButtonStyle">@style/AppTheme.Alert.Button</item>
-        <item name="buttonBar
+        <item name="buttonBarNegativeButtonStyle">@style/AppTheme.Alert.Button</item>
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/DialogTitle</item>
+    </style>
+
+    <style name="BottomSheetTheme" parent="ThemeOverlay.Material3.BottomSheetDialog">
+<!--        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>-->
+        <item name="colorPrimarySurface">@color/toolbarColor</item>
+    </style>
+
+<!--    <style name="BottomSheetStyle" parent="Widget.Material3.BottomSheet.Modal">-->
+<!--        <item name="android:background">@drawable/top_rounded_rect</item>-->
+<!--    </style>-->
+
+    <style name="DialogTitle" parent="MaterialAlertDialog.Ma
