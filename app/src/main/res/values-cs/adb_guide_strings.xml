@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="adb_intro_title">ADB návod</string>
+    <string name="adb_intro_desc">Nevíte, jak používat ADB? Žádný problém. Stačí postupovat podle toho
