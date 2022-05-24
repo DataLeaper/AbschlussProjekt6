@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="adb_intro_title">ADB návod</string>
-    <string name="adb_intro_desc">Nevíte, jak používat ADB? Žádný problém. Stačí postupovat podle toho
+    <string name="adb_intro_desc">Nevíte, jak používat ADB? Žádný problém. Stačí postupovat podle tohoto průvodce a vše je připraveno. (Upozorňujeme, že k tomuto postupu budete potřebovat počítač.)</string>
+    <string name="adb_intro_desc_no_computer">Nevíte jak používat ADB? Žádný problém. Jen postupujte podle tohoto návodu a vše by mělo být nastaveno.</string>
+    <string name="adb_choose_computer_os">Vyberte svůj operační systém.</string>
+    <string name="adb_choose_computer_os_desc">Jaký operační systém běží na vašem počítači?</string>
+    <string name="adb_android_guide">Počáteční nastavení (při telefonu)</string>
+    <string name="adb_final_title">Vše hotovo</string>
+    <string name="adb_final_desc">To je vše! Pokud vše proběhlo v pořádku, mělo by být povolení uděleno.</string>
+    <string name="adb_install_android_1">Otevřete Nastavení a posouvejte dolů na O telefonu. Klepněte na ni.</string>
+    <string name="adb_inst
