@@ -9,4 +9,9 @@
     <string name="adb_final_title">Vše hotovo</string>
     <string name="adb_final_desc">To je vše! Pokud vše proběhlo v pořádku, mělo by být povolení uděleno.</string>
     <string name="adb_install_android_1">Otevřete Nastavení a posouvejte dolů na O telefonu. Klepněte na ni.</string>
-    <string name="adb_inst
+    <string name="adb_install_android_2">V závislosti na zařízení se může zobrazit nabídka s názvem \"Informace o softwaru\". Pokud ano, klepněte na ni.</string>
+    <string name="adb_install_android_3">Nyní najdete možnost označenou \"Číslo sestavení\". Na některých zařízeních to může být jednoduše nazýváno \"Verze\".</string>
+    <string name="adb_install_android_4">Klepnutím na tuto možnost 7krát povolíte vývojářský režim. Možná budete muset zadat své heslo, abyste ji povolili.</string>
+    <string name="adb_install_android_5">Nyní se vraťte na hlavní stránku nastavení.</string>
+    <string name="adb_install_android_6">V závislosti na vašem zařízení můžete vidět novou nabídku nazvanou \"Pro vývojaře\". Pokud ano, klepněte na ni a přeskočte další krok.</string>
+    <string name="adb_install_android_7">Pokud nevidíte nabídku
