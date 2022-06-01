@@ -19,4 +19,10 @@
     <string name="adb_install_android_9">Na telefonech Xiaomi musíte také najít a zakázat možnost s označením \"Ladění USB (Nastavení zabezpečení)\".</string>
     <string name="adb_install_android_10">Na telefonech OPPO, Realme a OnePlus musíte také najít a povolit možnost označenou \"Zakázat monitorování oprávnění\".</string>
     <string name="adb_install_android_11">Nyní připojte telefon k počítači. Pokud se objeví potvrzení o ladění USB, povolte jej.</string>
-    <string name="adb_install_android_12">Jakmile je toto hotovo, je čas pokračovat na vašem počítači.</string
+    <string name="adb_install_android_12">Jakmile je toto hotovo, je čas pokračovat na vašem počítači.</string>
+    <string name="adb_install_local_1"><![CDATA[Stáhněte si a nainstalujte aplikaci Shizuku z [Google Play Store](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api).]]></string>
+    <string name="adb_install_local_2">Otevřete aplikaci Shizuku a postupujte podle pokynů v části \"Spustit přes bezdrátové ladění\".</string>
+    <string name="adb_install_local_3">Zavřete tuto obrazovku a klepněte na tlačítko \"UDĚLIT\".</string>
+    <string name="adb_install_adb_windows_1">Stáhněte si ADB ZIP zde: https://dl.google.com/android/repository/platform-tools-latest-windows.zip</string>
+    <string name="adb_install_adb_windows_2">Extrahujte ZIP na vhodné místo jako je C:\\adb`.</string>
+    <string name="adb_install_adb_windows_3">Použijte průzkumník souborů k procházení extrahovaných ZIP souborů. Měli byste
