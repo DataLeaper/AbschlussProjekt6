@@ -25,4 +25,9 @@
     <string name="adb_install_local_3">Zavřete tuto obrazovku a klepněte na tlačítko \"UDĚLIT\".</string>
     <string name="adb_install_adb_windows_1">Stáhněte si ADB ZIP zde: https://dl.google.com/android/repository/platform-tools-latest-windows.zip</string>
     <string name="adb_install_adb_windows_2">Extrahujte ZIP na vhodné místo jako je C:\\adb`.</string>
-    <string name="adb_install_adb_windows_3">Použijte průzkumník souborů k procházení extrahovaných ZIP souborů. Měli byste
+    <string name="adb_install_adb_windows_3">Použijte průzkumník souborů k procházení extrahovaných ZIP souborů. Měli byste vidět soubor souborů, včetně jednoho nazvaného \"adb\".</string>
+    <string name="adb_install_adb_windows_4">Klikněte do vyhledávacího řádku a nahraďte jej slovem \"cmd\" (bez uvozovek). Pak stiskněte klávesu Enter.</string>
+    <string name="adb_install_adb_mac_1">Stáhněte si ADB ZIP zde: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip</string>
+    <string name="adb_install_adb_mac_2">Extrahujte ZIP na vhodné místo jako je Plocha.</string>
+    <string name="adb_install_adb_mac_3">Nyní otevřete terminál. Můžete tak učinit stisknutím CMD+MEZERNÍK najednou, abyste otevřeli Vyhledávání, a vyhledejte \"Terminal\".</string>
+    <string name="adb_install_adb_mac_4">Nyní přejděte k extrahovaným souborům pomocí následujícího příkazu: `cd /cesta/do/souborů/`. Pokud je například vaše uživatelské
