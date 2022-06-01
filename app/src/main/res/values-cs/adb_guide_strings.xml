@@ -14,4 +14,9 @@
     <string name="adb_install_android_4">Klepnutím na tuto možnost 7krát povolíte vývojářský režim. Možná budete muset zadat své heslo, abyste ji povolili.</string>
     <string name="adb_install_android_5">Nyní se vraťte na hlavní stránku nastavení.</string>
     <string name="adb_install_android_6">V závislosti na vašem zařízení můžete vidět novou nabídku nazvanou \"Pro vývojaře\". Pokud ano, klepněte na ni a přeskočte další krok.</string>
-    <string name="adb_install_android_7">Pokud nevidíte nabídku
+    <string name="adb_install_android_7">Pokud nevidíte nabídku Vývojářů, najděte nabídku označenou \"Systém\" nebo \"Další nastavení\". Měli byste vidět menu Pro vývojáře.</string>
+    <string name="adb_install_android_8">Posuňte dolů, dokud nenajdete přepínač \"Ladění USB\" a povolte jej.</string>
+    <string name="adb_install_android_9">Na telefonech Xiaomi musíte také najít a zakázat možnost s označením \"Ladění USB (Nastavení zabezpečení)\".</string>
+    <string name="adb_install_android_10">Na telefonech OPPO, Realme a OnePlus musíte také najít a povolit možnost označenou \"Zakázat monitorování oprávnění\".</string>
+    <string name="adb_install_android_11">Nyní připojte telefon k počítači. Pokud se objeví potvrzení o ladění USB, povolte jej.</string>
+    <string name="adb_install_android_12">Jakmile je toto hotovo, je čas pokračovat na vašem počítači.</string
