@@ -11,4 +11,15 @@
     <string name="category_icon_blacklist_custom">Vlastní</string>
     <string name="category_icon_blacklist_auto_desc">Klepnutím rozbalit/načíst</string>
     <string name="icon_blacklist_add_custom">Přidat vlastní položku</string>
-    <string name="
+    <string name="icon_blacklist_add_custom_desc">Pokud nemůžete najít ikonu, kterou chcete skrýt a znáte její klíč, můžete ji sem přidat.</string>
+    <string name="icon_blacklist_remove_custom">Odstranit tuto položku</string>
+    <string name="icon_blacklist_remove_custom_desc">Opravdu chcete odstranit vybrané položky z blacklistu?</string>
+    <string name="icon_blacklist_rotate">Zámek otáčení</string>
+    <string name="icon_blacklist_airplane">Režim v letadle</string>
+    <string name="icon_blacklist_wifi">Wi-Fi</string>
+    <string name="icon_blacklist_volte">VoLTE</string>
+    <string name="icon_blacklist_vowifi">VoWiFi</string>
+    <string name="icon_blacklist_dmb">DMB</string>
+    <string name="icon_blacklist_wifi_calling">Volání přes Wi-Fi</string>
+    <string name="icon_blacklist_cdma_eri">CDMA ERI</string>
+    <string name="icon_blacklist_
