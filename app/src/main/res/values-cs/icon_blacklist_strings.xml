@@ -74,4 +74,16 @@
     <string name="icon_blacklist_keyguard_wakeup">Ikona aktivace KeyGuard</string>
     <string name="icon_blacklist_safezone">Bezpečná zóna</string>
     <string name="icon_blacklist_wimax">WiMax</string>
-    <string name="icon_blackl
+    <string name="icon_blacklist_smart_bonding">Ikona chytrého připnutí</string>
+    <string name="icon_blacklist_private_mode">Soukromý režim</string>
+    <string name="icon_blacklist_powersavingmode">Úsporný režim</string>
+    <string name="icon_blacklist_earphone">Sluchátka</string>
+    <string name="icon_blacklist_unicom_call">Volání Unicom</string>
+    <string name="icon_blacklist_volte_call">VoLTE hovor</string>
+    <string name="icon_blacklist_eyes_protect">Ochrana očí</string>
+    <string name="icon_blacklist_mikey">MiKey</string>
+    <string name="icon_blacklist_call_record">Nahrávání hovorů</string>
+    <string name="icon_blacklist_privacy_mode">Režim soukromí</string>
+    <string name="icon_blacklist_ble_unlock_mode">BLE Unlock Mode</string>
+    <string name="icon_blacklist_quiet">Ticho</string>
+    <string nam
