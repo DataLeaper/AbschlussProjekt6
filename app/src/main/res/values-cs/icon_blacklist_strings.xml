@@ -86,4 +86,7 @@
     <string name="icon_blacklist_privacy_mode">Režim soukromí</string>
     <string name="icon_blacklist_ble_unlock_mode">BLE Unlock Mode</string>
     <string name="icon_blacklist_quiet">Ticho</string>
-    <string nam
+    <string name="icon_blacklist_missed_call">Zmeškaný Hovor</string>
+    <string name="icon_blacklist_bluetooth_handsfree_battery">Bluetooth Handsfree baterie</string>
+    <string name="icon_blacklist_rtt">RTT</string>
+</resources>
