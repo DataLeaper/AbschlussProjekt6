@@ -11,4 +11,16 @@
     <string name="category_icon_blacklist_custom">Benutzerdefiniert</string>
     <string name="category_icon_blacklist_auto_desc">Zum Erweitern/Laden antippen</string>
     <string name="icon_blacklist_add_custom">Benutzerdefiniertes Element hinzufügen</string>
-    <string name="icon_blacklist_add_custom_desc">Wenn Sie das Symbol, das Sie ausblenden möchten, nicht finden können aber seinen Schlüssel kennen, können Sie es hier hi
+    <string name="icon_blacklist_add_custom_desc">Wenn Sie das Symbol, das Sie ausblenden möchten, nicht finden können aber seinen Schlüssel kennen, können Sie es hier hinzufügen.</string>
+    <string name="icon_blacklist_remove_custom">Diesen Element entfernen</string>
+    <string name="icon_blacklist_remove_custom_desc">Möchten Sie dieses benutzerdefinierte Sperrlistenelement wirklich entfernen?</string>
+    <string name="icon_blacklist_rotate">Drehung sperren</string>
+    <string name="icon_blacklist_airplane">Flugmodus</string>
+    <string name="icon_blacklist_wifi">WLAN</string>
+    <string name="icon_blacklist_volte">VoLTE</string>
+    <string name="icon_blacklist_vowifi">VoWiFi</string>
+    <string name="icon_blacklist_dmb">DMB</string>
+    <string name="icon_blacklist_wifi_calling">WLAN-Anrufe</string>
+    <string name="icon_blacklist_cdma_eri">CDMA ERI</string>
+    <string name="icon_blacklist_data_connection">Daten-Verbindung</string>
+    <string name="icon_blacklist_phone_evdo_signal">Evolution, Data Optimized (
