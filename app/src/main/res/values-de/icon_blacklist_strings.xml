@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="category_icon_blacklist_general">Allgemein</string>
-    <string
+    <string name="category_icon_blacklist_samsung">Samsung</string>
+    <string name="category_icon_blacklist_huawei">Huawei</string>
+    <string name="category_icon_blacklist_xiaomi">Xiaomi</string>
+    <string name="category_icon_blacklist_htc">HTC</string>
+    <string name="category_icon_blacklist_sony">Sony</string>
+    <string name="category_icon_blacklist_lg">LG</string>
+    <string name="category_icon_blacklist_auto">Automatisch</string>
+    <string name="category_icon_blacklist_custom">Benutzerdefiniert</string>
+    <string name="category_icon_blacklist_auto_desc">Zum Erweitern/Laden antippen</string>
+    <string name="icon_blacklist_add_custom">Benutzerdefiniertes Element hinzufügen</string>
+    <string name="icon_blacklist_add_custom_desc">Wenn Sie das Symbol, das Sie ausblenden möchten, nicht finden können aber seinen Schlüssel kennen, können Sie es hier hi
