@@ -23,4 +23,16 @@
     <string name="icon_blacklist_wifi_calling">WLAN-Anrufe</string>
     <string name="icon_blacklist_cdma_eri">CDMA ERI</string>
     <string name="icon_blacklist_data_connection">Daten-Verbindung</string>
-    <string name="icon_blacklist_phone_evdo_signal">Evolution, Data Optimized (
+    <string name="icon_blacklist_phone_evdo_signal">Evolution, Data Optimized (EvDO)-Telefonsignal</string>
+    <string name="icon_blacklist_phone_signal">Telefon-Signalstärke</string>
+    <string name="icon_blacklist_volume">Lautstärke</string>
+    <string name="icon_blacklist_headset">Kopfhörer</string>
+    <string name="icon_blacklist_speakerphone">Telefonlautsprecher</string>
+    <string name="icon_blacklist_remote_call">Fernabfrage</string>
+    <string name="icon_blacklist_tty">TTY (Modus für Sprach- und Hörgeschädigte)</string>
+    <string name="icon_blacklist_clock">Uhr</string>
+    <string name="icon_blacklist_alarm">Wecker</string>
+    <string name="icon_blacklist_zen">Zen</string>
+    <string name="icon_blacklist_do_not_disturb">Bitte nicht stören</string>
+    <string name="icon_blacklist_managed_profile">Verwaltete Profile</string>
+    <string name="icon_blacklist_battery">Akku</string>
