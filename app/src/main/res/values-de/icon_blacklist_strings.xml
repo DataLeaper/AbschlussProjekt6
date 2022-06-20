@@ -47,4 +47,16 @@
     <string name="icon_blacklist_ime">Eingabemethoden (Input Method Editor/IME)</string>
     <string name="icon_blacklist_sync_failing">Synchronisation fehlgeschlagen</string>
     <string name="icon_blacklist_sync_active">Sync aktiv</string>
-    <string name="icon_blacklist_nfclock">NFC-Sp
+    <string name="icon_blacklist_nfclock">NFC-Sperre</string>
+    <string name="icon_blacklist_secure">Sicher</string>
+    <string name="icon_blacklist_power_saver">Stromsparmodus</string>
+    <string name="icon_blacklist_data_saver">Datenverbrauch reduzieren</string>
+    <string name="icon_blacklist_hotspot">Persönlicher Hotspot</string>
+    <string name="icon_blacklist_bluetooth">Bluetooth</string>
+    <string name="icon_blacklist_mute">Ton aus</string>
+    <string name="icon_blacklist_vpn">VPN (Virtuelles privates Netzwerk)</string>
+    <string name="icon_blacklist_knox_container">KNOX-Container</string>
+    <string name="icon_blacklist_smart_network">Intelligentes Netzwerk</string>
+    <string name="icon_blacklist_glove">Handschuh</string>
+    <string name="icon_blacklist_gesture">Gesten</string>
+   
