@@ -82,4 +82,11 @@
     <string name="icon_blacklist_volte_call">VoLTE-Anruf</string>
     <string name="icon_blacklist_eyes_protect">Augenschutz</string>
     <string name="icon_blacklist_mikey">MiKey</string>
-    <string name="
+    <string name="icon_blacklist_call_record">Anrufliste</string>
+    <string name="icon_blacklist_privacy_mode">Privatsphäre-Modus</string>
+    <string name="icon_blacklist_ble_unlock_mode">BLE-Entsperrmodus (Bluetooth Low Energy, kurz BLE)</string>
+    <string name="icon_blacklist_quiet">Leise</string>
+    <string name="icon_blacklist_missed_call">Anrufe in Abwesenheit</string>
+    <string name="icon_blacklist_bluetooth_handsfree_battery">Akku der Bluetooth-Freisprecheinrichtung</string>
+    <string name="icon_blacklist_rtt">RTT (Real-Time Text, Echtzeittext)</string>
+</resources>
