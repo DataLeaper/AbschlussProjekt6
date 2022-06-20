@@ -70,3 +70,16 @@
     <string name="icon_blacklist_wifi_ap">AP-WLAN</string>
     <string name="icon_blacklist_wifi_oxygen">Oxygen WLAN</string>
     <string name="icon_blacklist_phone_signal_second_stub">Telefon Signal Zweiten Stub</string>
+    <string name="icon_blacklist_toddler">Kleinkind</string>
+    <string name="icon_blacklist_keyguard_wakeup">Aufwach-Tastensperre</string>
+    <string name="icon_blacklist_safezone">Sicherheitszone</string>
+    <string name="icon_blacklist_wimax">WiMax</string>
+    <string name="icon_blacklist_smart_bonding">Intelligentes Anhaften</string>
+    <string name="icon_blacklist_private_mode">Privater Modus</string>
+    <string name="icon_blacklist_powersavingmode">Energiesparmodus</string>
+    <string name="icon_blacklist_earphone">Kopfhörer</string>
+    <string name="icon_blacklist_unicom_call">Unicom-Anruf</string>
+    <string name="icon_blacklist_volte_call">VoLTE-Anruf</string>
+    <string name="icon_blacklist_eyes_protect">Augenschutz</string>
+    <string name="icon_blacklist_mikey">MiKey</string>
+    <string name="
