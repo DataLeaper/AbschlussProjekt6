@@ -36,3 +36,15 @@
     <string name="icon_blacklist_do_not_disturb">Bitte nicht stören</string>
     <string name="icon_blacklist_managed_profile">Verwaltete Profile</string>
     <string name="icon_blacklist_battery">Akku</string>
+    <string name="icon_blacklist_cast">Übertragung</string>
+    <string name="icon_blacklist_nfc">NFC</string>
+    <string name="icon_blacklist_location">Standortzugriff</string>
+    <string name="icon_blacklist_su">SU</string>
+    <string name="icon_blacklist_otg_mouse">On-to-Go (OTG)-Maus</string>
+    <string name="icon_blacklist_otg_keyboard">On-the-Go (OTG)-Tastatur</string>
+    <string name="icon_blacklist_felica_lock">Felica-Passwortsperre</string>
+    <string name="icon_blacklist_answering_memo">Memo wird beantwortet</string>
+    <string name="icon_blacklist_ime">Eingabemethoden (Input Method Editor/IME)</string>
+    <string name="icon_blacklist_sync_failing">Synchronisation fehlgeschlagen</string>
+    <string name="icon_blacklist_sync_active">Sync aktiv</string>
+    <string name="icon_blacklist_nfclock">NFC-Sp
