@@ -59,4 +59,14 @@
     <string name="icon_blacklist_smart_network">Intelligentes Netzwerk</string>
     <string name="icon_blacklist_glove">Handschuh</string>
     <string name="icon_blacklist_gesture">Gesten</string>
-   
+    <string name="icon_blacklist_smart_scroll">Intelligenter Bildlauf</string>
+    <string name="icon_blacklist_face">Gesicht</string>
+    <string name="icon_blacklist_gps">GPS</string>
+    <string name="icon_blacklist_lbs">LBS (Location Based Service)</string>
+    <string name="icon_blacklist_wearable_gear">Tragbare Geräte</string>
+    <string name="icon_blacklist_femtoicon">Femtozellen (häusliche Mobilfunkzellen)</string>
+    <string name="icon_blacklist_comsamsungrcs">Samsung RCS (Rich Communication Services / SMS-Nachfolger)</string>
+    <string name="icon_blacklist_wifi_p2p">P2P-WLAN</string>
+    <string name="icon_blacklist_wifi_ap">AP-WLAN</string>
+    <string name="icon_blacklist_wifi_oxygen">Oxygen WLAN</string>
+    <string name="icon_blacklist_phone_signal_second_stub">Telefon Signal Zweiten Stub</string>
