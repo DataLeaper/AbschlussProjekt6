@@ -12,4 +12,9 @@
     <string name="adb_install_android_2">Dependiendo de su dispositivo, puede ver un menú llamado \"Información del software\". Si es así, pulse sobre él.</string>
     <string name="adb_install_android_3">Ahora busque la opción \"Build Number\". En algunos dispositivos, esto puede llamarse simplemente \"Version\".</string>
     <string name="adb_install_android_4">Pulse esa opción 7 veces para activar el modo desarrollador. Puede que necesite introducir su código de acceso para habilitarlo.</string>
-    <string name="adb_install_android_5">Ahora,
+    <string name="adb_install_android_5">Ahora, vuelve a la página principal de configuración.</string>
+    <string name="adb_install_android_6">Dependiendo de tu dispositivo, puedes ver un nuevo menú llamado \"Opciones de desarrollador\". Si es así, pulsa y omite el siguiente paso.</string>
+    <string name="adb_install_android_7">Si no ve el menú Opciones de Desarrollador, busque el menú etiquetado como \"Sistema\" o \"Ajustes Adicionales\". Deberías ver el menú Opciones de desarrollador dentro de eso.</string>
+    <string name="adb_install_android_8">Desplácese hacia abajo hasta que encuentre el interruptor etiquetado \"Debugging USB\" y actívelo.</string>
+    <string name="adb_install_android_9">En los teléfonos Xiaomi, también tendrás que encontrar y desactivar la opción \"Debugging USB (Configuración de seguridad)\".</string>
+    <string name="adb_install_android_10">En los teléfonos OPPO, Realme y OnePlus, también te
