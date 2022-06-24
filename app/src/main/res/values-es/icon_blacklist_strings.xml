@@ -4,4 +4,13 @@
     <string name="category_icon_blacklist_samsung">Samsung</string>
     <string name="category_icon_blacklist_huawei">Huawei</string>
     <string name="category_icon_blacklist_xiaomi">Xiaomi</string>
-    <stri
+    <string name="category_icon_blacklist_htc">HTC</string>
+    <string name="category_icon_blacklist_sony">Sony</string>
+    <string name="category_icon_blacklist_lg">LG</string>
+    <string name="category_icon_blacklist_auto">Automático</string>
+    <string name="category_icon_blacklist_custom">Personalizado</string>
+    <string name="category_icon_blacklist_auto_desc">Toca para expandir/cargar</string>
+    <string name="icon_blacklist_add_custom">Añadir Elemento Personalizado</string>
+    <string name="icon_blacklist_add_custom_desc">Si no puedes encontrar el icono que quieres ocultar, y conoces su clave, puedes añadirlo aquí.</string>
+    <string name="icon_blacklist_remove_custom">Eliminar Este Elemento</string>
+    <string name="icon_blacklist_remove_custom_desc">¿Está seguro de que desea eliminar este elemento p
