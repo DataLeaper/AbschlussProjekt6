@@ -77,4 +77,16 @@
     <string name="icon_blacklist_smart_bonding">Unión Inteligente</string>
     <string name="icon_blacklist_private_mode">Modo Privado</string>
     <string name="icon_blacklist_powersavingmode">Modo de Ahorro de Batería</string>
-    <string name="icon_blac
+    <string name="icon_blacklist_earphone">Auricular</string>
+    <string name="icon_blacklist_unicom_call">Llamada Unicom</string>
+    <string name="icon_blacklist_volte_call">Llamada VoLTE</string>
+    <string name="icon_blacklist_eyes_protect">Protección ocular</string>
+    <string name="icon_blacklist_mikey">MiKey</string>
+    <string name="icon_blacklist_call_record">Registro de llamada</string>
+    <string name="icon_blacklist_privacy_mode">Modo de privacidad</string>
+    <string name="icon_blacklist_ble_unlock_mode">Modo de desbloqueo BLE</string>
+    <string name="icon_blacklist_quiet">Silencio</string>
+    <string name="icon_blacklist_missed_call">Llamada perdida</string>
+    <string name="icon_blacklist_bluetooth_handsfree_battery">Batería sin manos Bluetooth</string>
+    <string name="icon_blacklist_rtt">RTT</string>
+</resources>

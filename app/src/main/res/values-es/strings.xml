@@ -1,0 +1,26 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Configurador de IU del sistema</string>
+    <string name="manager_channel">Gestor (Desactivar)</string>
+    <string name="tap_to_disable">Toca para desactivar esta notificación</string>
+    <string name="home">Inicio</string>
+    <string name="category_display">Pantalla</string>
+    <string name="category_accessibility">Accesibilidad</string>
+    <string name="category_apps">Aplicaciones</string>
+    <string name="category_audio">Audio &amp; sonido</string>
+    <string name="category_developer">Desarrollador</string>
+    <string name="category_easter_eggs">Huevos de Pascua</string>
+    <string name="category_network">Red</string>
+    <string name="category_notifications">Notificaciones</string>
+    <string name="category_status_bar">Barra de estado</string>
+    <string name="category_oem">Características OEM</string>
+    <string name="category_system">Sistema</string>
+    <string name="category_ui">UI</string>
+    <string name="category_lock_screen">Pantalla de bloqueo</string>
+    <string name="category_quick_settings">Configuración Rápida</string>
+    <string name="screen_persistent">Opciones persistentes</string>
+    <string name="category_interaction">Interacción</string>
+    <string name="more">Más</string>
+    <string name="tweaks">Ajustes</string>
+    <string name="failure">Fallo</string>
