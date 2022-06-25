@@ -13,4 +13,16 @@
     <string name="icon_blacklist_add_custom">Añadir Elemento Personalizado</string>
     <string name="icon_blacklist_add_custom_desc">Si no puedes encontrar el icono que quieres ocultar, y conoces su clave, puedes añadirlo aquí.</string>
     <string name="icon_blacklist_remove_custom">Eliminar Este Elemento</string>
-    <string name="icon_blacklist_remove_custom_desc">¿Está seguro de que desea eliminar este elemento p
+    <string name="icon_blacklist_remove_custom_desc">¿Está seguro de que desea eliminar este elemento personalizado de la lista negra?</string>
+    <string name="icon_blacklist_rotate">Bloqueo de rotación</string>
+    <string name="icon_blacklist_airplane">Modo Avión</string>
+    <string name="icon_blacklist_wifi">Wi-Fi</string>
+    <string name="icon_blacklist_volte">VoLTE</string>
+    <string name="icon_blacklist_vowifi">VoWiFi</string>
+    <string name="icon_blacklist_dmb">DMB</string>
+    <string name="icon_blacklist_wifi_calling">Llamadas Wi-Fi</string>
+    <string name="icon_blacklist_cdma_eri">CDMA ERI</string>
+    <string name="icon_blacklist_data_connection">Conexión de datos</string>
+    <string name="icon_blacklist_phone_evdo_signal">Señal EvDO del Teléfono</string>
+    <string name="icon_blacklist_phone_signal">Señal del teléfono</string>
+    <string name="icon_blacklist_volume">Volumen</string
