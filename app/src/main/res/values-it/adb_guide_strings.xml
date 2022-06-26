@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="adb_intro_title">Guida ADB</string>
+    <string name="adb_intro_desc">Non sai come usare ADB? Nessun problema. Basta seguire questa guida e dovresti essere in grado. (Nota che avrai bisogno di un computer per questo processo.)</string>
+    <string name="adb_intro_desc_no_computer">Non sai come usare ADB? Nessun problema. Basta seguire questa guida e dovresti essere in grado.</string>
+    <string name="adb_choose_computer_os">Scegli il tuo sistema operativo.</string>
+    <string name="adb_choose_computer_os_desc">Quale sistema operativo usi sul tuo computer?</string>
+    <string name="adb_android_guide">Configurazione Iniziale (Sul Tuo Telefono)</string
