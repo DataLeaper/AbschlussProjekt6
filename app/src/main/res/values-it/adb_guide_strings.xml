@@ -5,4 +5,10 @@
     <string name="adb_intro_desc_no_computer">Non sai come usare ADB? Nessun problema. Basta seguire questa guida e dovresti essere in grado.</string>
     <string name="adb_choose_computer_os">Scegli il tuo sistema operativo.</string>
     <string name="adb_choose_computer_os_desc">Quale sistema operativo usi sul tuo computer?</string>
-    <string name="adb_android_guide">Configurazione Iniziale (Sul Tuo Telefono)</string
+    <string name="adb_android_guide">Configurazione Iniziale (Sul Tuo Telefono)</string>
+    <string name="adb_final_title">Completato</string>
+    <string name="adb_final_desc">Questo è tutto! Se tutto è andato bene, i( permessi ora dovrebbero essere concessi.</string>
+    <string name="adb_install_android_1">Apri l\'app Impostazioni e scorri verso il basso su Informazioni sul telefono. Aprilo.</string>
+    <string name="adb_install_android_2">A seconda del dispositivo, è possibile visualizzare un menu di nome\"Informazioni software\". In tal caso, aprilo.</string>
+    <string name="adb_install_android_3">Ora, trova l\'opzione denominata \"Numero Build\". Su alcuni dispositivi, questo può essere chiamato semplicemente \"Versione\".</string>
+    <string name="adb_install_android_4">Tocca quell\'opzione 7 volte per abilitare la modalità sviluppatore. Potresti a
