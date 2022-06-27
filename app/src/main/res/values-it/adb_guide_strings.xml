@@ -16,4 +16,10 @@
     <string name="adb_install_android_6">A seconda del tuo dispositivo, puoi vedere un nuovo menu chiamato \"Opzioni sviluppatore\". Premilo e vai al passo successivo.</string>
     <string name="adb_install_android_7">Se non vedi il menu Opzioni sviluppatore, trova il menu di nome \"Sistema\" o \"Impostazioni aggiuntive\". Dovresti vedere il menu Opzioni Sviluppatore al suo interno.</string>
     <string name="adb_install_android_8">Scorri verso il basso finché non trovi lo switch \"Debug USB\" e attivalo.</string>
-    <string name="adb_install_android_9">Sui telefoni Xiaomi, avrai anche bisogno di trovare e disabil
+    <string name="adb_install_android_9">Sui telefoni Xiaomi, avrai anche bisogno di trovare e disabilitare l\'opzione denominata \"USB Debugging (Impostazioni di Sicurezza)\".</string>
+    <string name="adb_install_android_10">Sui telefoni OPPO, Realme e OnePlus, dovrai anche trovare e abilitare l\'opzione denominata \"Disabilita monitoraggio permessi\".</string>
+    <string name="adb_install_android_11">Ora, collega il telefono al computer. Se appare un popup di conferma di debug USB, consentilo.</string>
+    <string name="adb_install_android_12">Una volta fatto, è il momento di continuare sul computer.</string>
+    <string name="adb_install_local_1"><![CDATA[Scarica e installa l\'app Shizuku dal [Google Play Store](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api).]]></string>
+    <string name="adb_install_local_2">Apri l\'app Shizuku e segui le istruzioni sotto \"Avvia tramite debug wireless\".</string>
+    <string name="adb_install_local_3">Chiuder
