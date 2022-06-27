@@ -22,4 +22,10 @@
     <string name="adb_install_android_12">Una volta fatto, è il momento di continuare sul computer.</string>
     <string name="adb_install_local_1"><![CDATA[Scarica e installa l\'app Shizuku dal [Google Play Store](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api).]]></string>
     <string name="adb_install_local_2">Apri l\'app Shizuku e segui le istruzioni sotto \"Avvia tramite debug wireless\".</string>
-    <string name="adb_install_local_3">Chiuder
+    <string name="adb_install_local_3">Chiudere questa schermata e toccare il pulsante \"GRANT\".</string>
+    <string name="adb_install_adb_windows_1">Download the ADB ZIP from here: https://dl.google.com/android/repository/platform-tools-latest-windows.zip</string>
+    <string name="adb_install_adb_windows_2">Extract the ZIP to a convenient location, such as `C:\\adb`.</string>
+    <string name="adb_install_adb_windows_3">Usa il file explorer per navigare allo ZIP estratto. Dovresti vedere dei file, compreso uno chiamato \"adb\".</string>
+    <string name="adb_install_adb_windows_4">Fai clic sulla barra di ricerca e sostituisci ciò che c\'è con \"cmd\" (senza virgolette). Poi premi Invio.</string>
+    <string name="adb_install_adb_mac_1">Download the ADB ZIP from here: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip</string>
+    <string name=
