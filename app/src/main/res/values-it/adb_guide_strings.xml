@@ -11,4 +11,9 @@
     <string name="adb_install_android_1">Apri l\'app Impostazioni e scorri verso il basso su Informazioni sul telefono. Aprilo.</string>
     <string name="adb_install_android_2">A seconda del dispositivo, è possibile visualizzare un menu di nome\"Informazioni software\". In tal caso, aprilo.</string>
     <string name="adb_install_android_3">Ora, trova l\'opzione denominata \"Numero Build\". Su alcuni dispositivi, questo può essere chiamato semplicemente \"Versione\".</string>
-    <string name="adb_install_android_4">Tocca quell\'opzione 7 volte per abilitare la modalità sviluppatore. Potresti a
+    <string name="adb_install_android_4">Tocca quell\'opzione 7 volte per abilitare la modalità sviluppatore. Potresti aver bisogno d\'inserire il tuo codice di accesso per abilitarlo.</string>
+    <string name="adb_install_android_5">Ora, torna alla pagina delle impostazioni principali.</string>
+    <string name="adb_install_android_6">A seconda del tuo dispositivo, puoi vedere un nuovo menu chiamato \"Opzioni sviluppatore\". Premilo e vai al passo successivo.</string>
+    <string name="adb_install_android_7">Se non vedi il menu Opzioni sviluppatore, trova il menu di nome \"Sistema\" o \"Impostazioni aggiuntive\". Dovresti vedere il menu Opzioni Sviluppatore al suo interno.</string>
+    <string name="adb_install_android_8">Scorri verso il basso finché non trovi lo switch \"Debug USB\" e attivalo.</string>
+    <string name="adb_install_android_9">Sui telefoni Xiaomi, avrai anche bisogno di trovare e disabil
