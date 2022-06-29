@@ -17,4 +17,21 @@
     <string name="category_system">Sistema</string>
     <string name="category_ui">Interfaccia utente</string>
     <string name="category_lock_screen">Schermata di Blocco</string>
-    <string name="categ
+    <string name="category_quick_settings">Impostazioni Rapide</string>
+    <string name="screen_persistent">Opzioni persistenti</string>
+    <string name="category_interaction">Interazione</string>
+    <string name="more">Altro</string>
+    <string name="tweaks">Ottimizzazioni</string>
+    <string name="failure">Operazione non riuscita</string>
+    <string name="help_translate">Partecipa alla traduzione</string>
+    <string name="sub_cellular">Cellulare</string>
+    <string name="sub_wifi">Wi-Fi</string>
+    <string name="sub_miscellaneous">Altro</string>
+    <string name="sub_htc">HTC</string>
+    <string name="sub_huawei">Huawei/Honor</string>
+    <string name="sub_lg">LG</string>
+    <string name="sub_oneplus">OnePlus</string>
+    <string name="sub_samsung">Samsung</string>
+    <string name="sub_sony">Sony</string>
+    <string name="sub_xiaomi">Xiaomi</string>
+    <string n
