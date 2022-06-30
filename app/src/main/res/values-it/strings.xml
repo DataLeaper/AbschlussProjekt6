@@ -61,4 +61,6 @@
     <string name="feature_heads_up_notifications">Notifiche Heads Up</string>
     <string name="feature_heads_up_notifications_desc">Commuta per abilitare o disabilitare globalmente le notifiche heads up. Le notifiche heads up sono le notifiche che appaiono nella parte superiore dello schermo.</string>
     <string name="feature_insufficient_storage_warning">Bypassa l\'avviso \"spazio disponibile insufficiente\"</string>
-    <string name="feature_insuffici
+    <string name="feature_insufficient_storage_warning_desc">Quando il dispositivo raggiunge la soglia di spazio di archiviazione disponibile, Android visualizza un avviso indicando che il dispositivo non dispone di sufficienti quantità di spazio di archiviazione. Ciò può impedirti di installare nuove app o aggiornamenti. È possibile abbassare manualmente la soglia per evitare che venga visualizzato questo avviso.</string>
+    <string name="feature_keep_screen_on">Mantieni acceso il dispositivo quando collegato</string>
+    <string name="feature_keep_screen_on_desc">Nelle Impostazioni sviluppatore di Android, puoi selezionare l\'opzione per mantenere lo schermo acceso quando è collegato all\'alimentazione. Per impostazione predefinita, questa opzione abilita la funzionalità per tutte le fonti di alimentazione. È possibile specificare quali fonti di alimentazione si desidera mantenere acceso lo schermo del telefono.
