@@ -43,4 +43,7 @@
     <string name="sub_demo">Modalità Demo</string>
     <string name="sub_demo_desc">La modalità demo permette di forzare la barra di stato del dispositivo in diversi stati. Può essere usata per mostrare o nascondere specifiche icone, indicare il livello del segnale e alcune altre cose.</string>
     <string name="special_sub_airplane_mode">Tweaks Modalità Aereo</string>
-    <string name="special_sub_airplane_mode_desc">La modalità aereo disabilita automa
+    <string name="special_sub_airplane_mode_desc">La modalità aereo disabilita automaticamente tutte le comunicazioni radio del dispositivo quando viene attivata. È possibile specificare quali comunicazioni radio devono essere disabilitate (come mantenere il WiFi attivo quando si attiva la modalità aereo). Inoltre, è possibile modificare quali comunicazioni radio possono essere attivate manualmente quando il dispositivo entra in modalità aereo.</string>
+    <string name="special_sub_icon_blacklist">Lista nera icone</string>
+    <string name="special_sub_icon_blacklist_desc">Scegli icone specifiche da nascondere dalla barra di stato. Questa funzione non funzionerà su tutti i dispositivi o con tutte le icone. Le icone di notifica non possono essere nascoste usando questa funzione.</string>
+    <string name="feature_lock_timeout">Imposta tempo di attesa perso
