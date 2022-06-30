@@ -56,4 +56,9 @@
     <string name="feature_font_scale_desc">Android consente di impostare la dimensione del testo mostrato sul dispositivo specificando una scala di font per tutto il sistema. Questo valore è tipicamente rappresentato come \"piccolo\", \"normale\", \"grande\", \"molto grande\" e \"enorme\". Tuttavia, è possibile impostare il proprio valore personalizzato.</string>
     <string name="feature_freeform">Attiva finestre a forma libera</string>
     <string name="feature_freeform_desc">Indica se abilitare il supporto di finestre a forma libera. Richiede il riavvio. Funziona solo su dispositivi Android 7.0+.</string>
-    <string name="feature_app_install_location">Imposta il percorso d\'in
+    <string name="feature_app_install_location">Imposta il percorso d\'installazione di default</string>
+    <string name="feature_app_install_location_desc">Percorso d\'installazione predefinito. Scegli quali app devono essere installate di default. Normalmente, le applicazioni decidono autonomamente specificando il valore in AndroidManifest, ma puoi scegliere di installarle su un supporto di memorizzazione se vuoi.</string>
+    <string name="feature_heads_up_notifications">Notifiche Heads Up</string>
+    <string name="feature_heads_up_notifications_desc">Commuta per abilitare o disabilitare globalmente le notifiche heads up. Le notifiche heads up sono le notifiche che appaiono nella parte superiore dello schermo.</string>
+    <string name="feature_insufficient_storage_warning">Bypassa l\'avviso \"spazio disponibile insufficiente\"</string>
+    <string name="feature_insuffici
