@@ -51,4 +51,9 @@
     <string name="feature_battery_saver_trigger">Imposta percentuale personalizzata di attivazione risparmio batteria</string>
     <string name="feature_battery_saver_trigger_desc" formatted="false">La funzione risparmio energetico di Google può attivarsi automaticamente quando il livello della batteria è del 5\% o del 15\%. Qui è possibile impostare una percentuale di attivazione personalizzata.</string>
     <string name="feature_long_press_delay">Imposta ritardo personalizzato pressione lunga</string>
-    <string name="feature_long_press_delay_desc">Nelle impostazioni di accessibilità, c\'è una funzionalità chiamata \"ritardo tocco prolungato\" che consente di specificare quanto tempo è necessario tenere premuto sullo schermo perché Android riconosca un evento a pressione prolungata. Tuttavia, le uniche opzioni per impostazione predefinita sono \"breve\", \"medio\" e \"lungo\". Qui è possi
+    <string name="feature_long_press_delay_desc">Nelle impostazioni di accessibilità, c\'è una funzionalità chiamata \"ritardo tocco prolungato\" che consente di specificare quanto tempo è necessario tenere premuto sullo schermo perché Android riconosca un evento a pressione prolungata. Tuttavia, le uniche opzioni per impostazione predefinita sono \"breve\", \"medio\" e \"lungo\". Qui è possibile impostare un ritardo personalizzato.</string>
+    <string name="feature_font_scale">Imposta dimensione personalizzata font</string>
+    <string name="feature_font_scale_desc">Android consente di impostare la dimensione del testo mostrato sul dispositivo specificando una scala di font per tutto il sistema. Questo valore è tipicamente rappresentato come \"piccolo\", \"normale\", \"grande\", \"molto grande\" e \"enorme\". Tuttavia, è possibile impostare il proprio valore personalizzato.</string>
+    <string name="feature_freeform">Attiva finestre a forma libera</string>
+    <string name="feature_freeform_desc">Indica se abilitare il supporto di finestre a forma libera. Richiede il riavvio. Funziona solo su dispositivi Android 7.0+.</string>
+    <string name="feature_app_install_location">Imposta il percorso d\'in
