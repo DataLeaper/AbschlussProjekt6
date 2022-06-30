@@ -34,4 +34,13 @@
     <string name="sub_samsung">Samsung</string>
     <string name="sub_sony">Sony</string>
     <string name="sub_xiaomi">Xiaomi</string>
-    <string n
+    <string name="sub_security">Sicurezza</string>
+    <string name="sub_storage">Archiviazione</string>
+    <string name="sub_power">Accensione/spegnimento</string>
+    <string name="add_to_blacklist">Aggiungi alla lista nera delle icone</string>
+    <string name="remove_from_blacklist">Rimuovi dalla lista nera delle icone</string>
+    <string name="flashlight">Torcia</string>
+    <string name="sub_demo">Modalità Demo</string>
+    <string name="sub_demo_desc">La modalità demo permette di forzare la barra di stato del dispositivo in diversi stati. Può essere usata per mostrare o nascondere specifiche icone, indicare il livello del segnale e alcune altre cose.</string>
+    <string name="special_sub_airplane_mode">Tweaks Modalità Aereo</string>
+    <string name="special_sub_airplane_mode_desc">La modalità aereo disabilita automa
