@@ -67,4 +67,8 @@
     <string name="feature_custom_animation_scales">Imposta Scala Animazione Personalizzata</string>
     <string name="feature_custom_animation_scales_desc">Nelle impostazioni sviluppatore di Android, puoi impostare le scale delle animazioni per controllare la durata delle animazioni. Se le opzioni disponibili sono troppo veloci o lente, è possibile impostare valori personalizzati qui.</string>
     <string name="feature_custom_rotation">Orientamento del blocco schermo in un valore personalizzato</string>
-    <string name="feature_custom_rotation_desc">La maggior parte dei telefoni consente solo di bloccare l\'orientamento dello schermo del telefono in modalità Verticale. Con questa impostazione, è possibile bloccare l\'orientamento dello schermo su 
+    <string name="feature_custom_rotation_desc">La maggior parte dei telefoni consente solo di bloccare l\'orientamento dello schermo del telefono in modalità Verticale. Con questa impostazione, è possibile bloccare l\'orientamento dello schermo su qualsiasi orientamento. Dovrai prima disabilitare la rotazione automatica.</string>
+    <string name="feature_immersive_mode">Modalità immersiva</string>
+    <string name="feature_immersive_mode_desc">La maggior parte delle altre applicazioni che consentono di attivare o disattivare la modalità immersiva hanno solo alcune opzioni: nascondere la barra di navigazione o nascondere la barra di stato. In realtà è possibile impostarlo in base all\'app, in modalità whitelist o blacklist. Nota che su Android 11 e versioni successive, questa opzione è interrotta in AOSP e potrebbe non funzionare più sul tuo dispositivo.</string>
+    <string name="feature_heads_up_snooze_length">Durata delle Heads-Up silenziose</string>
+    <string name="feature_heads_up_snooze_length_desc">Millisecondi dopo che una notifica 
