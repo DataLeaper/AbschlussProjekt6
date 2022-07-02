@@ -71,4 +71,8 @@
     <string name="feature_immersive_mode">Modalità immersiva</string>
     <string name="feature_immersive_mode_desc">La maggior parte delle altre applicazioni che consentono di attivare o disattivare la modalità immersiva hanno solo alcune opzioni: nascondere la barra di navigazione o nascondere la barra di stato. In realtà è possibile impostarlo in base all\'app, in modalità whitelist o blacklist. Nota che su Android 11 e versioni successive, questa opzione è interrotta in AOSP e potrebbe non funzionare più sul tuo dispositivo.</string>
     <string name="feature_heads_up_snooze_length">Durata delle Heads-Up silenziose</string>
-    <string name="feature_heads_up_snooze_length_desc">Millisecondi dopo che una notifica 
+    <string name="feature_heads_up_snooze_length_desc">Millisecondi dopo che una notifica Heads Up viene respinta prima che l\'app possa interrompersi di nuovo. (Valore predefinito: 60 secondi).</string>
+    <string name="feature_camera_gestures">Gesti Fotocamera</string>
+    <string name="feature_camera_gestures_desc">L\'abilitazione di questa opzione potrebbe consentire al telefono di avviare rapidamente la fotocamera toccando due volte il pulsante di accensione o capovolgendo il telefono tra la parte posteriore e anteriore.</string>
+    <string name="feature_disable_safe_audio_warning">Disabilita avvisi di sicurezza</string>
+    <string name="feature_disable_safe_audio_warning_desc">Le normative UE richiedono agli smartphone di avvisare quando superano determinati livelli di volume (85 dB). Questo avviso deve essere visualizzato una volta dopo ogni riavvio o dopo 20 ore di riproduzione musicale continua.
