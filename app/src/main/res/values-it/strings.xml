@@ -80,4 +80,9 @@
     <string name="feature_custom_ui_sounds_desc">Android ha un sacco di suoni per diverse parti dell\'UI. Un sacco di questi possono effettivamente essere modificati per i propri suoni personalizzati. Hai solo bisogno di specificare ad Android il file da usare.</string>
     <string name="feature_fix_tethering">Fix Tethering</string>
     <string name="feature_fix_tethering_desc">Su alcuni dispositivi e versioni Android, questo potrebbe bypassare le restrizioni operatore sul tethering.</string>
-    <string name="feature_shortcode_warning">Disabilita Con
+    <string name="feature_shortcode_warning">Disabilita Conferma Breve Codice Sms</string>
+    <string name="feature_shortcode_warning_desc">Quando si inviano SMS a determinati codici brevi, il sistema ti avvisa che potrebbe essere addebitata una commissione. Puoi disabilitare questo avviso qui.</string>
+    <string name="feature_sms_limit">Limite Sms Personalizzato</string>
+    <string name="feature_sms_limit_desc">Per impostazione predefinita, Android limita l\'invio di 30 SMS ogni 30 minuti prima di preoccuparsi con una notifica pop-up. Utilizzando questi due valori, è possibile personalizzare tutti gli SMS che si desidera essere in grado di inviare senza essere preoccupati.</string>
+    <string name="feature_lockscreen_shortcuts">Scorciatoie schermata di blocco</string>
+    <string name="feature_lockscreen_shortcuts_desc">A partire da Android Oreo Developer Preview 3, Google ha rimosso la po
