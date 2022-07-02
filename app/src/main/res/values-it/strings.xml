@@ -75,4 +75,9 @@
     <string name="feature_camera_gestures">Gesti Fotocamera</string>
     <string name="feature_camera_gestures_desc">L\'abilitazione di questa opzione potrebbe consentire al telefono di avviare rapidamente la fotocamera toccando due volte il pulsante di accensione o capovolgendo il telefono tra la parte posteriore e anteriore.</string>
     <string name="feature_disable_safe_audio_warning">Disabilita avvisi di sicurezza</string>
-    <string name="feature_disable_safe_audio_warning_desc">Le normative UE richiedono agli smartphone di avvisare quando superano determinati livelli di volume (85 dB). Questo avviso deve essere visualizzato una volta dopo ogni riavvio o dopo 20 ore di riproduzione musicale continua.
+    <string name="feature_disable_safe_audio_warning_desc">Le normative UE richiedono agli smartphone di avvisare quando superano determinati livelli di volume (85 dB). Questo avviso deve essere visualizzato una volta dopo ogni riavvio o dopo 20 ore di riproduzione musicale continua. Utilizzare questa impostazione per modificare il comportamento dell\'avviso o disattivarlo completamente. Assicurati di abilitare questa impostazione in Opzioni permanenti affinché rimanga.</string>
+    <string name="feature_custom_ui_sounds">Imposta Suoni Ui Personalizzati</string>
+    <string name="feature_custom_ui_sounds_desc">Android ha un sacco di suoni per diverse parti dell\'UI. Un sacco di questi possono effettivamente essere modificati per i propri suoni personalizzati. Hai solo bisogno di specificare ad Android il file da usare.</string>
+    <string name="feature_fix_tethering">Fix Tethering</string>
+    <string name="feature_fix_tethering_desc">Su alcuni dispositivi e versioni Android, questo potrebbe bypassare le restrizioni operatore sul tethering.</string>
+    <string name="feature_shortcode_warning">Disabilita Con
