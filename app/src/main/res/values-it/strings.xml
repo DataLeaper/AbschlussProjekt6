@@ -135,4 +135,12 @@
     <string name="option_ui_sound_desk_undock_desc">Audio che viene riprodotto quando il telefono è rimosso dal dock scrivania.</string>
     <string name="option_ui_sound_lock">Blocco</string>
     <string name="option_ui_sound_lock_desc">Audio riprodotto quando il dispositivo è bloccato.</string>
-    <string name="option_ui_sound_unlock">Sblocco</s
+    <string name="option_ui_sound_unlock">Sblocco</string>
+    <string name="option_ui_sound_unlock_desc">Audio riprodotto quando il dispositivo è sbloccato.</string>
+    <string name="option_ui_sound_low_battery">Batteria quasi scarica</string>
+    <string name="option_ui_sound_low_battery_desc">Audio che viene riprodotto quando il dispositivo ha batteria quasi scarica.</string>
+    <string name="option_ui_sound_trusted">Affidabile</string>
+    <string name="option_ui_sound_trusted_desc">Audio che viene riprodotto quando il dispositivo entra nello stato “fidato” senza sbloccare.</string>
+    <string name="option_ui_sound_wireless_charging">In carica</string>
+    <string name="option_ui_sound_wireless_charging_desc">Audio che viene riprodotto quando il dispositivo è in carica.</string>
+    <string name="option_ui_sound_disable_charging">Disattiva i suoni di ca
