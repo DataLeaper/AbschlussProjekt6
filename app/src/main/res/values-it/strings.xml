@@ -89,4 +89,10 @@
     <string name="feature_enable_adb">Abilita ADB</string>
     <string name="feature_enable_adb_desc">Alcuni dispositivi disabilitano ADB automaticamente dopo un periodo di inattività. Abilita questa opzione e impostala come opzione persistente per forzare ADB.</string>
     <string name="feature_dark_mode">Abilita il tema scuro universale</string>
-    <string name="feature_dark_mode_desc">Android Pie e 10 hanno introdotto un\'opzione globale di modalità scura, ma questa opzione è stata parte di Android per un po \'. Questa opzione può abilitare la modalità scura nelle applicazioni che supportano questa funzionalità (come Instagram). Potrebbe essere necessario un riavvio affinché le modifich
+    <string name="feature_dark_mode_desc">Android Pie e 10 hanno introdotto un\'opzione globale di modalità scura, ma questa opzione è stata parte di Android per un po \'. Questa opzione può abilitare la modalità scura nelle applicazioni che supportano questa funzionalità (come Instagram). Potrebbe essere necessario un riavvio affinché le modifiche abbiano effetto.</string>
+    <string name="feature_clock_seconds">Mostra secondi nell\'orologio</string>
+    <string name="feature_clock_seconds_desc">Abilita i secondi nell\'orologio della barra di stato. Questo non funzionerà su tutti i dispositivi e le configurazioni, tra cui MIUI e One UI.</string>
+    <string name="feature_dnd_in_volume">Non disturbare nell\'indicatore di volume</string>
+    <string name="feature_dnd_in_volume_desc">Consente di attivare o disattivare Non disturbare dal popup del volume.</string>
+    <string name="feature_battery_percent">Mostra la percentuale della batteria nella barra di stato</string>
+    <string name="feature_battery_percent_desc">Mostra la percentuale della batteria nell\'icona della batteria sulla barra di stato. Potrebbe essere necessario attivare il root.</st
