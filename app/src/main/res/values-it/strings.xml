@@ -116,4 +116,15 @@
     <string name="option_airplane_mode_radio_wimax">WiMax</string>
     <string name="option_app_install_location_auto">Automatico</string>
     <string name="option_app_install_location_internal">Memoria Interna</string>
-    <string name="option_app_insta
+    <string name="option_app_install_location_sd">SD Card</string>
+    <string name="option_user_rotation_0">Verticale</string>
+    <string name="option_user_rotation_90">CCW Orizzontale</string>
+    <string name="option_user_rotation_180">Verticale Inverso</string>
+    <string name="option_user_rotation_270">CW Orizzontale</string>
+    <string name="option_sms_limit_count">Numero massimo di Sms</string>
+    <string name="option_sms_limit_interval">Intervallo di tempo</string>
+    <string name="option_lockscreen_shortcut_left">Collegamento a sinistra</string>
+    <string name="option_lockscreen_shortcut_right">Collegamento a destra</string>
+    <string name="option_ui_sound_car_dock">Dock auto</string>
+    <string name="option_ui_sound_car_dock_desc">Audio che viene riprodotto quando il telefono è in un dock auto.</string>
+    <st
