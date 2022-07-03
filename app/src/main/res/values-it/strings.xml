@@ -95,4 +95,14 @@
     <string name="feature_dnd_in_volume">Non disturbare nell\'indicatore di volume</string>
     <string name="feature_dnd_in_volume_desc">Consente di attivare o disattivare Non disturbare dal popup del volume.</string>
     <string name="feature_battery_percent">Mostra la percentuale della batteria nella barra di stato</string>
-    <string name="feature_battery_percent_desc">Mostra la percentuale della batteria nell\'icona della batteria sulla barra di stato. Potrebbe essere necessario attivare il root.</st
+    <string name="feature_battery_percent_desc">Mostra la percentuale della batteria nell\'icona della batteria sulla barra di stato. Potrebbe essere necessario attivare il root.</string>
+    <string name="feature_header_airplane_mode_radios">Esente</string>
+    <string name="feature_header_airplane_mode_toggleable_radios">Attivabile</string>
+    <string name="option_keep_awake_on_ac">Alimentazione da rete</string>
+    <string name="option_keep_awake_on_usb">Alimentazione da USB</string>
+    <string name="option_keep_awake_on_wireless">Alimentazione wireless</string>
+    <string name="option_animator_duration_scale">Durata dell\'animazione</string>
+    <string name="option_window_animation_scale">Durata dell\'animazione della finestra</string>
+    <string name="option_transition_animation_scale">Durata della transizione</string>
+    <string name="option_storage_threshold_percentage">Percentuale soglia archivio</string>
+    <string name="option
