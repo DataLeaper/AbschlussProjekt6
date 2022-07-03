@@ -105,4 +105,15 @@
     <string name="option_window_animation_scale">Durata dell\'animazione della finestra</string>
     <string name="option_transition_animation_scale">Durata della transizione</string>
     <string name="option_storage_threshold_percentage">Percentuale soglia archivio</string>
-    <string name="option
+    <string name="option_storage_threshold_max_bytes">Limite massimo di Bytes di Archiviazione</string>
+    <string name="option_camera_gesture_double_power">Doppio tocco sul tasto di accensione</string>
+    <string name="option_camera_gesture">Gesture</string>
+    <string name="option_camera_gesture_twist">Capovolgi avanti e indietro il telefono</string>
+    <string name="option_airplane_mode_radio_cell">Cella</string>
+    <string name="option_airplane_mode_radio_bluetooth">Bluetooth</string>
+    <string name="option_airplane_mode_radio_wifi">WiFi</string>
+    <string name="option_airplane_mode_radio_nfc">NFC</string>
+    <string name="option_airplane_mode_radio_wimax">WiMax</string>
+    <string name="option_app_install_location_auto">Automatico</string>
+    <string name="option_app_install_location_internal">Memoria Interna</string>
+    <string name="option_app_insta
