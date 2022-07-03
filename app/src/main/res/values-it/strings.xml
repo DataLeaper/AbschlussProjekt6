@@ -127,4 +127,12 @@
     <string name="option_lockscreen_shortcut_right">Collegamento a destra</string>
     <string name="option_ui_sound_car_dock">Dock auto</string>
     <string name="option_ui_sound_car_dock_desc">Audio che viene riprodotto quando il telefono è in un dock auto.</string>
-    <st
+    <string name="option_ui_sound_car_undock">Rimozione dock auto</string>
+    <string name="option_ui_sound_car_undock_desc">Audio che viene riprodotto quando il telefono è in un dock auto.</string>
+    <string name="option_ui_sound_desk_dock">Dock scrivania</string>
+    <string name="option_ui_sound_desk_dock_desc">Audio che viene riprodotto quando il telefono è in un dock auto.</string>
+    <string name="option_ui_sound_desk_undock">Rimozione Dock scrivania</string>
+    <string name="option_ui_sound_desk_undock_desc">Audio che viene riprodotto quando il telefono è rimosso dal dock scrivania.</string>
+    <string name="option_ui_sound_lock">Blocco</string>
+    <string name="option_ui_sound_lock_desc">Audio riprodotto quando il dispositivo è bloccato.</string>
+    <string name="option_ui_sound_unlock">Sblocco</s
