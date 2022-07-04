@@ -153,4 +153,8 @@
     <string name="option_advanced_write_setting_desc">Se si dispone di una particolare impostazione che si desidera modificare che non fa parte di SystemUI Tuner, è possibile impostarla qui.</string>
     <string name="option_qqs_tiles">Conteggio Intestazione Impostazioni Rapide</string>
     <string name="option_qqs_tiles_desc">Android Nougat ha introdotto un nuova funzionalità nelle impostazioni rapide, chiamata intestazione delle impostazioni rapide. Questa funzionalità mostra i primi riquadri in una sola linea nel pannello delle notifiche. Usando questa opzione, è possibile aumentare o diminuire il numero di riquadri mostrati nella intestazione. Questo non funziona su One UI.</string>
-  
+    <string name="option_oneui_clock_position">Posizione Orologio</string>
+    <string name="option_oneui_clock_position_desc">In Samsung One UI (Android 9 o superiore), è possibile cambiare la posizione dell\'orologio nella barra di stato.
+Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limitate in base al dispositivo. Puoi usare questo per impostrlo a sinistra, centro o a destra. Tieni conto che in One UI 2.0 (Android 10), hai bisogno di avere QuickStar installato per fare in modo che questa opzione abbia effetto. Per impostare questa opzione persistente, abilita la Blacklist delle icone nelle opzioni persistenti.</string>
+    <string name="option_touchwiz_navbar_color">Colore Barra Di Navigazione</string>
+    <string name="option_touchwiz_navbar_color
