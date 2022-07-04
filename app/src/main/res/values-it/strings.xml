@@ -157,4 +157,8 @@
     <string name="option_oneui_clock_position_desc">In Samsung One UI (Android 9 o superiore), è possibile cambiare la posizione dell\'orologio nella barra di stato.
 Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limitate in base al dispositivo. Puoi usare questo per impostrlo a sinistra, centro o a destra. Tieni conto che in One UI 2.0 (Android 10), hai bisogno di avere QuickStar installato per fare in modo che questa opzione abbia effetto. Per impostare questa opzione persistente, abilita la Blacklist delle icone nelle opzioni persistenti.</string>
     <string name="option_touchwiz_navbar_color">Colore Barra Di Navigazione</string>
-    <string name="option_touchwiz_navbar_color
+    <string name="option_touchwiz_navbar_color_desc">Su Samsung Experience e One UI è possibile impostare il colore della barra di navigazione al proprio colore personalizzato. Utilizza questa opzione per farlo.</string>
+    <string name="option_custom_notification_snooze_times">Tempi Di Notifica Personalizzati</string>
+    <string name="option_custom_notification_snooze_times_desc">Android Oreo 8.1 ha introdotto un\'opzione per posticipare le notifiche. È possibile utilizzare questa impostazione per impostare valori personalizzati per i tempi di posticipo.</string>
+    <string name="option_night_mode">Modalità notturna</string>
+    <string name="option_night_mode_desc">Android Nougat ha introdotto un\'opzione nativa per colorare il display di giallo di notte, chiamato Modalità Notte, rinominato in Night Display. Puoi abilitarlo qui e regolare diverse opz
