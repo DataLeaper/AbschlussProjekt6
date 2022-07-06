@@ -173,4 +173,9 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="option_touchwiz_disable_high_brightness_warning">Disabilita Avviso di alta luminosità</string>
     <string name="option_touchwiz_disable_high_brightness_warning_desc">In alcune regioni, i dispositivi Samsung mostreranno un avviso quando si tenta di andare sopra un certo livello di luminosità dello schermo. Questa impostazione di solito viene ripristinata al riavvio. Abilitala e impostala come opzione persistente per disabilitare definitivamente questo avviso.</string>
     <string name="option_qs_editor">Editor Impostazioni Rapide</string>
-    <string name="option_qs_editor_desc">Mentre le impostazioni rapide personalizzate sono disponibili solo su Android Nougat (7.0) e successivi, Marshmallow (6.0) ha ancora limitato la modifica delle impostazioni rapide disponibili. È possibile riordinare, rim
+    <string name="option_qs_editor_desc">Mentre le impostazioni rapide personalizzate sono disponibili solo su Android Nougat (7.0) e successivi, Marshmallow (6.0) ha ancora limitato la modifica delle impostazioni rapide disponibili. È possibile riordinare, rimuovere e aggiungere le impostazioni rapide predefinite, così come intenti base.</string>
+    <string name="option_qs_fancy_anim">QS Animazioni Avanzate</string>
+    <string name="option_qs_fancy_anim_desc">Sui dispositivi supportati, è possibile utilizzare questo per disabilitare il movimento e la dissolvenza dei tile quando si espande completamente il centro di notifica. Se questo non sembra avere un effetto sul tuo dispositivo, tienilo acceso per evitare altri problemi.</string>
+    <string name="option_qs_move_full_rows">QS Sposta Righe Intere</string>
+    <string name="option_qs_move_full_rows_desc">Ciò che questo in realtà non è spiegato molto bene, ma fa qualcosa e si potrebbe provare se vuoi. Ha qualcosa a che fare con tirare giù il centro di notifica.</string>
+    <string name="option_back_gesture_inset_scale_left">Larghezza Bordo 
