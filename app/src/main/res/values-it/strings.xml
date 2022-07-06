@@ -166,4 +166,8 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="option_touchwiz_qs_row_count_desc">Su Samsung TouchWiz Nougat e Oreo, è possibile personalizzare la griglia di layout con impostazioni nascoste. Usa questo per cambiare il numero delle righe. Abilita questa opzione come opzione persistente.</string>
     <string name="option_touchwiz_qs_column_count">Conteggio Colonna Impostazioni Rapide</string>
     <string name="option_touchwiz_qs_column_count_desc">Su Samsung TouchWiz Nougat e Oreo, è possibile personalizzare la griglia di layout con impostazioni nascoste. Usa questo per cambiare il numero di colonne. Abilita questa opzione come opzione persistente.</string>
-  
+    <string name="option_advanced_force_enable_all">Abilita Tutte Le Opzioni Disabilitate/Nascoste</string>
+    <string name="option_advanced_force_enable_all_desc">Alcune opzioni nel Tuner SystemUI sono nascoste o disabilitate a seconda del dispositivo e della versione di Android in esecuzione. Abilitando questo forzerà queste opzioni ad essere visibili e abilitate. ATTENZIONE: di solito c\'è un buon motivo per cui queste opzioni sono disabilitate o nascoste. Possono semplicemente non funzionare, o possono rompere il dispositivo. Procedere con cautela!</string>
+    <string name="option_advanced_manage_qs_tiles">Gestisci i tile QS</string>
+    <string name="option_advanced_manage_qs_tiles_desc">Abilita o disabilita le impostazioni rapide di SystemUI Tuner singolarmente.</string>
+    <string name
