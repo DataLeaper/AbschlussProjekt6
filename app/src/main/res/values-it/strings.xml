@@ -170,4 +170,7 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="option_advanced_force_enable_all_desc">Alcune opzioni nel Tuner SystemUI sono nascoste o disabilitate a seconda del dispositivo e della versione di Android in esecuzione. Abilitando questo forzerà queste opzioni ad essere visibili e abilitate. ATTENZIONE: di solito c\'è un buon motivo per cui queste opzioni sono disabilitate o nascoste. Possono semplicemente non funzionare, o possono rompere il dispositivo. Procedere con cautela!</string>
     <string name="option_advanced_manage_qs_tiles">Gestisci i tile QS</string>
     <string name="option_advanced_manage_qs_tiles_desc">Abilita o disabilita le impostazioni rapide di SystemUI Tuner singolarmente.</string>
-    <string name
+    <string name="option_touchwiz_disable_high_brightness_warning">Disabilita Avviso di alta luminosità</string>
+    <string name="option_touchwiz_disable_high_brightness_warning_desc">In alcune regioni, i dispositivi Samsung mostreranno un avviso quando si tenta di andare sopra un certo livello di luminosità dello schermo. Questa impostazione di solito viene ripristinata al riavvio. Abilitala e impostala come opzione persistente per disabilitare definitivamente questo avviso.</string>
+    <string name="option_qs_editor">Editor Impostazioni Rapide</string>
+    <string name="option_qs_editor_desc">Mentre le impostazioni rapide personalizzate sono disponibili solo su Android Nougat (7.0) e successivi, Marshmallow (6.0) ha ancora limitato la modifica delle impostazioni rapide disponibili. È possibile riordinare, rim
