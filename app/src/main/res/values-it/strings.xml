@@ -178,4 +178,7 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="option_qs_fancy_anim_desc">Sui dispositivi supportati, è possibile utilizzare questo per disabilitare il movimento e la dissolvenza dei tile quando si espande completamente il centro di notifica. Se questo non sembra avere un effetto sul tuo dispositivo, tienilo acceso per evitare altri problemi.</string>
     <string name="option_qs_move_full_rows">QS Sposta Righe Intere</string>
     <string name="option_qs_move_full_rows_desc">Ciò che questo in realtà non è spiegato molto bene, ma fa qualcosa e si potrebbe provare se vuoi. Ha qualcosa a che fare con tirare giù il centro di notifica.</string>
-    <string name="option_back_gesture_inset_scale_left">Larghezza Bordo 
+    <string name="option_back_gesture_inset_scale_left">Larghezza Bordo del gesto Indietro (Sinistra)</string>
+    <string name="option_back_gesture_inset_scale_left_desc">Android 11 introduce un\'opzione per impostare la sensibilità per il gesto posteriore del bordo dello schermo regolando la larghezza dell\'area di rilevamento. Utilizzare questa opzione per impostare la larghezza del bordo destro più finemente, o rimuoverlo del tutto.</string>
+    <string name="option_back_gesture_inset_scale_right">Larghezza Bordo Gesto Indietro (Destra)</string>
+    <string name="option_back_gesture_inset_scale_right_desc">Android 11 introduce un\'opzione per impostare la sensibilità per il gesto posteriore del bordo dello schermo regolando la larghezza dell\'area di rilevamento. Utilizzare questa opzione per impostare la larghezza del bordo destro più finemente, o
