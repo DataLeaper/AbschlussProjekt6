@@ -189,4 +189,17 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="option_disable_lock_screen_ads">Disabilita Pubblicità Blocco Schermo</string>
     <string name="option_disable_lock_screen_ads_desc">Se il tuo Kindle ha annunci che vengono visualizzati sulla schermata di blocco, puoi usare questa opzione per disabilitarli. Per renderlo permanente, è necessario abilitare questa opzione anche nella schermata Opzioni persistenti.</string>
     <string name="option_allow_custom_left_lock_shortcut">Consenti Scorciatoia Personalizzata A Sinistra</string>
-    <string name="option_allow_custom_left_lock_shortcut_desc">FireOS normalmente riser
+    <string name="option_allow_custom_left_lock_shortcut_desc">FireOS normalmente riserva la scorciatoia sinistra della schermata di blocco per la dashboard del dispositivo intelligente, anche se si cambia la scorciatoia. Abilita qui e in Opzioni persistenti per poter usare una scorciatoia personalizzata.</string>
+    <string name="home_welcome_title">Benvenuto/a!</string>
+    <string name="search">Cerca</string>
+    <string name="immersive_none">Nessuna</string>
+    <string name="immersive_full">Completa</string>
+    <string name="immersive_status">Stato</string>
+    <string name="immersive_nav">Nav</string>
+    <string name="immersive_blacklist">Blacklist</string>
+    <string name="immersive_whitelist">Whitelist</string>
+    <string name="advanced">Avanzato</string>
+    <string name="all_apps">Tutte le app</string>
+    <string name="select_apps">Seleziona Apps</string>
+    <string name="radio">Radio</string>
+    <string n
