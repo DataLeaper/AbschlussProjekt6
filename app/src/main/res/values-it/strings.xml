@@ -273,4 +273,11 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="status_bar_style">Stile barra di stato</string>
     <string name="backup_restore">Backup/Ripristino</string>
     <string name="back_up">Backup</string>
-    <string
+    <string name="restore">Ripristino</string>
+    <string name="set_color">Imposta Colore</string>
+    <string name="intro_welcome">Benvenuto/a!</string>
+    <string name="intro_welcome_desc">Il tuo dispositivo Android probabilmente ha un sacco di impostazioni da modificare, ma sapevi che ci sono un sacco di impostazioni che sono nascoste? Questa app ti aiuta a cambiare quelle impostazioni nascoste! Non hai bisogno di accesso root, ma devi seguire alcuni passaggi per impostare questa app.</string>
+    <string name="intro_terms">Termini di utilizzo</string>
+    <string name="intro_terms_desc">Per favore leggi questi termini. Ti prometto che ne vale la pena. Per la maggior parte di voi, vi salveranno una email.</string>
+    <string name="intro_disclaimer">Disclaimer</string>
+    <string name="intro_disclaimer_desc">Sy
