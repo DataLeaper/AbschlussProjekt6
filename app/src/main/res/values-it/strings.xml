@@ -280,4 +280,6 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="intro_terms">Termini di utilizzo</string>
     <string name="intro_terms_desc">Per favore leggi questi termini. Ti prometto che ne vale la pena. Per la maggior parte di voi, vi salveranno una email.</string>
     <string name="intro_disclaimer">Disclaimer</string>
-    <string name="intro_disclaimer_desc">Sy
+    <string name="intro_disclaimer_desc">SystemUI Tuner può modificare le impostazioni nascoste. Sfortunatamente, poiché sono nascoste, c\'è la possibilità che il dispositivo specifico non risponda a determinate modifiche. Su versioni pesantemente personalizzate di Android, come EMUI, MIUI, e ColorOS, ci saranno un sacco di caratteristiche che semplicemente non funzionano. Si prega di tenere a mente che non c\'è semplicemente nulla che posso fare al riguardo.</string>
+    <string name="intro_grant_wss">Consenti la scrittura delle Impostazioni Sicure</string>
+    <string name="intro_grant_wss_desc">SystemUI Tuner ha bisogno di un permesso speciale per funzionare. Per garantirlo, devi utilizzare ADB o avere il Root. Premendo GARANTISCI proverà a usare il root. Altrimenti, premi AIUTO e ti aiuteremo a impostare ADB. Non ti preoccupare, è si
