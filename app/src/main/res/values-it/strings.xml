@@ -215,4 +215,21 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="show">Mostra</string>
     <string name="enabled">Abilitato</string>
     <string name="enable">Attiva</string>
-    <string na
+    <string name="global">Globale</string>
+    <string name="secure">Sicuro</string>
+    <string name="system">Sistema</string>
+    <string name="left">Sinistra</string>
+    <string name="middle">Centrale</string>
+    <string name="right">Destra</string>
+    <string name="snooze_default">Predefinito</string>
+    <string name="snooze_a">A</string>
+    <string name="snooze_b">B</string>
+    <string name="snooze_c">C</string>
+    <string name="snooze_d">D</string>
+    <string name="disabled">Disattivato</string>
+    <string name="auto">Automatico</string>
+    <string name="tile_full_immersive">Immersivo Completo</string>
+    <string name="tile_nav_immersive">Solo Navbar</string>
+    <string name="tile_status_immersive">Solo barra di stato</string>
+    <string name="add">Aggiungi</string>
+    <string name="add_qs_tile">Aggiun
