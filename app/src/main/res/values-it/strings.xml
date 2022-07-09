@@ -259,4 +259,18 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="mobile_visibility">Visibilità Mobile</string>
     <string name="wifi_level">Livello WiFi</string>
     <string name="wifi_fully_connected">Segnale WiFi connesso al massimo</string>
-    <string name="mobile_level">Livello Mobil
+    <string name="mobile_level">Livello Mobile</string>
+    <string name="mobile_fully_connected">Segnale Rete mobile al massimo</string>
+    <string name="mobile_roaming">Roaming Mobile</string>
+    <string name="mobile_data_type">Tipo Dati Mobili</string>
+    <string name="mobile_activity_type">Tipo Di Attività Mobile</string>
+    <string name="wifi_activity_type">Tipo Attività WiFi</string>
+    <string name="mobile_carrier_network_change">Cambio Rete Operatore</string>
+    <string name="mobile_inflate_signal">Segnale Gonfiabile Mobile</string>
+    <string name="battery_level">Livello batteria</string>
+    <string name="battery_charging">Batteria in carica</string>
+    <string name="clock_time">Orario</string>
+    <string name="status_bar_style">Stile barra di stato</string>
+    <string name="backup_restore">Backup/Ripristino</string>
+    <string name="back_up">Backup</string>
+    <string
