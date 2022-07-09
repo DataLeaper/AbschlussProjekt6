@@ -247,4 +247,16 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="volume_visibility">Visibilità Volume</string>
     <string name="bluetooth_visibility">Visibilità Bluetooth</string>
     <string name="location_visibility">Visibilità della posizione</string>
-    <string name="a
+    <string name="alarm_visibility">Visibilità Allarme</string>
+    <string name="sync_visibility">Visibilità della sincronizzazione</string>
+    <string name="tty_visibility">Visibilità TTY</string>
+    <string name="eri_visibility">Visibilità ERI</string>
+    <string name="secure_visibility">Visibilità Sicura</string>
+    <string name="mute_visibility">Visibilità del muto</string>
+    <string name="speakerphone_visibility">Visibilità Altoparlante</string>
+    <string name="airplane_visibility">Visibilità Aereo</string>
+    <string name="wifi_visibility">Visibilità WiFi</string>
+    <string name="mobile_visibility">Visibilità Mobile</string>
+    <string name="wifi_level">Livello WiFi</string>
+    <string name="wifi_fully_connected">Segnale WiFi connesso al massimo</string>
+    <string name="mobile_level">Livello Mobil
