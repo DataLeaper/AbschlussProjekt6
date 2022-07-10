@@ -303,4 +303,13 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="android_marshmallow">Marshmallow 6.0</string>
     <string name="android_nougat">Nougat 7.0</string>
     <string name="android_nougat_7_1">Nougat 7.1</string>
-    <string name="android_or
+    <string name="android_oreo">Oreo 8.0</string>
+    <string name="android_oreo_8_1">Oreo 8.1</string>
+    <string name="android_pie">Pie 9.0</string>
+    <string name="android_10">10</string>
+    <string name="android_11">11</string>
+    <string name="write_system_fail">Impossibile scrivere su impostazioni di sistema!</string>
+    <string name="write_system_fail_desc">Purtroppo, Android ha aggiunto alcune restrizioni su ciò che può essere scritto sulle impostazioni di sistema, e sembra che tu ne abbia incontrato una. Per fortuna, è possibile aggirare questa restrizione attraverso l\'uso di un\'app aggiuntiva. Dovrai scaricarla da XDA Labs, ma è gratuita e open source.</string>
+    <string name="write_system_fail_get_add_on">Ottieni Add-On</string>
+    <string name="donate">Dona</string>
+    <string name="donate_desc">Sviluppo questa app nel mio tempo libero. Se 
