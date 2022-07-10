@@ -312,4 +312,15 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="write_system_fail_desc">Purtroppo, Android ha aggiunto alcune restrizioni su ciò che può essere scritto sulle impostazioni di sistema, e sembra che tu ne abbia incontrato una. Per fortuna, è possibile aggirare questa restrizione attraverso l\'uso di un\'app aggiuntiva. Dovrai scaricarla da XDA Labs, ma è gratuita e open source.</string>
     <string name="write_system_fail_get_add_on">Ottieni Add-On</string>
     <string name="donate">Dona</string>
-    <string name="donate_desc">Sviluppo questa app nel mio tempo libero. Se 
+    <string name="donate_desc">Sviluppo questa app nel mio tempo libero. Se ti piace usarla, considera di comprarmi una tazza di caffè (anche se non bevo caffè). Naturalmente, questa è una donazione, e non devi fare nulla. Non ci sono funzioni a pagamento in SystemUl Tuner.</string>
+    <string name="paypal">PayPal</string>
+    <string name="google_play">Google Play</string>
+    <string name="social">Social</string>
+    <string name="twitter">Twitter</string>
+    <string name="email">E-mail</string>
+    <string name="website">Sito web</string>
+    <string name="more_apps">Altre app</string>
+    <string name="telegram">Telegram</string>
+    <string name="mastodon">Mastodon</string>
+    <string name="oneui_tuner">OneUI Tuner</string>
+    <string name="oneui_tuner_desc">Se possiedi un dispositivo Samsung con Android Pie o più, su Samsung One UI potresti aver notato che alcune opzioni che funzionavano su Oreo non funzionano più, come C
