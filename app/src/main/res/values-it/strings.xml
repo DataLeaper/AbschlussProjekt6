@@ -333,4 +333,10 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="tile_battery">Batteria</string>
     <string name="tile_clock">Orologio</string>
     <string name="tile_demo">Modalità demo</string>
-    <string name="tile_head
+    <string name="tile_heads_up">Notifiche Heads-Up</string>
+    <string name="tile_night_mode">Modalità notte</string>
+    <string name="icon_blacklist_rotation_lock">Blocco rotazione</string>
+    <string name="icon_blacklist_rotation_lock_desc">Modificare la blacklist delle icone potrebbe causare l\'icona mostrata qui nella barra di stato. Questa è l\' icona Blocco Rotazione. Puoi metterla in blacklist qui sotto.</string>
+    <string name="hide_battery_android_bug_msg">Nascondere l\'icona della batteria non è più possibile utilizzando la blacklist su Android 10. Questo è un bug in Android. Dovrebbe essere risolto in Android 11.</string>
+    <string name="hide_battery_android_bug_btn_view_issue">Visualizza Problemi</string>
+    <string name="error_creating_file_template">Errore creazione file: %s</string
