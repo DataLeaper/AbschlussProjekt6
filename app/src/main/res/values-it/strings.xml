@@ -286,4 +286,9 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="intro_grant_extra">Concedi Permessi Extra</string>
     <string name="intro_grant_extra_desc">Per alcune funzionalità, SystemUI Tuner necessita di alcune autorizzazioni ADB aggiuntive per funzionare correttamente. Non è necessario concedere questi ora, e vi verrà chiesto se sono necessari.</string>
     <string name="intro_system_alert_window">Finestra di avviso di sistema</string>
-    <string name="intro_system_alert_window_desc">Android 12 e successivi hanno notevolmente limitato la possibilità per le applicazioni di eseguire operazioni in background e quando il dispositivo si avvia. Concedere il permesso di visualizzare il sintonizzatore SystemUI su altre app lo esonererà da queste res
+    <string name="intro_system_alert_window_desc">Android 12 e successivi hanno notevolmente limitato la possibilità per le applicazioni di eseguire operazioni in background e quando il dispositivo si avvia. Concedere il permesso di visualizzare il sintonizzatore SystemUI su altre app lo esonererà da queste restrizioni e migliorerà l\'affidabilità delle Opzioni persistenti. Questa autorizzazione è completamente opzionale.</string>
+    <string name="intro_allow_notifications">Consenti notifiche</string>
+    <string name="intro_allow_notifications_desc">Android 13 introduce una nuova restrizione sulle app che richiedono l\'autorizzazione dell\'utente per visualizzare le notifiche. SystemUI Tuner può mostrare una notifica quando si eseguono operazioni in background. Se si desidera visualizzare questa notifica, si prega di consentire SystemUI Tuner per mostrare le notifiche.</string>
+    <string name="intro_last">Grazie per usare la mia app!</string>
+    <string name="intro_last_desc">Follow me on Mastodon or Twitter for the latest updates.</string>
+    <string name="intro_cr
