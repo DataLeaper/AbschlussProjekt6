@@ -295,4 +295,12 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="intro_crash_reports_desc">You can choose to enable anonymous crash reports to help keep the app running smoothly. No personal information is collected. To fully disable collection once enabled, you\'ll need to force stop SystemUI Tuner. You can change this setting later.</string>
     <string name="crash_reports_desc">You can choose to enable anonymous crash reports to help keep the app running smoothly. No personal information is collected. To fully disable collection once enabled, you\'ll need to force stop SystemUI Tuner.</string>
     <string name="compatibility_message_lower">Siamo spiacenti, questa funzione funziona solo con Android %s e versioni successive</string>
-    <string name="compatibility_message_both">Siamo spiacenti, questa funzione funziona solo da Android %1$s ad Android %2$s<
+    <string name="compatibility_message_both">Siamo spiacenti, questa funzione funziona solo da Android %1$s ad Android %2$s</string>
+    <string name="compatibility_message_higher">Siamo spiacenti, questa funzione funziona solo tramite Android %s</string>
+    <string name="compatibility_message_storage">Siamo spiacenti, hai bisogno di una scheda SD per cambiare questa opzione.</string>
+    <string name="reset_confirm">Questo ripristinerà la maggior parte delle modifiche apportate da SystemUI Tuner. Le opzioni sottostanti dovranno essere reimpostate manualmente. Ti raccomando di riavviare dopo il reset.\n%s</string>
+    <string name="persistent_options_desc">Seleziona qui un\' opzione per bloccare i suoi valori a quelli impostati da SystemUI Tuner.</string>
+    <string name="android_marshmallow">Marshmallow 6.0</string>
+    <string name="android_nougat">Nougat 7.0</string>
+    <string name="android_nougat_7_1">Nougat 7.1</string>
+    <string name="android_or
