@@ -339,4 +339,12 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="icon_blacklist_rotation_lock_desc">Modificare la blacklist delle icone potrebbe causare l\'icona mostrata qui nella barra di stato. Questa è l\' icona Blocco Rotazione. Puoi metterla in blacklist qui sotto.</string>
     <string name="hide_battery_android_bug_msg">Nascondere l\'icona della batteria non è più possibile utilizzando la blacklist su Android 10. Questo è un bug in Android. Dovrebbe essere risolto in Android 11.</string>
     <string name="hide_battery_android_bug_btn_view_issue">Visualizza Problemi</string>
-    <string name="error_creating_file_template">Errore creazione file: %s</string
+    <string name="error_creating_file_template">Errore creazione file: %s</string>
+    <string name="error_restoring_icon_blacklist">Errore nel ripristinare: %s</string>
+    <string name="permission_grant_success">Autorizzazioni concesse con successo.</string>
+    <string name="permission_grant_failure">Impossibile concedere i permessi. Se hai un dispositivo Xiaomi o OPPO/Realme/OnePlus, assicurati di abilitare \" Debug USB(Impostazioni di Sicurezza)\" o di abilitare \"Disabilita Monitor Permessi\".</string>
+    <string name="permission_grant_failure_short">Impossibile concedere i permessi.\n%s</string>
+    <string name="patreon">Patreon</string>
+    <string name="patreon_desc">Con solo $1 al mese hai accesso a tutte le mie app a pagamento e più.</string>
+    <string name="supporters">Sostenitori</string>
+    <string name="supporters_desc">Q
