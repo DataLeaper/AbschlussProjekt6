@@ -347,4 +347,16 @@ Good Lock di QuickStar ti permetterà di farlo, ma le opzioni a volte sono limit
     <string name="patreon">Patreon</string>
     <string name="patreon_desc">Con solo $1 al mese hai accesso a tutte le mie app a pagamento e più.</string>
     <string name="supporters">Sostenitori</string>
-    <string name="supporters_desc">Q
+    <string name="supporters_desc">Queste persone aiutano a mantenere questa app (e me) sviluppata.</string>
+    <string name="demo_mode_status_bar_opaque">Opaco</string>
+    <string name="demo_mode_status_bar_semi_transparent">Semi-trasparente</string>
+    <string name="demo_mode_status_bar_translucent">Traslucido</string>
+    <string name="demo_mode_data_type_roaming">Roaming dati</string>
+    <string name="demo_mode_data_type_none">Nessuno</string>
+    <string name="demo_mode_data_type_disabled">Disattivata</string>
+    <string name="demo_mode_data_type_not_default_data">Dati Non Predefiniti</string>
+    <string name="demo_mode_activity_type_none">Nessuna</string>
+    <string name="demo_mode_activity_type_in">Entra</string>
+    <string name="demo_mode_activity_type_out">Esci</string>
+    <string name="demo_mode_activity_type_inout">Entra/Esci</string>
+    <string name="safe_audio_state_not_config
