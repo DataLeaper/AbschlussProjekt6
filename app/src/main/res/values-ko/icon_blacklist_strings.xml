@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category_icon_blacklist_general">일반</string>
+    <string name="category_icon_blacklist_samsung">삼성</string>
+    <string name="category_icon_blacklist_huawei">화웨이</string>
+    <string name="category_icon_blacklist_xiaomi">샤오미</string>
+    <string name="category_icon_blacklist_htc">HTC</string>
+    <string n
