@@ -59,4 +59,17 @@
     <string name="icon_blacklist_smart_network">스마트 네트워크</string>
     <string name="icon_blacklist_glove">장갑 모드</string>
     <string name="icon_blacklist_gesture">제스처</string>
-    <str
+    <string name="icon_blacklist_smart_scroll">스마트 스크롤</string>
+    <string name="icon_blacklist_face">얼굴</string>
+    <string name="icon_blacklist_gps">GPS</string>
+    <string name="icon_blacklist_lbs">LBS</string>
+    <string name="icon_blacklist_wearable_gear">웨어러블 기어</string>
+    <string name="icon_blacklist_femtoicon">펨토셀</string>
+    <string name="icon_blacklist_comsamsungrcs">삼성 RCS</string>
+    <string name="icon_blacklist_wifi_p2p">WiFi P2P</string>
+    <string name="icon_blacklist_wifi_ap">WiFi AP</string>
+    <string name="icon_blacklist_wifi_oxygen">WiFi Oxygen</string>
+    <string name="icon_blacklist_phone_signal_second_stub">전화 신호 Second Stub</string>
+    <string name="icon_blacklist_toddler">키즈 모드</string>
+    <string name="icon_blacklist_keyguard_wakeup">키가드 웨이크업</string>
+    <string name="icon_blacklist
