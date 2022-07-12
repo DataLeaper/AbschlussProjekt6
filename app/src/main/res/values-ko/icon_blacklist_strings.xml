@@ -44,4 +44,19 @@
     <string name="icon_blacklist_otg_keyboard">OTG 키보드</string>
     <string name="icon_blacklist_felica_lock">펠리카 잠금</string>
     <string name="icon_blacklist_answering_memo">응답 메모</string>
-    <string name="icon_blacklist_ime">IME
+    <string name="icon_blacklist_ime">IME</string>
+    <string name="icon_blacklist_sync_failing">동기화 실패 중</string>
+    <string name="icon_blacklist_sync_active">동기화 진행 중</string>
+    <string name="icon_blacklist_nfclock">NFC 잠금</string>
+    <string name="icon_blacklist_secure">보안</string>
+    <string name="icon_blacklist_power_saver">절전</string>
+    <string name="icon_blacklist_data_saver">데이터 절약</string>
+    <string name="icon_blacklist_hotspot">핫스팟</string>
+    <string name="icon_blacklist_bluetooth">블루투스</string>
+    <string name="icon_blacklist_mute">음소거</string>
+    <string name="icon_blacklist_vpn">VPN</string>
+    <string name="icon_blacklist_knox_container">KNOX 컨테이너</string>
+    <string name="icon_blacklist_smart_network">스마트 네트워크</string>
+    <string name="icon_blacklist_glove">장갑 모드</string>
+    <string name="icon_blacklist_gesture">제스처</string>
+    <str
