@@ -72,4 +72,18 @@
     <string name="icon_blacklist_phone_signal_second_stub">전화 신호 Second Stub</string>
     <string name="icon_blacklist_toddler">키즈 모드</string>
     <string name="icon_blacklist_keyguard_wakeup">키가드 웨이크업</string>
-    <string name="icon_blacklist
+    <string name="icon_blacklist_safezone">안전 구역</string>
+    <string name="icon_blacklist_wimax">WiMax</string>
+    <string name="icon_blacklist_smart_bonding">스마트 본딩</string>
+    <string name="icon_blacklist_private_mode">사생활 보호 모드</string>
+    <string name="icon_blacklist_powersavingmode">절전 모드</string>
+    <string name="icon_blacklist_earphone">이어폰</string>
+    <string name="icon_blacklist_unicom_call">Unicom 전화</string>
+    <string name="icon_blacklist_volte_call">VoLTE 전화</string>
+    <string name="icon_blacklist_eyes_protect">시력 보호</string>
+    <string name="icon_blacklist_mikey">MiKey</string>
+    <string name="icon_blacklist_call_record">통화 녹음</string>
+    <string name="icon_blacklist_privacy_mode">개인정보 보호 모드</string>
+    <string name="icon_blacklist_ble_unlock_mode">BLE 잠금 해제 모드</string>
+    <string name="icon_blacklist_quiet">무음</string>
+    <string
