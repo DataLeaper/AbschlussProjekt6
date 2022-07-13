@@ -5,4 +5,10 @@
     <string name="adb_intro_desc_no_computer">Não sabe como usar o ADB? Sem problemas. Apenas siga esse guia e você deverá conseguir.</string>
     <string name="adb_choose_computer_os">Escolha seu Sistema Operacional.</string>
     <string name="adb_choose_computer_os_desc">Qual sistema operacional está rodando no seu computador?</string>
-    <string name="adb_andro
+    <string name="adb_android_guide">Configuração Inicial (No seu smartphone)</string>
+    <string name="adb_final_title">Tudo pronto</string>
+    <string name="adb_final_desc">É isso! Se tudo ocorreu bem, as permissões devem estar garantidas.</string>
+    <string name="adb_install_android_1">Abra as configurações do seu celular, desça até o final e entre em \"Sobre o dispositivo\".</string>
+    <string name="adb_install_android_2">Dependendo da interface da sua fabricante, você pode ver um menu chamado \"Informação de Software\". Se sim, toque nela.</string>
+    <string name="adb_install_android_3">Agora, encontre a opção \"Número da compilação\" ou \"Número da versão\" ou \"Versão da Miui\". Novamente: os nomes dependem da fabricante.</string>
+    <string name="adb_install_android_4">Toque nessa opção 7 vezes contínuas. Provavelmente você precisará colocar sua senh
