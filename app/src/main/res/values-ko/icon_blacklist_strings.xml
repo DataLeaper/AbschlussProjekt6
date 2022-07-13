@@ -86,4 +86,7 @@
     <string name="icon_blacklist_privacy_mode">개인정보 보호 모드</string>
     <string name="icon_blacklist_ble_unlock_mode">BLE 잠금 해제 모드</string>
     <string name="icon_blacklist_quiet">무음</string>
-    <string
+    <string name="icon_blacklist_missed_call">부재중 전화</string>
+    <string name="icon_blacklist_bluetooth_handsfree_battery">블루투스 핸즈프리 배터리</string>
+    <string name="icon_blacklist_rtt">RTT</string>
+</resources>
