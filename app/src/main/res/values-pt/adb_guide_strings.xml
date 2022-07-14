@@ -11,4 +11,9 @@
     <string name="adb_install_android_1">Abra as configurações do seu celular, desça até o final e entre em \"Sobre o dispositivo\".</string>
     <string name="adb_install_android_2">Dependendo da interface da sua fabricante, você pode ver um menu chamado \"Informação de Software\". Se sim, toque nela.</string>
     <string name="adb_install_android_3">Agora, encontre a opção \"Número da compilação\" ou \"Número da versão\" ou \"Versão da Miui\". Novamente: os nomes dependem da fabricante.</string>
-    <string name="adb_install_android_4">Toque nessa opção 7 vezes contínuas. Provavelmente você precisará colocar sua senh
+    <string name="adb_install_android_4">Toque nessa opção 7 vezes contínuas. Provavelmente você precisará colocar sua senha da tela de bloqueio.</string>
+    <string name="adb_install_android_5">Agora, volte para a página principal das Configurações.</string>
+    <string name="adb_install_android_6">Dependendo do seu aparelho, você poderá ver um novo menu chamado \"Opções de Desenvolvedor\". Se sim, toque nele e pule a próxima etapa.</string>
+    <string name="adb_install_android_7">Se você não vê o menu de Opções de Desenvolvedor, encontre o menu chamado \"Sistema\" ou \"Configurações adicionais\". Você deve ver o menu de Opções de Desenvolvedor ou Opções de Programador dentro disso.</string>
+    <string name="adb_install_android_8">Role para baixo até você encontrar a opção \"Depuração USB\", habilite-a.</string>
+    <string name="adb_install_android_9">Nos aparelhos da Xiaomi, você também precisará encontrar e desativar a opção \"Depura
