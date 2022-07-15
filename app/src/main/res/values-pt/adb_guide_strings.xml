@@ -26,4 +26,8 @@
     <string name="adb_install_adb_windows_1">Baixe o ADB ZIP aqui: https://dl.google.com/android/repository/platform-tools-latest-windows.zip</string>
     <string name="adb_install_adb_windows_2">Extrair o arquivo compactado para um local da sua preferência, como C:\adb\'.</string>
     <string name="adb_install_adb_windows_3">Use seu explorador de arquivos para navegar até o arquivo compactado extraído. Você deve ver um monte de arquivos, incluindo um chamado \"adb\".</string>
-    <string name="adb_install_adb_windows_4">Clique dentro da barra de endereços e substitua o que existe com \"cmd\" (sem aspas). Em seguida, aperte Enter no teclado. Observe: o cmd não precisa ser executado como a
+    <string name="adb_install_adb_windows_4">Clique dentro da barra de endereços e substitua o que existe com \"cmd\" (sem aspas). Em seguida, aperte Enter no teclado. Observe: o cmd não precisa ser executado como administrador.</string>
+    <string name="adb_install_adb_mac_1">Baixe o ADB ZIP aqui: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip</string>
+    <string name="adb_install_adb_mac_2">Extrair o arquivo compactado para um local da sua preferência, como a Mesa, ou em Transferências.</string>
+    <string name="adb_install_adb_mac_3">Agora, abra o terminal. Você pode fazê-lo pressionando CMD+SPACE para abrir o Spotlight e procurar por \"Terminal\". Ou entrando no Launchpad e abrindo a pasta \"Outros\".</string>
+    <string name="adb_install_adb_mac_4">Agora, navegue para os arquivos extraídos usando o seguinte comando no terminal: \"cd /path/to/files/\" (sem aspas). Por exemplo, se seu nome de usuário é Eduardo e você extraiu o arquivo compactado na Mesa, o comando deve ser \"cd /Use
