@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="adb_intro_title">Руководство по ADB</string>
+    <string name="adb_intro_desc">Не знаете, как использовать ADB? Без проблем, просто следуйте этому руководству (обратите внимание, что 

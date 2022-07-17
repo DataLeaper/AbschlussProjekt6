@@ -49,4 +49,6 @@
     <string name="adb_linux_fedora">Fedora/SUSE</string>
     <string name="adb_linux_debian">Debian/Ubuntu</string>
     <string name="adb_linux_rhel">RHEL/CentOS</string>
-    <string name="adb_linux_other">Outras distribuições
+    <string name="adb_linux_other">Outras distribuições Linux</string>
+    <string name="adb_local">Android (Este Dispositivo)</string>
+</resources>
