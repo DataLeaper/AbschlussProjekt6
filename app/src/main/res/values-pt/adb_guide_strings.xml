@@ -37,4 +37,8 @@
     <string name="adb_install_adb_fedora_2">Instale o ADB com o seguinte comando: \"sudo dnf install adb\".</string>
     <string name="adb_install_adb_rhel_1">Abra um terminal.</string>
     <string name="adb_install_adb_rhel_2">Instale o ADB com o seguinte comando: \"yum install android-tools\".</string>
-    <string name="adb_install_adb_linux_other_1">Baixe o ADB ZIP aqui: https://dl.google.
+    <string name="adb_install_adb_linux_other_1">Baixe o ADB ZIP aqui: https://dl.google.com/android/repository/platform-tools-latest-linux.zip</string>
+    <string name="adb_install_adb_linux_other_2">Extrair o arquivo compactado para um local da sua preferência, como a pasta Home, ou a pasta Documentos.</string>
+    <string name="adb_install_adb_linux_other_3">Abra um terminal.</string>
+    <string name="adb_install_adb_linux_other_4">Agora, navegue para os arquivos extraídos usando o seguinte comando no terminal: \"cd /path/to/files/\" (sem aspas). Por exemplo, se seu nome de usuário é Eduardo e você extraiu o arquivo compactado na pasta Home, o comando deve ser \"cd /home/eduardo/platform-tools/\", onde \"platform-tools\" é a pasta com o arquivo chamado \"adb\".</string>
+    <string name="adb_install_adb_general_end_1">Um Prompt de Comando ou uma janela de Terminal deve abrir. D
