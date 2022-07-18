@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="adb_intro_title">Руководство по ADB</string>
-    <string name="adb_intro_desc">Не знаете, как использовать ADB? Без проблем, просто следуйте этому руководству (обратите внимание, что 
+    <string name="adb_intro_desc">Не знаете, как использовать ADB? Без проблем, просто следуйте этому руководству (обратите внимание, что вам необходим компьютер для этого).</string>
+    <string name="adb_intro_desc_no_computer">Не знаете, как использовать ADB? Без проблем, просто следуйте этому руководству.</string>
+    <string name="adb_choose_computer_os">Выберите вашу операционную систему.</string>
+    <string name="adb_choose_computer_os_desc">Какая операционная система на вашем компьютере?</string>
+    <string name="adb_android_guide">Первоначальная установка (на вашем телефоне)</string>
+    <string name="adb_final_title">Всё готово</string>
+    <string name="adb_final_desc">Это всё! Если всё пошло хорошо, разрешения должны быть предоставлены.</string>
+    <string name="adb_install_android_1">Откройте приложение Настройки и прокрутите вниз до О телефона. Нажмите на него.</string>
+    <string name="adb_install_android_2">В зависимости от вашего устройства, вы можете увидеть меню \"Информация о прогр
