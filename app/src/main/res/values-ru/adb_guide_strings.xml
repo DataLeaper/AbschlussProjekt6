@@ -19,4 +19,10 @@
     <string name="adb_install_android_9">На телефонах Xiaomi вам также нужно найти и отключить опцию «Отладка по USB (Настройки безопасности)».</string>
     <string name="adb_install_android_10">На телефонах OPPO, Realme и OnePlus вам также нужно найти и включить опцию «Отключить мониторинг разрешений».</string>
     <string name="adb_install_android_11">Теперь подключите телефон к компьютеру. Если появится всплывающее окно с подтверждением об отладке USB, разрешите его.</string>
-    <string name="adb_install_android_12">Как только это будет сделано, придёт время продолжить работу на компьютере
+    <string name="adb_install_android_12">Как только это будет сделано, придёт время продолжить работу на компьютере.</string>
+    <string name="adb_install_local_1"><![CDATA[Скачайте и установите приложение Shizuku из [Google Play Store](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api).]]></string>
+    <string name="adb_install_local_2">Откройте приложение Shizuku и следуйте инструкциям в разделе \"Начать через беспроводную отладку\".</string>
+    <string name="adb_install_local_3">Закройте этот экран и нажмите кнопку «GRANT»/«ПРЕДОСТАВИТЬ».</string>
+    <string name="adb_install_adb_windows_1">Download the ADB ZIP from here: https://dl.google.com/android/repository/platform-tools-latest-windows.zip</string>
+    <string name="adb_install_adb_windows_2">Extract the ZIP to a convenient location, such as `C:\\adb`.</string>
+    <string name="adb_install_adb_windows_3">Откройте папку с распакова
