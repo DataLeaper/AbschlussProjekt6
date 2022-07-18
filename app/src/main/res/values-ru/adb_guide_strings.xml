@@ -25,4 +25,9 @@
     <string name="adb_install_local_3">Закройте этот экран и нажмите кнопку «GRANT»/«ПРЕДОСТАВИТЬ».</string>
     <string name="adb_install_adb_windows_1">Download the ADB ZIP from here: https://dl.google.com/android/repository/platform-tools-latest-windows.zip</string>
     <string name="adb_install_adb_windows_2">Extract the ZIP to a convenient location, such as `C:\\adb`.</string>
-    <string name="adb_install_adb_windows_3">Откройте папку с распакова
+    <string name="adb_install_adb_windows_3">Откройте папку с распакованным ZIPом. Вы должны увидеть несколько файлов, включая \"adb\".</string>
+    <string name="adb_install_adb_windows_4">Кликните внутри строки поиска в проводнике и замените то, что там есть на \"cmd\" (без кавычек), затем нажмите Enter.</string>
+    <string name="adb_install_adb_mac_1">Download the ADB ZIP from here: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip</string>
+    <string name="adb_install_adb_mac_2">Распакуйте ZIP в удобное место, например, на Рабочий стол.</string>
+    <string name="adb_install_adb_mac_3">Теперь откройте терминал нажав одновременно кнопки Cmd+SPACE для открытия поиска Spotlight и введите \"Терминал\".</string>
+    <string name="adb_install_adb_mac_4">Теперь выберите извлеченные файлы, используя следующую команду: `cd /path/to/files/`. Например, если ваше 
