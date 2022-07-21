@@ -37,4 +37,8 @@
     <string name="adb_install_adb_fedora_2">Установите ADB следующей командой: `sudo dnf install adb`.</string>
     <string name="adb_install_adb_rhel_1">Откройте Терминал.</string>
     <string name="adb_install_adb_rhel_2">Установите ADB следующей командой: `yum install android-tools`.</string>
-    <string name="adb_install_a
+    <string name="adb_install_adb_linux_other_1">Download the ADB ZIP from here: https://dl.google.com/android/repository/platform-tools-latest-linux.zip</string>
+    <string name="adb_install_adb_linux_other_2">Распакуйте ZIP в удобное место, например в домашний каталог.</string>
+    <string name="adb_install_adb_linux_other_3">Откройте Терминал.</string>
+    <string name="adb_install_adb_linux_other_4">Теперь перейдите к распакованным файла, используя следующую команду: `cd /путь/до/файлов/`. Например, если ваше имя пользователя Zachary и вы распаковали ZIP в домашнюю директорию, командой будет `cd /home/Zachary/platform-tools/`, где \"platform-tools\" это папка с файлом \"adb\".</string>
+    <string name="adb_install_adb_general_end_1">Должно быть открыто окно командной строки или терминала. Введите внутри него следующую команду(ы) и нажмите Ввод после каждой из них. Если на вашем телефоне появ
