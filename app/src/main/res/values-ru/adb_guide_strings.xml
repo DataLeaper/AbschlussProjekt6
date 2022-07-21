@@ -41,4 +41,14 @@
     <string name="adb_install_adb_linux_other_2">Распакуйте ZIP в удобное место, например в домашний каталог.</string>
     <string name="adb_install_adb_linux_other_3">Откройте Терминал.</string>
     <string name="adb_install_adb_linux_other_4">Теперь перейдите к распакованным файла, используя следующую команду: `cd /путь/до/файлов/`. Например, если ваше имя пользователя Zachary и вы распаковали ZIP в домашнюю директорию, командой будет `cd /home/Zachary/platform-tools/`, где \"platform-tools\" это папка с файлом \"adb\".</string>
-    <string name="adb_install_adb_general_end_1">Должно быть открыто окно командной строки или терминала. Введите внутри него следующую команду(ы) и нажмите Ввод после каждой из них. Если на вашем телефоне появ
+    <string name="adb_install_adb_general_end_1">Должно быть открыто окно командной строки или терминала. Введите внутри него следующую команду(ы) и нажмите Ввод после каждой из них. Если на вашем телефоне появится всплывающее окно об отладке по USB, убедитесь, что выдали разрешения.</string>
+    <string name="adb_install_adb_general_end_2">Если все прошло правильно, команды ничего не должны показать. Если же вывод команд есть, не забудьте прокрутить наверх до места ввода команды, чтобы увидеть ошибку.</string>
+    <string name="adb_install_adb_general_end_3">Разрешения теперь должны быть предоставлены!</string>
+    <string name="adb_windows">Windows</string>
+    <string name="adb_mac">macOS</string>
+    <string name="adb_linux_fedora">Fedora/SUSE</string>
+    <string name="adb_linux_debian">Debian/Ubuntu</string>
+    <string name="adb_linux_rhel">RHEL/CentOS</string>
+    <string name="adb_linux_other">Linux (прочие)</string>
+    <string name="adb_local">Android (это устройство)</string>
+</resources>
