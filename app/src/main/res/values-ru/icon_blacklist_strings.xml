@@ -48,4 +48,18 @@
     <string name="icon_blacklist_sync_failing">Сбой синхронизации</string>
     <string name="icon_blacklist_sync_active">Синхронизация активна</string>
     <string name="icon_blacklist_nfclock">Блокировка NFC</string>
-    <string name="icon_blacklist_secure">Безопасность</string
+    <string name="icon_blacklist_secure">Безопасность</string>
+    <string name="icon_blacklist_power_saver">Экономия энергии</string>
+    <string name="icon_blacklist_data_saver">Экономия трафика</string>
+    <string name="icon_blacklist_hotspot">Точка доступа</string>
+    <string name="icon_blacklist_bluetooth">Bluetooth</string>
+    <string name="icon_blacklist_mute">Заглушка</string>
+    <string name="icon_blacklist_vpn">VPN</string>
+    <string name="icon_blacklist_knox_container">Контейнер KNOX</string>
+    <string name="icon_blacklist_smart_network">Умная сеть</string>
+    <string name="icon_blacklist_glove">Перчатка</string>
+    <string name="icon_blacklist_gesture">Жесты</string>
+    <string name="icon_blacklist_smart_scroll">Умная прокрутка</string>
+    <string name="icon_blacklist_face">Лицо</string>
+    <string name="icon_blacklist_gps">GPS</string>
+    <stri
