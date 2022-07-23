@@ -74,4 +74,16 @@
     <string name="icon_blacklist_keyguard_wakeup">Пробуждение клавиатуры</string>
     <string name="icon_blacklist_safezone">Зона безопасности</string>
     <string name="icon_blacklist_wimax">WiMax</string>
-    <string nam
+    <string name="icon_blacklist_smart_bonding">Smart Bonding</string>
+    <string name="icon_blacklist_private_mode">Приватный режим</string>
+    <string name="icon_blacklist_powersavingmode">Режим энергосбережения</string>
+    <string name="icon_blacklist_earphone">Наушники</string>
+    <string name="icon_blacklist_unicom_call">Unicom Call</string>
+    <string name="icon_blacklist_volte_call">Вызов VoLTE</string>
+    <string name="icon_blacklist_eyes_protect">Защита глаз</string>
+    <string name="icon_blacklist_mikey">MiKey</string>
+    <string name="icon_blacklist_call_record">Запись звонка</string>
+    <string name="icon_blacklist_privacy_mode">Приватный режим</string>
+    <string name="icon_blacklist_ble_unlock_mode">Режим разблокировки BLE</string>
+    <string name="icon_blacklist_quiet">Тихо</string>
+    <string name="icon_blacklist_missed_call">Пропущенный вызов</s
