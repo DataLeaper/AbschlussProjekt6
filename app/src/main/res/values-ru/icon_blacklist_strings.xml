@@ -62,4 +62,16 @@
     <string name="icon_blacklist_smart_scroll">Умная прокрутка</string>
     <string name="icon_blacklist_face">Лицо</string>
     <string name="icon_blacklist_gps">GPS</string>
-    <stri
+    <string name="icon_blacklist_lbs">LBS</string>
+    <string name="icon_blacklist_wearable_gear">Носимая электроника</string>
+    <string name="icon_blacklist_femtoicon">Фемтосоты</string>
+    <string name="icon_blacklist_comsamsungrcs">Samsung RCS</string>
+    <string name="icon_blacklist_wifi_p2p">WiFi P2P</string>
+    <string name="icon_blacklist_wifi_ap">WiFi AP</string>
+    <string name="icon_blacklist_wifi_oxygen">WiFi Oxygen</string>
+    <string name="icon_blacklist_phone_signal_second_stub">Phone Signal Second Stub</string>
+    <string name="icon_blacklist_toddler">Малыши</string>
+    <string name="icon_blacklist_keyguard_wakeup">Пробуждение клавиатуры</string>
+    <string name="icon_blacklist_safezone">Зона безопасности</string>
+    <string name="icon_blacklist_wimax">WiMax</string>
+    <string nam
