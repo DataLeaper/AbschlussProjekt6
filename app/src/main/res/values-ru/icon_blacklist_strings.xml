@@ -23,4 +23,16 @@
     <string name="icon_blacklist_wifi_calling">Звонок по WiFi</string>
     <string name="icon_blacklist_cdma_eri">CDMA ERI</string>
     <string name="icon_blacklist_data_connection">Передача данных</string>
-    <string name="icon
+    <string name="icon_blacklist_phone_evdo_signal">Сигнал EvDO телефона</string>
+    <string name="icon_blacklist_phone_signal">Уровень связи</string>
+    <string name="icon_blacklist_volume">Громкость</string>
+    <string name="icon_blacklist_headset">Гарнитура</string>
+    <string name="icon_blacklist_speakerphone">Громкая связь</string>
+    <string name="icon_blacklist_remote_call">Удалённый вызов</string>
+    <string name="icon_blacklist_tty">TTY</string>
+    <string name="icon_blacklist_clock">Часы</string>
+    <string name="icon_blacklist_alarm">Будильник</string>
+    <string name="icon_blacklist_zen">Zen</string>
+    <string name="icon_blacklist_do_not_disturb">Не беспокоить</string>
+    <string name="icon_blacklist_managed_profile">Управление профилем</string>
+    <string name="icon_blacklist_battery">Батарея</string
