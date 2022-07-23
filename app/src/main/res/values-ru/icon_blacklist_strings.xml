@@ -11,4 +11,16 @@
     <string name="category_icon_blacklist_custom">Пользовательские настройки</string>
     <string name="category_icon_blacklist_auto_desc">Нажмите для развёртывания/загрузки</string>
     <string name="icon_blacklist_add_custom">Добавить пользовательский элемент</string>
-    <string name="icon_blacklist_add_custom_desc">Если вы не можете найти икон
+    <string name="icon_blacklist_add_custom_desc">Если вы не можете найти иконку, которую хотите скрыть, и вы знаете её ключ, добавьте его здесь.</string>
+    <string name="icon_blacklist_remove_custom">Удалить этот элемент</string>
+    <string name="icon_blacklist_remove_custom_desc">Вы уверены, что хотите удалить этот элемент чёрного списка?</string>
+    <string name="icon_blacklist_rotate">Отключение поворота</string>
+    <string name="icon_blacklist_airplane">Авиарежим</string>
+    <string name="icon_blacklist_wifi">Wi-Fi</string>
+    <string name="icon_blacklist_volte">VoLTE</string>
+    <string name="icon_blacklist_vowifi">VoWiFi</string>
+    <string name="icon_blacklist_dmb">DMB</string>
+    <string name="icon_blacklist_wifi_calling">Звонок по WiFi</string>
+    <string name="icon_blacklist_cdma_eri">CDMA ERI</string>
+    <string name="icon_blacklist_data_connection">Передача данных</string>
+    <string name="icon
