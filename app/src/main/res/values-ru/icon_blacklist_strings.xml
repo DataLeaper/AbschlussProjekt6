@@ -86,4 +86,7 @@
     <string name="icon_blacklist_privacy_mode">Приватный режим</string>
     <string name="icon_blacklist_ble_unlock_mode">Режим разблокировки BLE</string>
     <string name="icon_blacklist_quiet">Тихо</string>
-    <string name="icon_blacklist_missed_call">Пропущенный вызов</s
+    <string name="icon_blacklist_missed_call">Пропущенный вызов</string>
+    <string name="icon_blacklist_bluetooth_handsfree_battery">Батарея BT-устройств</string>
+    <string name="icon_blacklist_rtt">RTT</string>
+</resources>
