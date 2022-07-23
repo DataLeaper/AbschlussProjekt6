@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name=
+    <string name="category_icon_blacklist_general">Общее</string>
+    <string name="category_icon_blacklist_samsung">Samsung</string>
+    <string name="category_icon_blacklist_huawei">Huawei</string>
+    <string name="category_icon_blacklist_xiaomi">Xiaomi</string>
+    <string name="category_icon_blacklist_htc">HTC</string>
+    <string name="category_icon_blacklist_sony">Sony</string>
+    <string name="category_icon_blacklist_lg">LG</string>
+    <string name="category_icon_blacklist_auto">Авто</string>
+    <string name="category_icon_blacklist_custom">Пользовательские настройки</string>
+    <string name="category_icon_blacklist_auto_desc">Нажмите для развёртывания/загрузки</string>
+    <string name="icon_blacklist_add_custom">Добавить пользовательский элемент</string>
+    <string name="icon_blacklist_add_custom_desc">Если вы не можете найти икон
