@@ -14,4 +14,10 @@
     <string name="adb_install_android_4">Geliştirici Modunu etkinleştirmek için bu seçeneğe 7 kez dokunun. Etkinleştirmek için şifrenizi girmeniz gerekebilir.</string>
     <string name="adb_install_android_5">Şimdi ana Ayarlar sayfasına geri dönün.</string>
     <string name="adb_install_android_6">Cihazınıza bağlı olarak \"Geliştirici Seçenekleri\" adlı yeni bir menü görebilirsiniz. Eğer öyleyse, ona dokunun ve bir sonraki adımı atlayın.</string>
-    <string name="adb_install_android_7">Geliştirici Seçenekleri menüsünü görmüyorsanız, \"Sistem\" veya \"Ek Ayarlar\" etiketli menüyü bulun. Bunun içinde Geliştirici 
+    <string name="adb_install_android_7">Geliştirici Seçenekleri menüsünü görmüyorsanız, \"Sistem\" veya \"Ek Ayarlar\" etiketli menüyü bulun. Bunun içinde Geliştirici Seçenekleri menüsünü görmelisiniz.</string>
+    <string name="adb_install_android_8">\"USB Hata Ayıklama\" etiketli anahtarı bulana kadar aşağı kaydırın ve etkinleştirin.</string>
+    <string name="adb_install_android_9">Xiaomi cihazlarında, \"USB Hata Ayıklama (Güvenlik Ayarları)\" etiketli seçeneği de bulmanız ve devre dışı bırakmanız gerekir.</string>
+    <string name="adb_install_android_10">OPPO, Realme ve OnePlus telefonlarında ayrıca \"İzin İzlemeyi Devre Dışı Bırak\" etiketli seçeneği bulmanız ve etkinleştirmeniz gerekir.</string>
+    <string name="adb_install_android_11">Şimdi telefonunuzu bilgisayarınıza takın. USB Hata Ayıklama hakkında bir onay penceresi görünürse, izin verin.</string>
+    <string name="adb_install_android_12">Bu yapıldıktan sonra, bilgisayarınızda devam etme zamanı.</string>
+    <string name="adb_install_local_1"><![CDATA[Shizuku uygul
