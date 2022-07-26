@@ -9,4 +9,9 @@
     <string name="adb_final_title">Bitti</string>
     <string name="adb_final_desc">Bu kadar! Her şey yolunda giderse, izin(ler) şimdi verilmelidir.</string>
     <string name="adb_install_android_1">Ayarlar uygulamasını açın ve Telefon Hakkında\'ya tıklayın.</string>
-    <string name="adb_install_android_2">Cihazınıza bağlı olarak \"Yazılım Bilgi
+    <string name="adb_install_android_2">Cihazınıza bağlı olarak \"Yazılım Bilgileri\" adlı bir menü görebilirsiniz. Eğer öyleyse, ona tıklayın.</string>
+    <string name="adb_install_android_3">Şimdi, \"Derleme numarası\" etiketli seçeneği bulun. Bazı cihazlarda buna basitçe \"Sürüm\" adı verilebilir.</string>
+    <string name="adb_install_android_4">Geliştirici Modunu etkinleştirmek için bu seçeneğe 7 kez dokunun. Etkinleştirmek için şifrenizi girmeniz gerekebilir.</string>
+    <string name="adb_install_android_5">Şimdi ana Ayarlar sayfasına geri dönün.</string>
+    <string name="adb_install_android_6">Cihazınıza bağlı olarak \"Geliştirici Seçenekleri\" adlı yeni bir menü görebilirsiniz. Eğer öyleyse, ona dokunun ve bir sonraki adımı atlayın.</string>
+    <string name="adb_install_android_7">Geliştirici Seçenekleri menüsünü görmüyorsanız, \"Sistem\" veya \"Ek Ayarlar\" etiketli menüyü bulun. Bunun içinde Geliştirici 
