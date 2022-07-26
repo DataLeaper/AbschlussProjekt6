@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="adb_intro_title">ADB kılavuzu</string>
-    <string name="adb_intro_desc">ADB\'yi nasıl kullanacağınızı bilmiyor musunuz? Sorun değil. Sadece bu kılavuzu takip etmeniz yeterli. (Bu işlem için 
+    <string name="adb_intro_desc">ADB\'yi nasıl kullanacağınızı bilmiyor musunuz? Sorun değil. Sadece bu kılavuzu takip etmeniz yeterli. (Bu işlem için bir bilgisayara ihtiyacınız olacağını unutmayın.)</string>
+    <string name="adb_intro_desc_no_computer">ADB\'yi nasıl kullanacağınızı bilmiyor musunuz? Sorun değil. Sadece bu kılavuzu takip etmeniz yeterli.</string>
+    <string name="adb_choose_computer_os">Kullandığınız işletim sistemini seçin.</string>
+    <string name="adb_choose_computer_os_desc">Bilgisayarınız hangi işletim sistemiyle çalışıyor?</string>
+    <string name="adb_android_guide">İlk Kurulum (Telefonunuzda)</string>
+    <string name="adb_final_title">Bitti</string>
+    <string name="adb_final_desc">Bu kadar! Her şey yolunda giderse, izin(ler) şimdi verilmelidir.</string>
+    <string name="adb_install_android_1">Ayarlar uygulamasını açın ve Telefon Hakkında\'ya tıklayın.</string>
+    <string name="adb_install_android_2">Cihazınıza bağlı olarak \"Yazılım Bilgi
