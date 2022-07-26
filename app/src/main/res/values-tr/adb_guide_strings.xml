@@ -26,4 +26,10 @@
     <string name="adb_install_adb_windows_1">ADB ZIP dosyasını buradan indirin: https://dl.google.com/android/repository/platform-tools-latest-windows.zip</string>
     <string name="adb_install_adb_windows_2">ZIP dosyasını \"C:\\adb\" gibi uygun bir konuma çıkarın.</string>
     <string name="adb_install_adb_windows_3">Çıkarılan ZIP\'ye göz atmak için dosya gezginini kullanın. \"Adb\" adlı bir dosya da dahil olmak üzere bir grup dosya görmelisiniz.</string>
-  
+    <string name="adb_install_adb_windows_4">Arama çubuğunun içine tıklayın ve orada olanı \"cmd\" (tırnak işaretleri olmadan) ile değiştirin. Ardından Enter\'a basın.</string>
+    <string name="adb_install_adb_mac_1">ADB ZIP dosyasını buradan indirin: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip</string>
+    <string name="adb_install_adb_mac_2">ZIP dosyasını uygun bir yere çıkarın, Masaüstü gibi.</string>
+    <string name="adb_install_adb_mac_3">Şimdi, Terminali açın. Spotlight Search\'ü açmak için aynı anda CMD+SPACE tuşlarına basarak, \"Terminal\"i arayabilirsin.</string>
+    <string name="adb_install_adb_mac_4">Adb_install_adb_mac_4.</string>
+    <string name="adb_install_adb_debian_1">CTRL+ALT+T ye basarak Terminali açın.</string>
+    <stri
