@@ -32,4 +32,12 @@
     <string name="adb_install_adb_mac_3">Şimdi, Terminali açın. Spotlight Search\'ü açmak için aynı anda CMD+SPACE tuşlarına basarak, \"Terminal\"i arayabilirsin.</string>
     <string name="adb_install_adb_mac_4">Adb_install_adb_mac_4.</string>
     <string name="adb_install_adb_debian_1">CTRL+ALT+T ye basarak Terminali açın.</string>
-    <stri
+    <string name="adb_install_adb_debian_2">Şu komutla ADB yi kurun: `sudo apt install android-tools-adb android-tools-fastboot`.</string>
+    <string name="adb_install_adb_fedora_1">Terminali açın.</string>
+    <string name="adb_install_adb_fedora_2">Şu komutla ADB yi kurun: `sudo dnf install adb`.</string>
+    <string name="adb_install_adb_rhel_1">Terminali açın.</string>
+    <string name="adb_install_adb_rhel_2">Şu komutla ADB yi kurun: `yum install android-tools`.</string>
+    <string name="adb_install_adb_linux_other_1">ADB ZIP dosyasını buradan indirin: https://dl.google.com/android/repository/platform-tools-latest-linux.zip</string>
+    <string name="adb_install_adb_linux_other_2">ZIP dosyasını uygun bir yere çıkarın, Masaüstü gibi.</string>
+    <string name="adb_install_adb_linux_other_3">Terminali açın.</string>
+    <st
