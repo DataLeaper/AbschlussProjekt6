@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="BaseTheme">
+    </style>
+
+    <style name="ActionBarStyle" parent="Widget.Material3.Toolbar">
+    </style>
+
+    <style name="AppTheme.Alert.Button" parent="Widget.Material3.Button.TextButton">
+    </style>
+</resources>
