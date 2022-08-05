@@ -16,4 +16,12 @@
     <string name="adb_install_android_6">根据您的设备，您可以看到一个名为“开发者选项”的新菜单。如果是，请点击它并跳过下一步。</string>
     <string name="adb_install_android_7">如果您没有看到开发者选项菜单，找到“系统”或“附加设置”菜单。 您应该在这里看到开发者选项菜单。</string>
     <string name="adb_install_android_8">向下滚动直到您发现标签为“USB 调试”并启用它。</string>
-    <string name="adb_install_android_9">在Xiaomi手机上，您还需要找到并禁用标题为“USB调试(安全设置)”的选项。</stri
+    <string name="adb_install_android_9">在Xiaomi手机上，您还需要找到并禁用标题为“USB调试(安全设置)”的选项。</string>
+    <string name="adb_install_android_10">在 OPPO, Realme, 和 OnePlus 手机上，您还需要找到并启用标题为“禁用权限监视”的选项。</string>
+    <string name="adb_install_android_11">现在，将您的手机插入您的计算机。如果确认有关于 USB 调试的弹出窗口，允许它。</string>
+    <string name="adb_install_android_12">完成后，您就可以在您的电脑继续了。</string>
+    <string name="adb_install_local_1"><![CDATA[从 [Google Play Store](https://play.google.com/store/apps/details?id=moe.shizuku.priveged.api)下载并安装Shizuku应用程序。]]></string>
+    <string name="adb_install_local_2">打开Shizuku应用程序，按“通过无线调试启动”下的说明操作。</string>
+    <string name="adb_install_local_3">关闭此屏幕并点击\"GRANT\"按钮。</string>
+    <string name="adb_install_adb_windows_1">Download the ADB ZIP from here: https://dl.google.com/android/repository/platform-tools-latest-windows.zip</string>
+    <string name="adb_install_adb_windows_2">
