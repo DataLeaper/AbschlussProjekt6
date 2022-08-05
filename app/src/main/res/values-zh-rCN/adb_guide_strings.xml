@@ -6,4 +6,14 @@
     <string name="adb_choose_computer_os">选择您的操作系统。</string>
     <string name="adb_choose_computer_os_desc">您的电脑正在运行哪个操作系统？</string>
     <string name="adb_android_guide">初始设置(在您的手机上)</string>
-    <string name="adb_final_titl
+    <string name="adb_final_title">全部完成</string>
+    <string name="adb_final_desc">就这样！如果一切顺利，现在应该已授予权限(s)。</string>
+    <string name="adb_install_android_1">打开“设置”应用并向下滚动至“关于手机”。点击它。</string>
+    <string name="adb_install_android_2">根据您的设备不同，您可能会看到一个名为“软件信息”的菜单。如果看到了，请点击它。</string>
+    <string name="adb_install_android_3">现在，找到标题为“构建编号”的选项。在某些设备上，这可以被简单地称为“版本”。</string>
+    <string name="adb_install_android_4">点击此选项7次以启用开发者模式。您可能需要输入您的密码才能启用它。</string>
+    <string name="adb_install_android_5">现在回到主设置页面。</string>
+    <string name="adb_install_android_6">根据您的设备，您可以看到一个名为“开发者选项”的新菜单。如果是，请点击它并跳过下一步。</string>
+    <string name="adb_install_android_7">如果您没有看到开发者选项菜单，找到“系统”或“附加设置”菜单。 您应该在这里看到开发者选项菜单。</string>
+    <string name="adb_install_android_8">向下滚动直到您发现标签为“USB 调试”并启用它。</string>
+    <string name="adb_install_android_9">在Xiaomi手机上，您还需要找到并禁用标题为“USB调试(安全设置)”的选项。</stri
