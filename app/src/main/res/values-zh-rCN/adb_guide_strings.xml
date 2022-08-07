@@ -31,4 +31,13 @@
     <string name="adb_install_adb_mac_2">提取ZIP到一个方便的位置，如桌面。</string>
     <string name="adb_install_adb_mac_3">现在打开终端。您可以同时按 CMD + SPACE 打开Spotlight Search，并搜索“终端”。</string>
     <string name="adb_install_adb_mac_4">现在，使用以下命令浏览到已提取的文件：`cd /path/to/files/`。 例如，如果您的用户名是Zachary 并且您提取了ZIP到您的桌面， 命令将是“cd /Users/Zachary/Desktop/platform-tools/`”，其中“platform-tools”是名为\"adb\"文件的文件夹。</string>
-    <string name="adb_install_adb_debian_1">
+    <string name="adb_install_adb_debian_1">按 CTRL+ALT+T. 打开终端。</string>
+    <string name="adb_install_adb_debian_2">通过以下命令安装 ADB: `sudo apt install android-tools-adb android-tools-fastboot` 。</string>
+    <string name="adb_install_adb_fedora_1">打开终端</string>
+    <string name="adb_install_adb_fedora_2">通过以下命令安装 ADB: `sudo dnf install adb`.</string>
+    <string name="adb_install_adb_rhel_1">打开终端</string>
+    <string name="adb_install_adb_rhel_2">通过以下命令安装 ADB: `sudo dnf install adb`.</string>
+    <string name="adb_install_adb_linux_other_1">Download the ADB ZIP from here: https://dl.google.com/android/repository/platform-tools-latest-linux.zip</string>
+    <string name="adb_install_adb_linux_other_2">提取ZIP到一个方便的位置，如桌面。</string>
+    <string name="adb_install_adb_linux_other_3">打开终端</string>
+    <string name="adb_install_adb_linux_other_4">现在，使用以下命令浏览
