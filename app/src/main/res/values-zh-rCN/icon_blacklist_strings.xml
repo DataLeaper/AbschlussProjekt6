@@ -1,1 +1,14 @@
-<?x
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category_icon_blacklist_general">通用</string>
+    <string name="category_icon_blacklist_samsung">三星</string>
+    <string name="category_icon_blacklist_huawei">华为</string>
+    <string name="category_icon_blacklist_xiaomi">小米</string>
+    <string name="category_icon_blacklist_htc">HTC</string>
+    <string name="category_icon_blacklist_sony">索尼</string>
+    <string name="category_icon_blacklist_lg">LG</string>
+    <string name="category_icon_blacklist_auto">自动</string>
+    <string name="category_icon_blacklist_custom">自定义</string>
+    <string name="category_icon_blacklist_auto_desc">点击展开/加载</string>
+    <string name="icon_blacklist_add_custom">添加自定义项</string>
+    <string name="icon_blacklist_add_custom_desc">如果你找不到你想要隐藏的图标并且你知道它的密钥，你可以在这里添加它。</st
