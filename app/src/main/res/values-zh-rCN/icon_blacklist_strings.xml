@@ -69,4 +69,17 @@
     <string name="icon_blacklist_wifi_p2p">WiFi P2P</string>
     <string name="icon_blacklist_wifi_ap">WiFi 热点</string>
     <string name="icon_blacklist_wifi_oxygen">WiFi Oxygen</string>
-    <string na
+    <string name="icon_blacklist_phone_signal_second_stub">第二个电话信号</string>
+    <string name="icon_blacklist_toddler">Toddler</string>
+    <string name="icon_blacklist_keyguard_wakeup">锁屏唤醒</string>
+    <string name="icon_blacklist_safezone">安全区</string>
+    <string name="icon_blacklist_wimax">WiMax</string>
+    <string name="icon_blacklist_smart_bonding">智能绑定中</string>
+    <string name="icon_blacklist_private_mode">隐私模式</string>
+    <string name="icon_blacklist_powersavingmode">省电模式</string>
+    <string name="icon_blacklist_earphone">耳机</string>
+    <string name="icon_blacklist_unicom_call">Unicom 呼叫</string>
+    <string name="icon_blacklist_volte_call">VoLTE Call</string>
+    <string name="icon_blacklist_eyes_protect">护眼</string>
+    <string name="icon_blacklist_mikey">MiKey</string>
+    <string name="icon_bla
