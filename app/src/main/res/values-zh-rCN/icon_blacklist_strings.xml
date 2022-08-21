@@ -54,4 +54,19 @@
     <string name="icon_blacklist_hotspot">热点</string>
     <string name="icon_blacklist_bluetooth">蓝牙</string>
     <string name="icon_blacklist_mute">静音</string>
-    <string name="icon_blacklist_vpn">VPN
+    <string name="icon_blacklist_vpn">VPN</string>
+    <string name="icon_blacklist_knox_container">KNOX容器</string>
+    <string name="icon_blacklist_smart_network">智能网络</string>
+    <string name="icon_blacklist_glove">Glove</string>
+    <string name="icon_blacklist_gesture">手势</string>
+    <string name="icon_blacklist_smart_scroll">智能滚动</string>
+    <string name="icon_blacklist_face">脸部</string>
+    <string name="icon_blacklist_gps">GPS</string>
+    <string name="icon_blacklist_lbs">LBS</string>
+    <string name="icon_blacklist_wearable_gear">可穿戴设备</string>
+    <string name="icon_blacklist_femtoicon">基站</string>
+    <string name="icon_blacklist_comsamsungrcs">Samsung RCS</string>
+    <string name="icon_blacklist_wifi_p2p">WiFi P2P</string>
+    <string name="icon_blacklist_wifi_ap">WiFi 热点</string>
+    <string name="icon_blacklist_wifi_oxygen">WiFi Oxygen</string>
+    <string na
