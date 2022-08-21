@@ -82,4 +82,11 @@
     <string name="icon_blacklist_volte_call">VoLTE Call</string>
     <string name="icon_blacklist_eyes_protect">护眼</string>
     <string name="icon_blacklist_mikey">MiKey</string>
-    <string name="icon_bla
+    <string name="icon_blacklist_call_record">通话录音</string>
+    <string name="icon_blacklist_privacy_mode">隐私模式</string>
+    <string name="icon_blacklist_ble_unlock_mode">BLE 解锁模式</string>
+    <string name="icon_blacklist_quiet">低音</string>
+    <string name="icon_blacklist_missed_call">未接来电</string>
+    <string name="icon_blacklist_bluetooth_handsfree_battery">无蓝牙电池</string>
+    <string name="icon_blacklist_rtt">RTT</string>
+</resources>
