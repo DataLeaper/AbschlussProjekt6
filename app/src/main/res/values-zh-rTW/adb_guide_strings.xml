@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string
+    <string name="adb_intro_title">ADB 指南</string>
+    <string name="adb_intro_desc">不知道如何使用 ADB 嗎？沒問題，只需要遵循此指南，您將完成設定。(請注意，您需要一台電腦以完成此過程)</string>
+    <string name="adb_intro_desc_no_computer">不知道如何使用 ADB 嗎？沒問題，只需要遵循此指南，您將完成設定。</string>
+    <string name="adb_choose_computer_os">選擇你的作業系統。</string>
+    <string name="adb_choose_computer_os_desc">您電腦的作業系統是？</string>
+    <string name="adb_android_guide">初始設定 (在您的手機上)</string>
+    <string name="adb_final_title">全部完成</string>
+    <string name="adb_final_desc">就這樣！如果一切順利，現在應該授予一些權限。</string>
+    <string name="adb_install_android_1">開啟「設定」應用程式，向下捲動並輕觸「關於手機」。</string>
+    <string name="adb_install_android_2">根據您的裝置，您可能會看到一個名為「軟體資訊」的選單，若這樣，輕觸它。</string>
+    <string name="adb_install_android_3">現在，找到標籤為「版本號碼」的選項。在某些裝置上，可能名為「版本」。</string>
+    <string name="adb_in
