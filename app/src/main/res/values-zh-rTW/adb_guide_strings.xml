@@ -20,4 +20,12 @@
     <string name="adb_install_android_10">在 OPPO、Realme 和 OnePlus 手機上，您還需要找到並啟用標籤為「停用權限監視」的選項。</string>
     <string name="adb_install_android_11">現在，將您的手機插入電腦。如果有確認 USB 偵錯的彈出式視窗，請允許。</string>
     <string name="adb_install_android_12">一旦完成這些，就可以繼續在您的電腦上進行了。</string>
-    <string name="adb_install_local_1"><![CDATA[從 
+    <string name="adb_install_local_1"><![CDATA[從 [Google Play Store](https://play.google.com/store/apps/details?id=moe.shizuku.priveged.api) 下載並安裝 Shizuku 應用程式。]]></string>
+    <string name="adb_install_local_2">開啟 Shizuku 應用程式並遵循「透過無線偵錯啟動」下的說明。</string>
+    <string name="adb_install_local_3">關閉此螢幕並輕觸「授予」按鈕。</string>
+    <string name="adb_install_adb_windows_1">從這裡下載 ADB ZIP：https://dl.google.com/android/repository/platform-tools-latest-windows.zip</string>
+    <string name="adb_install_adb_windows_2">將壓縮檔解壓縮到方便的位置，如「C:\\adb」。</string>
+    <string name="adb_install_adb_windows_3">使用檔案總管瀏覽已解壓縮的壓縮檔。你會看到一些檔案，包括一個叫做「adb」的檔案。</string>
+    <string name="adb_install_adb_windows_4">點選搜尋列內，用「cmd」(無引號) 取代其中的內容。然後按輸入鍵。</string>
+    <string name="adb_install_adb_mac_1">從這裡下載 ADB ZIP：https://dl.google.com/android/repository/platform-tools-latest-darwin.zip</string>
+    <string name=
