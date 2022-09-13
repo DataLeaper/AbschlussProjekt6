@@ -34,4 +34,19 @@
     <string name="icon_blacklist_alarm">鬧鐘</string>
     <string name="icon_blacklist_zen">Zen</string>
     <string name="icon_blacklist_do_not_disturb">零打擾</string>
-    <string
+    <string name="icon_blacklist_managed_profile">管理設定檔</string>
+    <string name="icon_blacklist_battery">電量</string>
+    <string name="icon_blacklist_cast">投放</string>
+    <string name="icon_blacklist_nfc">NFC</string>
+    <string name="icon_blacklist_location">定位</string>
+    <string name="icon_blacklist_su">SU</string>
+    <string name="icon_blacklist_otg_mouse">OTG 滑鼠</string>
+    <string name="icon_blacklist_otg_keyboard">OTG 鍵盤</string>
+    <string name="icon_blacklist_felica_lock">Felica 鎖定</string>
+    <string name="icon_blacklist_answering_memo">語音備忘錄</string>
+    <string name="icon_blacklist_ime">輸入法</string>
+    <string name="icon_blacklist_sync_failing">同步失敗</string>
+    <string name="icon_blacklist_sync_active">同步啟用</string>
+    <string name="icon_blacklist_nfclock">NFC 鎖</string>
+    <string name="icon_blacklist_secure">安全</string>
+    <string name="icon_blacklist_power
