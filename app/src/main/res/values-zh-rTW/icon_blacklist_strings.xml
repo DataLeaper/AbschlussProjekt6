@@ -19,4 +19,19 @@
     <string name="icon_blacklist_wifi">WiFi</string>
     <string name="icon_blacklist_volte">VoLTE</string>
     <string name="icon_blacklist_vowifi">VoWiFi</string>
-    <string name="icon_blacklist_dmb">DMB</s
+    <string name="icon_blacklist_dmb">DMB</string>
+    <string name="icon_blacklist_wifi_calling">WiFi 通話</string>
+    <string name="icon_blacklist_cdma_eri">CDMA ERI</string>
+    <string name="icon_blacklist_data_connection">資料連線</string>
+    <string name="icon_blacklist_phone_evdo_signal">手機 EvDO 訊號</string>
+    <string name="icon_blacklist_phone_signal">手機訊號</string>
+    <string name="icon_blacklist_volume">音量</string>
+    <string name="icon_blacklist_headset">耳機</string>
+    <string name="icon_blacklist_speakerphone">擴音模式</string>
+    <string name="icon_blacklist_remote_call">遠端通話</string>
+    <string name="icon_blacklist_tty">TTY</string>
+    <string name="icon_blacklist_clock">時鐘</string>
+    <string name="icon_blacklist_alarm">鬧鐘</string>
+    <string name="icon_blacklist_zen">Zen</string>
+    <string name="icon_blacklist_do_not_disturb">零打擾</string>
+    <string
