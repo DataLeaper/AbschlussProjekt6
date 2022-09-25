@@ -76,4 +76,17 @@
     <string name="icon_blacklist_wimax">WiMax</string>
     <string name="icon_blacklist_smart_bonding">智慧繫結</string>
     <string name="icon_blacklist_private_mode">私密模式</string>
-    <string name="icon_blacklist_powersavingm
+    <string name="icon_blacklist_powersavingmode">省電模式</string>
+    <string name="icon_blacklist_earphone">耳機</string>
+    <string name="icon_blacklist_unicom_call">Unicom 通話</string>
+    <string name="icon_blacklist_volte_call">VoLTE 通話</string>
+    <string name="icon_blacklist_eyes_protect">眼部防護</string>
+    <string name="icon_blacklist_mikey">MiKey</string>
+    <string name="icon_blacklist_call_record">電話錄音</string>
+    <string name="icon_blacklist_privacy_mode">隱私模式</string>
+    <string name="icon_blacklist_ble_unlock_mode">BLE 解除鎖定模式</string>
+    <string name="icon_blacklist_quiet">靜音</string>
+    <string name="icon_blacklist_missed_call">未接來電</string>
+    <string name="icon_blacklist_bluetooth_handsfree_battery">藍牙免持式電池</string>
+    <string name="icon_blacklist_rtt">RTT</string>
+</resources>
