@@ -16,4 +16,21 @@
     <string name="category_oem">OEM 功能</string>
     <string name="category_system">系統</string>
     <string name="category_ui">使用者介面</string>
-  
+    <string name="category_lock_screen">鎖定畫面</string>
+    <string name="category_quick_settings">快速設定</string>
+    <string name="screen_persistent">持續選項</string>
+    <string name="category_interaction">反應</string>
+    <string name="more">更多</string>
+    <string name="tweaks">調校</string>
+    <string name="failure">失敗</string>
+    <string name="help_translate">協助翻譯</string>
+    <string name="sub_cellular">行動數據</string>
+    <string name="sub_wifi">Wi-Fi</string>
+    <string name="sub_miscellaneous">雜項</string>
+    <string name="sub_htc">HTC</string>
+    <string name="sub_huawei">Huawei/Honor</string>
+    <string name="sub_lg">LG</string>
+    <string name="sub_oneplus">OnePlus</string>
+    <string name="sub_samsung">Samsung</string>
+    <string name="sub_sony">Sony</string>
+    <string name="sub_xiaomi">
