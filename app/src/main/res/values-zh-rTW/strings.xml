@@ -45,4 +45,12 @@
     <string name="special_sub_airplane_mode">飛航模式調校</string>
     <string name="special_sub_airplane_mode_desc">飛航模式開啟時會關閉裝置的所有無線電。你可以選擇取消關閉哪些無線電 (例如在飛航模式開啟的時候保留 Wifi 的開啟狀態)。你也可以選擇哪些無線電在飛航模式開啟的時候能夠手動開啟。</string>
     <string name="special_sub_icon_blacklist">圖示黑名單</string>
-    <string name="special_sub_icon_blacklist_desc">選擇哪些圖示在狀態列被隱藏起來。這個功能可能在某些裝置或圖示上無法使用，
+    <string name="special_sub_icon_blacklist_desc">選擇哪些圖示在狀態列被隱藏起來。這個功能可能在某些裝置或圖示上無法使用，通知圖示無法透過這個功能隱藏。</string>
+    <string name="feature_lock_timeout">設定裝置鎖定時間</string>
+    <string name="feature_lock_timeout_desc">在「安全鎖定設定」下，你能夠設定「自動鎖定」計時器。決定了在裝置進入休眠模式後自動鎖定的時間。你能夠設定任何你想要的時間 (以毫秒為單位)。如果你的時間設定的夠長，那裝置不會進入鎖定狀態 (必須關閉「按下電源鍵後立刻鎖定」功能)。</string>
+    <string name="feature_battery_saver_trigger">設定省電模式觸發電量百分比</string>
+    <string name="feature_battery_saver_trigger_desc" formatted="false">Google 的省電模式能夠在電量為 5\% 或是 15\% 時觸發。你可以透過這個功能設定自己的觸發電量。</string>
+    <string name="feature_long_press_delay">設定長按延遲</string>
+    <string name="feature_long_press_delay_desc">在無障礙功能設定中，這個功能稱為「輕觸並按住的延遲時間」，這個功能能夠讓你在按壓螢幕時，要按住多久才會被辨識為長按。然而預設選項只有「短」、「中」、「長」，你可以透過此功能設定你的按壓延遲。</string>
+    <string name="feature_font_scale">設定字型大小</string>
+    <string name="feature_font_scale_desc">Android 系統允許你設定裝置上文字的顯
