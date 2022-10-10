@@ -53,4 +53,12 @@
     <string name="feature_long_press_delay">設定長按延遲</string>
     <string name="feature_long_press_delay_desc">在無障礙功能設定中，這個功能稱為「輕觸並按住的延遲時間」，這個功能能夠讓你在按壓螢幕時，要按住多久才會被辨識為長按。然而預設選項只有「短」、「中」、「長」，你可以透過此功能設定你的按壓延遲。</string>
     <string name="feature_font_scale">設定字型大小</string>
-    <string name="feature_font_scale_desc">Android 系統允許你設定裝置上文字的顯
+    <string name="feature_font_scale_desc">Android 系統允許你設定裝置上文字的顯示大小。這些設定通常只有「小」、「預設」、「大」、「超大」和「特大」，而你能夠自行調整確切的大小。</string>
+    <string name="feature_freeform">啟用自由形式視窗</string>
+    <string name="feature_freeform_desc">啟用與停用自由形式視窗。設定後需要重新開機。僅適用於 Android 7 以及更高版本。</string>
+    <string name="feature_app_install_location">設定預設應用程式安裝位置</string>
+    <string name="feature_app_install_location_desc">預設應用程式安裝位置。選擇應用程式預設要安裝在哪裡。正常來說，應用程式會依據 AndroidManifest 的設定值來選擇安裝位置，你能夠選擇將應用程式安裝在外接儲存裝置中。</string>
+    <string name="feature_heads_up_notifications">彈出式通知</string>
+    <string name="feature_heads_up_notifications_desc">切換啟用或是停用彈出式通知。彈出式通知為裝置頂端彈出的通知。</string>
+    <string name="feature_insufficient_storage_warning">略過「內部儲存空間不足」警告</string>
+    <string name="feature_insufficient_storage_warning_desc">當你的裝置內部剩餘空間剩下特定空間時，Android 系統會跳出裝置剩餘空間不足的提示。可能會影響你安裝新
