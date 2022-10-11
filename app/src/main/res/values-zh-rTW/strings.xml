@@ -69,4 +69,12 @@
     <string name="feature_custom_rotation">鎖定螢幕方向為自訂值</string>
     <string name="feature_custom_rotation_desc">大多數手機只允許你將手機的螢幕方向鎖定為为直向模式。有了這個設定，你可以將螢幕方向鎖定為任何方向。你首先要停用自動旋轉功能，然后才能正常運作。</string>
     <string name="feature_immersive_mode">沉浸式模式</string>
-    <string name="feature_immersive_mode_desc">其他大多數允許你切換沉浸式模式的應用程式只有幾個選項：隱藏導覽列或隱藏狀態列。實際上，在白名單和黑名單模
+    <string name="feature_immersive_mode_desc">其他大多數允許你切換沉浸式模式的應用程式只有幾個選項：隱藏導覽列或隱藏狀態列。實際上，在白名單和黑名單模式下，有可能在每個應用程式的基礎上設定這個選項。請注意，在 Android 11 或更新版本，此選項在 AOSP 中已損壞，且可能無法在您的裝置上運作。</string>
+    <string name="feature_heads_up_snooze_length">彈出式通知延後時間</string>
+    <string name="feature_heads_up_snooze_length_desc">彈出式通知後的毫秒數會在應用程式再次中斷之前被推回。(預設：60 秒)。</string>
+    <string name="feature_camera_gestures">相機手勢</string>
+    <string name="feature_camera_gestures_desc">啟用此選項會使你的手機透過按下兩次電源鍵或在背面和正面之間翻轉手機來快速啟動相機。</string>
+    <string name="feature_disable_safe_audio_warning">停用音量安全警告</string>
+    <string name="feature_disable_safe_audio_warning_desc">歐洲聯盟規章要求智慧型手機在超過某些音量等階 (85 分貝) 時發出警告。這個警報必須在每次重新啟動後或連續播放音樂 20 小時後顯示一次。使用這個設定來改變此警告的行為方式，或完全停用它。請確保在持續選項中啟用這一設定，以使其保持不變。</string>
+    <string name="feature_custom_ui_sounds">自訂 UI 音效</string>
+    <string name="feature_custom_ui_sounds_desc">Android 在 UI 的每個部分上都有許多的音效，他們大部分能夠換成你的自訂音效。
