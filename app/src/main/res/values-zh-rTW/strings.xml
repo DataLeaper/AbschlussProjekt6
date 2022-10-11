@@ -77,4 +77,14 @@
     <string name="feature_disable_safe_audio_warning">停用音量安全警告</string>
     <string name="feature_disable_safe_audio_warning_desc">歐洲聯盟規章要求智慧型手機在超過某些音量等階 (85 分貝) 時發出警告。這個警報必須在每次重新啟動後或連續播放音樂 20 小時後顯示一次。使用這個設定來改變此警告的行為方式，或完全停用它。請確保在持續選項中啟用這一設定，以使其保持不變。</string>
     <string name="feature_custom_ui_sounds">自訂 UI 音效</string>
-    <string name="feature_custom_ui_sounds_desc">Android 在 UI 的每個部分上都有許多的音效，他們大部分能夠換成你的自訂音效。
+    <string name="feature_custom_ui_sounds_desc">Android 在 UI 的每個部分上都有許多的音效，他們大部分能夠換成你的自訂音效。你只需要選擇檔案來讓系統使用。</string>
+    <string name="feature_fix_tethering">修復網路共用</string>
+    <string name="feature_fix_tethering_desc">在某些裝置和 Android 版本上，這可能會略過電信業者對連線的限制。</string>
+    <string name="feature_shortcode_warning">停用簡訊短代碼確認</string>
+    <string name="feature_shortcode_warning_desc">當你傳送簡訊到特定的短代碼時，系統會警告你簡訊可能會收費。你可以在這裡停用這個警告。</string>
+    <string name="feature_sms_limit">自訂簡訊限制</string>
+    <string name="feature_sms_limit_desc">預設狀態下，Android 系統限制您每 30 分鐘傳送 30 條訊息，然後用彈出式通知來打擾您。使用這兩個值，你可以自訂您希望能夠傳送多少條訊息而不被打擾。</string>
+    <string name="feature_lockscreen_shortcuts">鎖定畫面捷徑</string>
+    <string name="feature_lockscreen_shortcuts_desc">從 Android Oreo 開發人員預覽版本 3 開始，Google 移除了自訂鎖定畫面捷徑的能力。然而，偏好值仍可手動設定。</string>
+    <string name="feature_enable_adb">啟用 ADB</string>
+    <string name="feature_enable_adb_desc">某些裝置在不活動一段時間後會自動停用 
