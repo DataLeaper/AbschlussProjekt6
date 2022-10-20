@@ -123,4 +123,17 @@
     <string name="option_user_rotation_270">旋轉 270 度</string>
     <string name="option_sms_limit_count">最大傳送數量</string>
     <string name="option_sms_limit_interval">時間間隔</string>
-   
+    <string name="option_lockscreen_shortcut_left">左捷徑</string>
+    <string name="option_lockscreen_shortcut_right">右捷徑</string>
+    <string name="option_ui_sound_car_dock">汽車底座模式</string>
+    <string name="option_ui_sound_car_dock_desc">音訊會在手機接入汽車底座時播放</string>
+    <string name="option_ui_sound_car_undock">解除汽車底座模式</string>
+    <string name="option_ui_sound_car_undock_desc">音訊會在手機離開汽車底座時播放</string>
+    <string name="option_ui_sound_desk_dock">桌上底座</string>
+    <string name="option_ui_sound_desk_dock_desc">音訊會在手機接入桌上底座時播放</string>
+    <string name="option_ui_sound_desk_undock">解除桌上底座模式</string>
+    <string name="option_ui_sound_desk_undock_desc">音訊會在手機離開桌上底座時播放</string>
+    <string name="option_ui_sound_lock">鎖定</string>
+    <string name="option_ui_sound_lock_desc">音訊會在手機鎖定時播放</string>
+    <string name="option_ui_sound_unlock">解鎖</string>
+  
