@@ -154,4 +154,13 @@
     <string name="option_qqs_tiles">快速設定標頭數</string>
     <string name="option_qqs_tiles_desc">Android Nougat 引入了全新的快速設定特性，即標頭快速設定，讓您能在通知列的一行顯示多個快速設定按鈕，使用此選項可調整一行內的按鈕數量。此選項無法在 One UI 上正常運作。</string>
     <string name="option_oneui_clock_position">時鐘位置</string>
-    <string name="option_oneui_clock_position_desc">在 Samsung 的 One UI (Android Pie 或更高版本)，可以變更狀態列的時鐘位置。Good Lock 的 QuickStar 可以完成這項工作，但有時會有裝置上的限制。您可以使用它將時鐘設定為左、中、或右。注意，您需要在 One UI 2.0 (Android 10) 安裝 QuickStar 才能產生效果。要使此選項持續存在，請啟用圖示黑名單。</s
+    <string name="option_oneui_clock_position_desc">在 Samsung 的 One UI (Android Pie 或更高版本)，可以變更狀態列的時鐘位置。Good Lock 的 QuickStar 可以完成這項工作，但有時會有裝置上的限制。您可以使用它將時鐘設定為左、中、或右。注意，您需要在 One UI 2.0 (Android 10) 安裝 QuickStar 才能產生效果。要使此選項持續存在，請啟用圖示黑名單。</string>
+    <string name="option_touchwiz_navbar_color">導覽列色彩</string>
+    <string name="option_touchwiz_navbar_color_desc">在 Samsung Experience 和 One UI 上，您可以自訂導覽列色彩。請使用此選項。</string>
+    <string name="option_custom_notification_snooze_times">自訂通知延後時間</string>
+    <string name="option_custom_notification_snooze_times_desc">Android Oreo 8.1 引入了通知延後的選項。您可以使用此設定來自訂延後時間值。</string>
+    <string name="option_night_mode">夜間模式</string>
+    <string name="option_night_mode_desc">Android Nougat 引入了一個原生選項，在夜間顯示為黃色，稱為「夜間模式」。它在 Nougat 7.1 中得到進一步完善，並更名為「夜燈」。您可以在此處啟用它並調整為不同選項。警告：在某些 Android 裝置上，激活它將使螢幕變黑。</string>
+    <string name="option_touchwiz_qs_row_count">快速設定列數</string>
+    <string name="option_touchwiz_qs_row_count_desc">在 Samsung TouchWiz Nougat 和 Oreo 上，可以使用隱藏的設定自訂快速設定布局。用它來更改列數。請啟用此選項為持續選項。</string>
+    <string name="option_touchwiz_qs_column_count">
