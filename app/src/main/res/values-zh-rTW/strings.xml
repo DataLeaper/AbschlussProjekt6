@@ -170,4 +170,12 @@
     <string name="option_advanced_manage_qs_tiles">管理快速設定圖塊</string>
     <string name="option_advanced_manage_qs_tiles_desc">單獨啟用或停用 SystemUI Tuner 的快速設定圖塊。</string>
     <string name="option_touchwiz_disable_high_brightness_warning">停用高亮度警告</string>
-    <string name="option_touchwiz_disable_high_brightness_warning_desc">在某些地區，當您試圖超過某個亮度等階時 Samsung 裝置將顯示一個警告。此設定通常在重
+    <string name="option_touchwiz_disable_high_brightness_warning_desc">在某些地區，當您試圖超過某個亮度等階時 Samsung 裝置將顯示一個警告。此設定通常在重新啟動時重設。啟用此設定為持續選項以永久停用此警告。</string>
+    <string name="option_qs_editor">快速設定編輯器</string>
+    <string name="option_qs_editor_desc">雖然自訂快速設定圖塊只能在 Android Nougat (7.0) 和更高版本上可用，但 Marshmallow (6.0) 仍有有限的快速設定編輯功能。您可以重新排列、刪除和新增預設的快速設定圖塊，以及基本意向。</string>
+    <string name="option_qs_fancy_anim">快速設定花式動畫</string>
+    <string name="option_qs_fancy_anim_desc">在支援的裝置上，你可以用它來停用花式快速設定移動和完全展開通知中心時的淡出。如果這對您的裝置沒有影響，請保持開啟以避免其他問題。</string>
+    <string name="option_qs_move_full_rows">快速設定移動完整列</string>
+    <string name="option_qs_move_full_rows_desc">這實際上是做什麼的並沒有解釋得很清楚，但它會起到一些作用，如果你想的話可以試試。它與下拉通知中心有關。</string>
+    <string name="option_back_gesture_inset_scale_left">返回手勢邊緣寬度 (左)</string>
+    <string name="option_back_gesture_inset_scale_left_desc">Android 11 引入了一個選項，透過調整檢測區域的寬度來設定螢幕邊緣返回手勢的靈敏度。使用這個選項可以更精確地設定左邊緣的寬度，或者完全刪除它。
