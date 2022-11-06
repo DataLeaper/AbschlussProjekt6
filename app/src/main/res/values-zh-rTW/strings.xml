@@ -178,4 +178,11 @@
     <string name="option_qs_move_full_rows">快速設定移動完整列</string>
     <string name="option_qs_move_full_rows_desc">這實際上是做什麼的並沒有解釋得很清楚，但它會起到一些作用，如果你想的話可以試試。它與下拉通知中心有關。</string>
     <string name="option_back_gesture_inset_scale_left">返回手勢邊緣寬度 (左)</string>
-    <string name="option_back_gesture_inset_scale_left_desc">Android 11 引入了一個選項，透過調整檢測區域的寬度來設定螢幕邊緣返回手勢的靈敏度。使用這個選項可以更精確地設定左邊緣的寬度，或者完全刪除它。
+    <string name="option_back_gesture_inset_scale_left_desc">Android 11 引入了一個選項，透過調整檢測區域的寬度來設定螢幕邊緣返回手勢的靈敏度。使用這個選項可以更精確地設定左邊緣的寬度，或者完全刪除它。</string>
+    <string name="option_back_gesture_inset_scale_right">返回手勢邊緣寬度 (右)</string>
+    <string name="option_back_gesture_inset_scale_right_desc">Android 11 引入了一個選項，透過調整檢測區域的寬度來設定螢幕邊緣返回手勢的靈敏度。使用這個選項可以更精確地設定右邊緣的寬度，或者完全刪除它。</string>
+    <string name="option_hide_multi_sim_panel">隱藏快速設定多 SIM 面板</string>
+    <string name="option_hide_multi_sim_panel_desc">在 Samsung 裝置上，你可以使用這個選項來隱藏出現在快速設定面板上的多 SIM 卡視圖。</string>
+    <string name="option_disable_combined_internet">停用組合網路選項</string>
+    <string name="option_disable_combined_internet_desc">在 Android 12，Google 將 WiFi、藍牙和蜂巢式行動網路合併為一個選單。WiFi 和蜂巢式行動網路的快速設定圖塊也被合併為一個乙太網路圖塊。啟用此選項將使設定中的舊選單恢復，並允許你恢復獨立的快速設定圖塊。你可能需要重新啟動裝置以確保其生效。如果你沒有看到WiFi和蜂巢式行動網路圖塊，你可以使用 SystemUI Tuner 中的快速設定編輯器新增它們。</string>
+    <string name="option_disable_lock_screen_ads">停用鎖定畫面廣告
