@@ -217,4 +217,22 @@
     <string name="global">全域</string>
     <string name="secure">安全</string>
     <string name="system">系統</string>
-    <string nam
+    <string name="left">左</string>
+    <string name="middle">中</string>
+    <string name="right">右</string>
+    <string name="snooze_default">預設</string>
+    <string name="snooze_a">A</string>
+    <string name="snooze_b">B</string>
+    <string name="snooze_c">C</string>
+    <string name="snooze_d">D</string>
+    <string name="disabled">停用</string>
+    <string name="auto">自動</string>
+    <string name="tile_full_immersive">完全沉浸式</string>
+    <string name="tile_nav_immersive">導覽列沉浸式</string>
+    <string name="tile_status_immersive">狀態列沉浸式</string>
+    <string name="add">新增</string>
+    <string name="add_qs_tile">新增快速設定圖塊</string>
+    <string name="intent">調用請求</string>
+    <string name="view_online">線上檢視</string>
+    <string name="tile_custom">自訂</string>
+    <string name="next">下一個</string
