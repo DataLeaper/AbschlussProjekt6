@@ -198,4 +198,23 @@
     <string name="immersive_blacklist">黑名單</string>
     <string name="immersive_whitelist">白名單</string>
     <string name="advanced">進階</string>
-    <string name="all_apps">所有應用程式
+    <string name="all_apps">所有應用程式</string>
+    <string name="select_apps">選取應用程式</string>
+    <string name="radio">無線電</string>
+    <string name="reset">重設</string>
+    <string name="grant">授予</string>
+    <string name="help">說明</string>
+    <string name="no_root_msg">無法在裝置上授予權限，因為未偵測到 Root 或 Shizuku。若您的裝置已 Root，請確保 SystemUI Tuner 有 Root 存取權。否則按「說明」按鈕來取得 ADB 和 Shizuku 說明。</string>
+    <string name="wss_required_msg">未授予 WRITE_SECURE_SETTTINGS 权限。</string>
+    <string name="mode">模式</string>
+    <string name="key">金鑰</string>
+    <string name="value">值</string>
+    <string name="label">標籤</string>
+    <string name="hide">隱藏</string>
+    <string name="show">顯示</string>
+    <string name="enabled">已啟用</string>
+    <string name="enable">啟用</string>
+    <string name="global">全域</string>
+    <string name="secure">安全</string>
+    <string name="system">系統</string>
+    <string nam
