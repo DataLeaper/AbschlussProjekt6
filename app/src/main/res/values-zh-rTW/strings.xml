@@ -235,4 +235,22 @@
     <string name="intent">調用請求</string>
     <string name="view_online">線上檢視</string>
     <string name="tile_custom">自訂</string>
-    <string name="next">下一個</string
+    <string name="next">下一個</string>
+    <string name="finish">完成</string>
+    <string name="previous">上一個</string>
+    <string name="exit">離開</string>
+    <string name="done">完成</string>
+    <string name="error">錯誤</string>
+    <string name="status_bar_icons">狀態列圖示</string>
+    <string name="network_states">網路狀態</string>
+    <string name="volume_visibility">音量可見性</string>
+    <string name="bluetooth_visibility">藍牙可見性</string>
+    <string name="location_visibility">位置可見性</string>
+    <string name="alarm_visibility">鬧鐘可見性</string>
+    <string name="sync_visibility">同步可見性</string>
+    <string name="tty_visibility">TTY 可見性</string>
+    <string name="eri_visibility">ERI 可見性</string>
+    <string name="secure_visibility">安全可見性</string>
+    <string name="mute_visibility">靜音可見性</string>
+    <string name="speakerphone_visibility">揚聲器電話可見性</string>
+ 
