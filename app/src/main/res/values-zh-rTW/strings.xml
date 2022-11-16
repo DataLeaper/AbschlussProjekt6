@@ -253,4 +253,19 @@
     <string name="secure_visibility">安全可見性</string>
     <string name="mute_visibility">靜音可見性</string>
     <string name="speakerphone_visibility">揚聲器電話可見性</string>
- 
+    <string name="airplane_visibility">飛航模式可見性</string>
+    <string name="wifi_visibility">WiFi 可見性</string>
+    <string name="mobile_visibility">行動數據可見性</string>
+    <string name="wifi_level">WiFi 訊號等階</string>
+    <string name="wifi_fully_connected">WiFi 完全連線</string>
+    <string name="mobile_level">行動數據訊號等階</string>
+    <string name="mobile_fully_connected">行動數據完全連線</string>
+    <string name="mobile_roaming">行動數據漫遊</string>
+    <string name="mobile_data_type">行動數據類型</string>
+    <string name="mobile_activity_type">行動數據活動類型</string>
+    <string name="wifi_activity_type">WiFi 活動類型</string>
+    <string name="mobile_carrier_network_change">變更電信業者網路</string>
+    <string name="mobile_inflate_signal">放大行動數據訊號</string>
+    <string name="battery_level">電量</string>
+    <string name="battery_charging">充電中</string>
+    <string name="clock_t
