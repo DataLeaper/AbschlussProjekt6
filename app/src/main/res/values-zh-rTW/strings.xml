@@ -268,4 +268,16 @@
     <string name="mobile_inflate_signal">放大行動數據訊號</string>
     <string name="battery_level">電量</string>
     <string name="battery_charging">充電中</string>
-    <string name="clock_t
+    <string name="clock_time">時鐘時間</string>
+    <string name="status_bar_style">狀態列樣式</string>
+    <string name="backup_restore">備份/還原</string>
+    <string name="back_up">備份</string>
+    <string name="restore">還原</string>
+    <string name="set_color">設定色彩</string>
+    <string name="intro_welcome">歡迎！</string>
+    <string name="intro_welcome_desc">你的 Android 裝置可能有很多可變更的設定，但你知道有很多設定是隱藏的嗎？這個應用程式可以幫你變更這些隱藏的設定！你不需要 Root 存取權，但你必須遵循幾個步驟來設定這個應用程式。</string>
+    <string name="intro_terms">使用條款</string>
+    <string name="intro_terms_desc">請閱讀這些條款，我保證它們是值得的。對你們中的大多數人來說，它們可以為你節省一封電子郵件。</string>
+    <string name="intro_disclaimer">免責聲明</string>
+    <string name="intro_disclaimer_desc">SystemUI Tuner 可以變更隱藏的設定。不幸的是，由於它們是隱藏的，您的特定裝置可能對某些變更沒有回應。在深度客製化的 Android 版本上，如 EMUI、MIUI 和 ColorOS，會有很多功能無法使用。請記住，我對此無能為力。</string>
+    <string name="intro_grant_wss">授予寫入安全設
