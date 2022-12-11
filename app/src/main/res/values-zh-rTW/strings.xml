@@ -335,4 +335,15 @@
     <string name="tile_heads_up">彈出式通知</string>
     <string name="tile_night_mode">夜間模式</string>
     <string name="icon_blacklist_rotation_lock">旋轉鎖定</string>
-    <string name="icon_blacklist_rotation_lock_desc">修改圖示黑名單可能會導致這裡的顯示的圖示出現在你的狀態列中。這就是旋轉鎖定圖示。你可以在下面把
+    <string name="icon_blacklist_rotation_lock_desc">修改圖示黑名單可能會導致這裡的顯示的圖示出現在你的狀態列中。這就是旋轉鎖定圖示。你可以在下面把它列入黑名單。</string>
+    <string name="hide_battery_android_bug_msg">在 Android 10 上使用圖示黑名單已經無法隱藏電池圖示。這是 Android 的一個 Bug。它應該在 Android 11 中被修復。</string>
+    <string name="hide_battery_android_bug_btn_view_issue">檢視問題</string>
+    <string name="error_creating_file_template">建立檔案「%s」時發生錯誤</string>
+    <string name="error_restoring_icon_blacklist">建立還原「%s」時發生錯誤</string>
+    <string name="permission_grant_success">已成功授權。</string>
+    <string name="permission_grant_failure">授權失敗。如果您是 Xiaomi 或 OPPO/Realme/OnePlus 裝置，請確保你開啟了「USB 偵錯 (安全設定)」或「停用權限監控」。</string>
+    <string name="permission_grant_failure_short">授權失敗。\n%s</string>
+    <string name="patreon">Patreon</string>
+    <string name="patreon_desc">每月捐贈 $1 即可存取我的所有付費應用。</string>
+    <string name="supporters">贊助者</string>
+    <string name="support
