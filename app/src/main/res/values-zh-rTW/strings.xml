@@ -359,4 +359,16 @@
     <string name="demo_mode_activity_type_out">輸出</string>
     <string name="demo_mode_activity_type_inout">輸入/輸出</string>
     <string name="safe_audio_state_not_configured">未設定</string>
-    <string name="safe_audio_state_disa
+    <string name="safe_audio_state_disabled">停用</string>
+    <string name="safe_audio_state_inactive">未生效</string>
+    <string name="safe_audio_state_active">生效</string>
+    <string name="persistent_options_not_sticking_title">開機時選項沒有重新設定？</string>
+    <string name="persistent_options_not_sticking_desc">你可能需要將 SystemUI Tuner 加入任何電池效能最佳化白名單。點選這裡以瞭解更多。</string>
+    <string name="setting_applied_dialog">選項已套用！</string>
+    <string name="setting_applied_dialog_desc">要保持變更嗎？此選項將在 %s 秒內還原。</string>
+    <string name="keep">保持</string>
+    <string name="revert">還原</string>
+    <string name="blocked_reason_read_terms">請確保在繼續之前您已閱讀條款。</string>
+    <string name="blocked_reason_write_secure_settings">SystemUI Tuner 功能的正常運作需要「寫入安全設定」權限。若您有任何相關問題，請輕觸「說明」按鈕。</string>
+    <string name="blocked_reason_choose_os">在繼續之前，請選擇您的作業系統。</string>
+</resources>
