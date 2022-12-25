@@ -16,3 +16,13 @@
         android:title="@string/feature_app_install_location"
         android:summary="@string/feature_app_install_location_desc"
         android:key="default_install_location"
+        android:defaultValue="0"
+        android:icon="@drawable/ic_baseline_sd_card_24"
+        app:icon_color="@color/pref_color_5"
+        app:entries="@array/app_install_location_names"
+        app:entryValues="@array/app_install_location_values"
+        app:settings_type="global"
+        app:enabled_verifier="com.zacharee1.systemuituner.util.verifiers.EnableStorage"
+        />
+
+</PreferenceScreen>
