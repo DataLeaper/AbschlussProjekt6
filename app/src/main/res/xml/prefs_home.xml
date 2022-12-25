@@ -235,3 +235,26 @@
         android:icon="@drawable/telegram"
         app:link="https://bit.ly/ZachareeTG"
         />
+
+    <com.zacharee1.systemuituner.prefs.nav.LinkPreference
+        android:title="@string/email"
+        android:key="email"
+        android:icon="@drawable/ic_baseline_email_24"
+        app:link="mailto:zachary%40zwander.dev?subject=SystemUI%20Tuner"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.LinkPreference
+        android:title="@string/website"
+        android:key="website"
+        android:icon="@drawable/earth"
+        app:link="https://zwander.dev"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.LinkPreference
+        android:title="@string/more_apps"
+        android:key="more_apps"
+        android:icon="@drawable/ic_baseline_apps_24"
+        app:link="https://play.google.com/store/apps/dev?id=6168495537212917027"
+        />
+
+</PreferenceScreen>
