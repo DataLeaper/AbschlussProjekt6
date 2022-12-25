@@ -1,0 +1,237 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zacharee1.systemuituner.prefs.NavHeaderPreference
+        android:key="header"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        />
+
+    <PreferenceCategory
+        android:title="@string/tweaks"
+        android:key="tweaks_header"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        app:iconSpaceReserved="false"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.NavigationPreference
+        android:title="@string/category_apps"
+        android:key="go_to_apps"
+        android:icon="@drawable/ic_baseline_apps_24"
+        app:navigation_action="@id/appsFragment"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.NavigationPreference
+        android:title="@string/category_audio"
+        android:key="go_to_audio"
+        android:icon="@drawable/ic_baseline_volume_up_24"
+        app:navigation_action="@id/audioFragment"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.NavigationPreference
+        android:title="@string/category_developer"
+        android:key="go_to_developer"
+        android:icon="@drawable/ic_baseline_developer_mode_24"
+        app:navigation_action="@id/developerFragment"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.NavigationPreference
+        android:title="@string/category_display"
+        android:key="go_to_display"
+        android:icon="@drawable/ic_baseline_tv_24"
+        app:navigation_action="@id/displayFragment"
+        />
+
+    <tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategoryNew
+        android:title="@string/category_network"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:icon="@drawable/ic_network"
+        app:arrow_side="end"
+        android:key="category_network">
+
+        <com.zacharee1.systemuituner.prefs.nav.IndentedNavigationPreference
+            android:title="@string/sub_cellular"
+            android:key="go_to_network_cellular"
+            android:icon="@drawable/ic_baseline_signal_cellular_4_bar_24"
+            app:navigation_action="@id/netCellFragment"
+            />
+
+        <com.zacharee1.systemuituner.prefs.nav.IndentedNavigationPreference
+            android:title="@string/sub_wifi"
+            android:key="go_to_network_wifi"
+            android:icon="@drawable/ic_baseline_signal_wifi_4_bar_24"
+            app:navigation_action="@id/netWiFiFragment"
+            />
+
+        <com.zacharee1.systemuituner.prefs.nav.IndentedNavigationPreference
+            android:title="@string/sub_miscellaneous"
+            android:key="go_to_network_misc"
+            android:icon="@drawable/ic_baseline_more_horiz_24"
+            app:navigation_action="@id/netMiscellaneousFragment"
+            />
+
+    </tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategoryNew>
+
+    <tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategoryNew
+        android:title="@string/category_interaction"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        android:icon="@drawable/ic_baseline_touch_app_24"
+        app:arrow_side="end"
+        android:key="category_interaction">
+
+        <com.zacharee1.systemuituner.prefs.nav.IndentedNavigationPreference
+            android:title="@string/category_notifications"
+            android:key="go_to_notifications"
+            android:icon="@drawable/ic_baseline_notifications_24"
+            app:navigation_action="@id/notificationsFragment"
+            />
+
+        <com.zacharee1.systemuituner.prefs.nav.IndentedNavigationPreference
+            android:title="@string/category_status_bar"
+            android:key="go_to_status_bar"
+            android:icon="@drawable/ic_baseline_space_bar_24"
+            app:navigation_action="@id/statusBarFragment"
+            />
+
+        <com.zacharee1.systemuituner.prefs.nav.IndentedNavigationPreference
+            android:title="@string/category_quick_settings"
+            android:key="go_to_quick_settings"
+            android:icon="@drawable/ic_baseline_view_grid_24"
+            app:navigation_action="@id/qsFragment"
+            />
+
+    </tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategoryNew>
+
+    <tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategoryNew
+        android:title="@string/category_system"
+        android:icon="@drawable/ic_baseline_build_24"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        app:arrow_side="end"
+        android:key="category_system">
+
+        <com.zacharee1.systemuituner.prefs.nav.IndentedNavigationPreference
+            android:title="@string/sub_storage"
+            android:icon="@drawable/ic_baseline_sd_storage_24"
+            android:key="go_to_system_storage"
+            app:navigation_action="@id/storageFragment"
+            />
+
+        <com.zacharee1.systemuituner.prefs.nav.IndentedNavigationPreference
+            android:title="@string/category_lock_screen"
+            android:icon="@drawable/baseline_lock_24"
+            android:key="go_to_lock_screen"
+            app:navigation_action="@id/lockFragment"
+            />
+
+    </tk.zwander.collapsiblepreferencecategory.CollapsiblePreferenceCategoryNew>
+
+    <com.zacharee1.systemuituner.prefs.nav.NavigationPreference
+        android:title="@string/category_ui"
+        android:key="go_to_ui"
+        android:icon="@drawable/ic_baseline_touch_app_24"
+        app:navigation_action="@id/UIFragment"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.NavigationPreference
+        android:title="@string/advanced"
+        android:key="go_to_advanced"
+        android:icon="@drawable/tools"
+        app:navigation_action="@id/advancedFragment"
+        />
+
+    <PreferenceCategory
+        android:title="@string/more"
+        android:key="more_header"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        app:iconSpaceReserved="false"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.ShowDialogPreference
+        android:title="@string/intro_crash_reports"
+        android:key="enable_crash_reports"
+        android:icon="@drawable/baseline_bug_report_24"
+        app:dialog_class="com.zacharee1.systemuituner.dialogs.EnableCrashReportsDialog"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.NavigationPreference
+        android:title="@string/screen_persistent"
+        android:key="go_to_persistent_options"
+        android:icon="@drawable/ic_baseline_save_24"
+        app:navigation_action="@id/persistentActivity"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.ShowDialogPreference
+        android:title="@string/reset"
+        android:key="reset_options"
+        android:icon="@drawable/ic_baseline_restore_24"
+        app:dialog_class="com.zacharee1.systemuituner.dialogs.ResetDialog"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.ShowDialogPreference
+        android:title="@string/oneui_tuner"
+        android:key="oneui_tuner_option"
+        android:icon="@drawable/ic_baseline_android_24"
+        app:dialog_class="com.zacharee1.systemuituner.dialogs.OneUITunerDialog"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.LinkPreference
+        android:title="@string/help_translate"
+        android:key="help_translate_link"
+        android:icon="@drawable/ic_baseline_translate_24"
+        app:link="https://crowdin.com/project/systemui-tuner"
+        />
+
+    <PreferenceCategory
+        android:title="@string/social"
+        android:key="social_header"
+        app:iconSpaceReserved="false"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.ShowDialogPreference
+        android:title="@string/donate"
+        android:key="donate"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        app:dialog_class="com.zacharee1.systemuituner.dialogs.DonateDialog"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.ShowDialogPreference
+        android:title="@string/supporters"
+        android:key="supporters"
+        android:icon="@drawable/heart_outline"
+        app:dialog_class="com.zacharee1.systemuituner.dialogs.SupportersDialog"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.ShowDialogPreference
+        android:title="@string/patreon"
+        android:key="patreon"
+        android:icon="@drawable/patreon"
+        app:dialog_class="com.zacharee1.systemuituner.dialogs.PatreonDialog"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.LinkPreference
+        android:title="@string/mastodon"
+        android:key="mastodon"
+        android:icon="@drawable/mastodon"
+        app:link="https://androiddev.social/@wander1236"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.LinkPreference
+        android:title="@string/twitter"
+        android:key="twitter"
+        android:icon="@drawable/twitter"
+        app:link="https://twitter.com/wander1236"
+        />
+
+    <com.zacharee1.systemuituner.prefs.nav.LinkPreference
+        android:title="@string/telegram"
+        android:key="telegram"
+        android:icon="@drawable/telegram"
+        app:link="https://bit.ly/ZachareeTG"
+        />

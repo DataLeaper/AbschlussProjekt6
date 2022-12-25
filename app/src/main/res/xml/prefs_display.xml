@@ -1,0 +1,71 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zacharee1.systemuituner.prefs.secure.SecureEditTextPreference
+        android:title="@string/feature_lock_timeout"
+        android:summary="@string/feature_lock_timeout_desc"
+        android:key="lock_screen_lock_after_timeout"
+        android:defaultValue="5000"
+        android:inputType="number"
+        android:icon="@drawable/progress_clock"
+        app:icon_color="@color/pref_color_6"
+        app:settings_type="secure"
+        />
+
+    <com.zacharee1.systemuituner.prefs.secure.SecureSeekBarPreference
+        android:title="@string/feature_battery_saver_trigger"
+        android:summary="@string/feature_battery_saver_trigger_desc"
+        android:key="low_power_trigger_level"
+        android:defaultValue="5"
+        android:icon="@drawable/ic_baseline_battery_alert_24"
+        app:icon_color="@color/pref_color_3"
+        app:units="%"
+        app:minValue="0"
+        app:maxValue="100"
+        app:settings_type="global"
+        />
+
+    <com.zacharee1.systemuituner.prefs.secure.SecureSeekBarPreference
+        android:title="@string/feature_font_scale"
+        android:summary="@string/feature_font_scale_desc"
+        android:key="font_scale"
+        android:defaultValue="100"
+        android:icon="@drawable/ic_baseline_format_size_24"
+        app:icon_color="@color/pref_color_7"
+        app:minValue="20"
+        app:maxValue="300"
+        app:scale="0.01"
+        app:settings_type="system"
+        />
+
+    <com.zacharee1.systemuituner.prefs.secure.SecureListPreference
+        android:title="@string/feature_custom_rotation"
+        android:summary="@string/feature_custom_rotation_desc"
+        android:key="user_rotation"
+        android:defaultValue="0"
+        android:icon="@drawable/ic_baseline_screen_lock_rotation_24"
+        app:icon_color="@color/pref_color_6"
+        app:settings_type="system"
+        app:entries="@array/user_rotation_names"
+        app:entryValues="@array/user_rotation_values"
+        />
+
+    <com.zacharee1.systemuituner.prefs.secure.specific.TouchWizNavigationBarColor
+        />
+
+    <com.zacharee1.systemuituner.prefs.secure.SecureSwitchPreference
+        android:title="@string/option_touchwiz_disable_high_brightness_warning"
+        android:summary="@string/option_touchwiz_disable_high_brightness_warning_desc"
+        android:key="shown_max_brightness_dialog"
+        android:icon="@drawable/ic_baseline_brightness_7_24"
+        app:settings_type="system"
+        app:icon_color="@color/pref_color_1"
+        app:visibility_verifier="com.zacharee1.systemuituner.util.verifiers.ShowForTouchWiz"
+        />
+
+    <com.zacharee1.systemuituner.prefs.NightModePreference
+        />
+
+</PreferenceScreen>
