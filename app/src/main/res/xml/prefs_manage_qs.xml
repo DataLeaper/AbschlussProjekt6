@@ -2,4 +2,23 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.zac
+    <com.zacharee1.systemuituner.prefs.ManageQSPreference
+        android:title="@string/tile_battery"
+        android:icon="@drawable/battery_full"
+        app:manage_component="com.zacharee1.systemuituner/.services.tiles.BatteryTile"
+        />
+
+    <com.zacharee1.systemuituner.prefs.ManageQSPreference
+        android:title="@string/tile_clock"
+        android:icon="@drawable/progress_clock"
+        app:manage_component="com.zacharee1.systemuituner/.services.tiles.ClockTile"
+        />
+
+    <com.zacharee1.systemuituner.prefs.ManageQSPreference
+        android:title="@string/tile_demo"
+        android:icon="@drawable/ic_baseline_tv_24"
+        app:manage_component="com.zacharee1.systemuituner/.services.tiles.DemoTile"
+        />
+
+    <com.zacharee1.systemuituner.prefs.ManageQSPreference
+        a
