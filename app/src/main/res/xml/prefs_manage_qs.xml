@@ -38,4 +38,18 @@
         android:title="@string/tile_full_immersive"
         android:icon="@drawable/ic_baseline_fullscreen_24"
         app:manage_component="com.zacharee1.systemuituner/.services.tiles.FullImmersiveTile"
-      
+        />
+
+    <com.zacharee1.systemuituner.prefs.ManageQSPreference
+        android:title="@string/tile_nav_immersive"
+        android:icon="@drawable/ic_baseline_vertical_align_bottom_24"
+        app:manage_component="com.zacharee1.systemuituner/.services.tiles.NavImmersiveTile"
+        />
+
+    <com.zacharee1.systemuituner.prefs.ManageQSPreference
+        android:title="@string/tile_status_immersive"
+        android:icon="@drawable/ic_baseline_vertical_align_top_24"
+        app:manage_component="com.zacharee1.systemuituner/.services.tiles.StatusImmersiveTile"
+        />
+
+</PreferenceScreen>
