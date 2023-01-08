@@ -1,3 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schema
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zacharee1.systemuituner.prefs.secure.SecureSwitchPreference
+        android:title="@string/feature_heads_up_notifications"
+        android:summary="@string/feature_heads_up_notifications_desc"
+        android:key="heads_up_notifications_enabled"
+        android:icon="@drawable/ic_baseline_notifications_active_24"
+        app:icon_color="@color/pref_color_7"
+        app:settings_type="global"
+        />
+
+    <com.zacharee1.systemuituner.prefs.secure.SecureSeekBarPreference
+        android:title="@string/feature_heads_up_snooze_length"
+        android:summary="@string/feature_heads_up_snooze_length_desc"
+        android:key="heads_up_snooze_length_ms"
+        android:defaultValue="60000"
+        android:icon="@drawable/ic_baseline_notifications_paused_24"
+        app:icon_color="@color/pref_color_2"
+        
