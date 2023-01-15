@@ -18,4 +18,22 @@
         android:defaultValue="60000"
         android:icon="@drawable/ic_baseline_notifications_paused_24"
         app:icon_color="@color/pref_color_2"
-        
+        app:units="ms"
+        app:settings_type="global"
+        app:minValue="0"
+        app:maxValue="600000"
+        />
+
+    <com.zacharee1.systemuituner.prefs.secure.SecureSwitchPreference
+        android:title="@string/feature_dnd_in_volume"
+        android:summary="@string/feature_dnd_in_volume_desc"
+        android:key="sysui_show_full_zen"
+        android:icon="@drawable/do_not_disturb"
+        app:icon_color="@color/pref_color_1"
+        app:settings_type="secure"
+        />
+
+    <com.zacharee1.systemuituner.prefs.secure.specific.NotificationSnoozeTimesPreference
+        />
+
+</PreferenceScreen>
