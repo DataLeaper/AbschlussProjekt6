@@ -23,4 +23,23 @@
         android:key="sysui_qs_fancy_anim"
         android:icon="@drawable/animation"
         android:defaultValue="1"
-        app:icon_color="@colo
+        app:icon_color="@color/pref_color_5"
+        app:settings_type="secure"
+        />
+
+    <com.zacharee1.systemuituner.prefs.secure.SecureSwitchPreference
+        android:title="@string/option_qs_move_full_rows"
+        android:summary="@string/option_qs_move_full_rows_desc"
+        android:key="sysui_qs_move_whole_rows"
+        android:icon="@drawable/animation"
+        android:defaultValue="1"
+        app:icon_color="@color/pref_color_7"
+        app:settings_type="secure"
+        />
+
+    <com.zacharee1.systemuituner.prefs.ActivityPreference
+        android:title="@string/option_qs_editor"
+        android:summary="@string/option_qs_editor_desc"
+        android:key="sysui_qs_tiles"
+        android:icon="@drawable/ic_baseline_view_grid_plus_24"
+        app:icon_color="@color/pref_col
