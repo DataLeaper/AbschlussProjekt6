@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zacharee1.systemuituner.prefs.ActivityPreference
+        android:title="@string/special_sub_icon_blacklist"
+        android:summary="@string/special_sub_icon_blacklist_desc"
+        android:key="icon_blacklist"
+        android:icon="@drawable/ic_baseline_visibility_off_24"
+        app:icon_color="@color/pref_color_1"
+        app:activity_class="com.zacharee1.systemuituner.activities.IconBlacklistActivity"
+        app:settings_type="secure"
+        />
+
+    <com.zacharee1.systemuitun

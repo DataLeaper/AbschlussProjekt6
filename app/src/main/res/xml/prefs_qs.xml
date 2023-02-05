@@ -79,3 +79,7 @@
         app:icon_color="@color/pref_color_4"
         app:settings_type="secure"
         app:high_api="27"
+        app:visibility_verifier="com.zacharee1.systemuituner.util.verifiers.ShowForTouchWiz"
+        />
+
+</PreferenceScreen>
