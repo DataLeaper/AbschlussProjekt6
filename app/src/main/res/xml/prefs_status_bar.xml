@@ -12,4 +12,23 @@
         app:settings_type="secure"
         />
 
-    <com.zacharee1.systemuitun
+    <com.zacharee1.systemuituner.prefs.NonPersistentActivityPreference
+        android:title="@string/sub_demo"
+        android:summary="@string/sub_demo_desc"
+        android:key="sub_demo"
+        android:icon="@drawable/ic_baseline_tv_24"
+        app:icon_color="@color/pref_color_5"
+        app:activity_class="com.zacharee1.systemuituner.activities.DemoModeActivity"
+        />
+
+    <com.zacharee1.systemuituner.prefs.secure.SecureSwitchPreference
+        android:title="@string/feature_clock_seconds"
+        android:summary="@string/feature_clock_seconds_desc"
+        android:key="clock_seconds"
+        android:icon="@drawable/ic_seconds"
+        app:icon_color="@color/pref_color_4"
+        app:settings_type="secure"
+        />
+
+    <com.zacharee1.systemuituner.prefs.secure.SecureSwitchPreference
+        android:title="@
