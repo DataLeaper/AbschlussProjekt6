@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen>
+    <com.zacharee1.systemuituner.prefs.secure.specific.StorageThresholdPreference />
+</PreferenceScreen>
