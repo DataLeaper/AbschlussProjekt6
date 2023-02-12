@@ -56,4 +56,8 @@
         />
 
     <com.zacharee1.systemuituner.prefs.secure.specific.KeepDeviceOnPluggedPreference />
-    <com.zacharee1.systemuituner.prefs.s
+    <com.zacharee1.systemuituner.prefs.secure.specific.AnimationScalesPreference />
+    <com.zacharee1.systemuituner.prefs.secure.specific.CameraGesturesPreference />
+    <com.zacharee1.systemuituner.prefs.secure.specific.ImmersiveModePreference />
+    <com.zacharee1.systemuituner.prefs.secure.specific.DarkModePreference />
+</PreferenceScreen>
